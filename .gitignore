@@ -137,3 +137,22 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+dist/
+scratch/
+staging/
+log*.txt
+
+# Ignore Apple's weird folder junk
+.DS_Store
+
+# Ignore vscode local settings
+.vscode
+
+# Per deployment environment file
+env.sh
+
+.venv
+.oxigraph
+docs/
+

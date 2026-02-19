@@ -1,0 +1,6 @@
+named_graph,download_url
+https://purl.wholepersonphysiome.org,https://wholepersonproject.github.io/wpp-kg/catalog.ttl
+https://purl.wholepersonphysiome.org/collection/wpp,https://wholepersonproject.github.io/wpp-kg/collection/wpp/draft/graph.ttl
+https://purl.humanatlas.io/collection/hra,https://cdn.humanatlas.io/digital-objects/collection/hra/latest/graph.ttl
+https://purl.humanatlas.io/vocab/uberon,https://cdn.humanatlas.io/digital-objects/vocab/uberon/latest/graph.ttl
+https://purl.humanatlas.io/vocab/cl,https://cdn.humanatlas.io/digital-objects/vocab/cl/latest/graph.ttl
