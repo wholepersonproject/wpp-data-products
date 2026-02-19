@@ -1,4 +1,4 @@
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: Get CL IDs in WPP that are in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -19,11 +19,13 @@ WHERE {
     ?iri rdfs:label ?label .
   }
   GRAPH WPP: {
-    [] a wpp:Record ;
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
-      wpp:record_source ?source .
+    ] .
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
     FILTER(STRSTARTS(STR(?iri), STR(CL:)))
     BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)

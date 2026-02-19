@@ -1,0 +1,33 @@
+#+ summary: WPP effectors that occur in multiple tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables) (COUNT(DISTINCT ?table) as ?table_count)
+FROM WPP:
+WHERE {
+  [
+    a wpp:Record ;
+    wpp:record_source ?source ;
+    wpp:effector_field [
+      wpp:source_concept ?iri ;
+    ] ;
+  ] .
+  ?iri rdfs:label ?label .
+
+  BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+  BIND(REPLACE(REPLACE(STR(?iri), STR(CL:), 'CL:'), STR(UBERON:), 'UBERON:') as ?id)
+}
+GROUP BY ?id ?label
+HAVING (?table_count > 1)
+ORDER BY DESC(?table_count) ?id

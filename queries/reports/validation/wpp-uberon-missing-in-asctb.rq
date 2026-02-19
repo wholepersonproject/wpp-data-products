@@ -1,4 +1,4 @@
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: Get Uberon IDs in WPP that are not in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -15,11 +15,13 @@ PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH WPP: {
-    [] a wpp:Record ;
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
-      wpp:record_source ?source .
+    ] .
     ?iri rdfs:label ?label .
 
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
