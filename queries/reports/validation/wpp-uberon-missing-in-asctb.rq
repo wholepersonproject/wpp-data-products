@@ -7,26 +7,30 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
-PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
 SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
-  GRAPH HRA: {
-    ?iri ccf:ccf_asctb_type "CT"^^xsd:string .
-    ?iri rdfs:label ?label .
-  }
   GRAPH WPP: {
     [] a wpp:Record ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
       wpp:record_source ?source .
+    ?iri rdfs:label ?label .
+
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
-    FILTER(STRSTARTS(STR(?iri), STR(CL:)))
-    BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
+    FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+    BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
+
+    FILTER NOT EXISTS {
+      GRAPH HRA: {
+        ?iri ccf:ccf_asctb_type "AS"^^xsd:string .
+      }
+    }
   }
 }
 GROUP BY ?id ?label

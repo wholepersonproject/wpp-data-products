@@ -3,7 +3,7 @@ export DEFAULT_LOD_IRI="https://wholepersonproject.github.io/wpp-kg/"
 export DEFAULT_CDN_IRI="https://wholepersonproject.github.io/wpp-kg/"
 export CDN_S3_BUCKET=""
 
-export OXIGRAPH_DB_CACHE=".oxigraph"
+export BLAZEGRAPH_DB="blazegraph.jnl"
 export OUTPUT_DIR="docs"
 export VERSION="draft"
 

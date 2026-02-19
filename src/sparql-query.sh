@@ -3,8 +3,9 @@ source constants.sh
 shopt -s extglob
 set -e
 
-if [ -z "$2" ]; then
-  oxigraph query --location=$OXIGRAPH_DB_CACHE --query-file "$1" --results-format csv | csvformat
-else
-  oxigraph query --location=$OXIGRAPH_DB_CACHE --query-file "$1" --results-file "$2"
-fi
+query=$1
+output=$2
+
+blazegraph-runner --journal=$BLAZEGRAPH_DB --outformat=json select $query $output.json
+node "$(dirname "$0")/sparql-json2csv.js" $output.json $output
+rm $output.json

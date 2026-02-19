@@ -153,6 +153,5 @@ log*.txt
 env.sh
 
 .venv
-.oxigraph
 docs/
-
+blazegraph.jnl

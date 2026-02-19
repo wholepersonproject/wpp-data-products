@@ -14,19 +14,23 @@ PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
 SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
-  GRAPH HRA: {
-    ?iri ccf:ccf_asctb_type "CT"^^xsd:string .
-    ?iri rdfs:label ?label .
-  }
   GRAPH WPP: {
     [] a wpp:Record ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
       wpp:record_source ?source .
+    ?iri rdfs:label ?label .
+
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
     FILTER(STRSTARTS(STR(?iri), STR(CL:)))
     BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
+
+    FILTER NOT EXISTS {
+      GRAPH HRA: {
+        ?iri ccf:ccf_asctb_type "CT"^^xsd:string .
+      }
+    }
   }
 }
 GROUP BY ?id ?label

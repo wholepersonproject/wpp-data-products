@@ -3,7 +3,7 @@ import { globSync } from 'glob';
 import { basename, dirname, join } from 'path';
 import sh from 'shelljs';
 
-const OXIGRAPH_DB = process.argv[2];
+const JOURNAL = process.argv[2];
 const OUT_DIR = process.argv[3];
 const FILTER = process.argv.length === 5 ? process.argv[4] : undefined;
 
@@ -26,7 +26,7 @@ async function runQueries() {
     writeFileSync(`${reportCsv}.rq`, query);
 
     const result = sh.exec(
-      `oxigraph query --location=${OXIGRAPH_DB} --query-file ${reportCsv}.rq --results-file ${reportCsv}.json`,
+      `blazegraph-runner --journal=${JOURNAL} select --outformat=json ${reportCsv}.rq ${reportCsv}.json`,
       { silent: true }
     );
     if (result.code) {
