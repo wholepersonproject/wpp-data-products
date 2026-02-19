@@ -1,4 +1,4 @@
-id,label,tables
+id,label,wpp_tables
 CL:0000034,stem cell,digestive-system|integumentary-system
 CL:0000037,hematopoietic stem cell,immune-and-lymphatic-system
 CL:0000057,fibroblast,fascia-system

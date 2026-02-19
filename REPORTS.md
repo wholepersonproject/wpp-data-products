@@ -5,10 +5,11 @@
 * ad-hoc
   * [named graphs and number of tuples (named-graphs)](#named-graphs)
 * validation
-  * [get WPP collection components and download URLs for them (wpp-cl-missing-in-asctb)](#wpp-cl-missing-in-asctb)
-  * [get WPP collection components and download URLs for them (wpp-cl-present-in-asctb)](#wpp-cl-present-in-asctb)
-  * [get WPP collection components and download URLs for them (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
-  * [get WPP collection components and download URLs for them (wpp-uberon-present-in-asctb)](#wpp-uberon-present-in-asctb)
+  * [Get CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)](#wpp-cl-missing-in-asctb)
+  * [Get CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)](#wpp-cl-present-in-asctb)
+  * [WPP effectors that occur in multiple tables (wpp-effectors-in-multiple-tables)](#wpp-effectors-in-multiple-tables)
+  * [Get Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
+  * [Get Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)](#wpp-uberon-present-in-asctb)
 * wpp-ad-hoc
   * [get WPP collection components and download URLs for them (wpp-component-graphs)](#wpp-component-graphs)
 
@@ -53,7 +54,7 @@ ORDER BY ?graph
 
 ## ad-hoc
 
-### <a id="wpp-cl-missing-in-asctb"></a>get WPP collection components and download URLs for them (wpp-cl-missing-in-asctb)
+### <a id="wpp-cl-missing-in-asctb"></a>Get CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)
 
 
 
@@ -61,7 +62,7 @@ ORDER BY ?graph
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: Get CL IDs in WPP that are not in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -78,11 +79,13 @@ PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH WPP: {
-    [] a wpp:Record ;
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
-      wpp:record_source ?source .
+    ] .
     ?iri rdfs:label ?label .
 
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
@@ -112,12 +115,12 @@ ORDER BY ?id
 | CL:0000023 | oocyte | female-reproductive-system |
 | CL:0000043 | mature basophil | immune-and-lymphatic-system |
 | CL:0000060 | odontoblast | dental-and-craniofacial-system |
-| CL:0000062 | osteoblast | dental-and-craniofacial-system|endocrine-system|male-reproductive-system|skeletal-system|integumentary-system |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|endocrine-system|skeletal-system|integumentary-system|male-reproductive-system |
 | ... | ... | ... |
 
 ## validation
 
-### <a id="wpp-cl-present-in-asctb"></a>get WPP collection components and download URLs for them (wpp-cl-present-in-asctb)
+### <a id="wpp-cl-present-in-asctb"></a>Get CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)
 
 
 
@@ -125,7 +128,7 @@ ORDER BY ?id
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: Get CL IDs in WPP that are in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -146,11 +149,13 @@ WHERE {
     ?iri rdfs:label ?label .
   }
   GRAPH WPP: {
-    [] a wpp:Record ;
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
-      wpp:record_source ?source .
+    ] .
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
     FILTER(STRSTARTS(STR(?iri), STR(CL:)))
     BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
@@ -166,7 +171,7 @@ ORDER BY ?id
 
 #### Results ([View CSV File](reports/validation/wpp-cl-present-in-asctb.csv))
 
-| id | label | tables |
+| id | label | wpp_tables |
 | :--- | :--- | :--- |
 | CL:0000034 | stem cell | digestive-system|integumentary-system |
 | CL:0000037 | hematopoietic stem cell | immune-and-lymphatic-system |
@@ -176,7 +181,7 @@ ORDER BY ?id
 | ... | ... | ... |
 
 
-### <a id="wpp-uberon-missing-in-asctb"></a>get WPP collection components and download URLs for them (wpp-uberon-missing-in-asctb)
+### <a id="wpp-effectors-in-multiple-tables"></a>WPP effectors that occur in multiple tables (wpp-effectors-in-multiple-tables)
 
 
 
@@ -184,7 +189,66 @@ ORDER BY ?id
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: WPP effectors that occur in multiple tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables) (COUNT(DISTINCT ?table) as ?table_count)
+FROM WPP:
+WHERE {
+  [
+    a wpp:Record ;
+    wpp:record_source ?source ;
+    wpp:effector_field [
+      wpp:source_concept ?iri ;
+    ] ;
+  ] .
+  ?iri rdfs:label ?label .
+
+  BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+  BIND(REPLACE(REPLACE(STR(?iri), STR(CL:), 'CL:'), STR(UBERON:), 'UBERON:') as ?id)
+}
+GROUP BY ?id ?label
+HAVING (?table_count > 1)
+ORDER BY DESC(?table_count) ?id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-effectors-in-multiple-tables.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-effectors-in-multiple-tables.csv))
+
+| id | label | wpp_tables | table_count |
+| :--- | :--- | :--- | :--- |
+| CL:0000192 | smooth muscle cell | cardiovascular-system|pulmonary-system|digestive-system|integumentary-system|endocrine-system|muscular-system|nervous-system | 7 |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system|integumentary-system | 5 |
+| CL:0008002 | skeletal muscle fiber | nervous-system|endocrine-system|muscular-system|male-reproductive-system|female-reproductive-system | 5 |
+| CL:1000838 | kidney proximal convoluted tubule epithelial cell | cardiovascular-system|dental-and-craniofacial-system|skeletal-system|endocrine-system|urinary-system | 5 |
+| CL:0000092 | osteoclast | dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system | 4 |
+| ... | ... | ... | ... |
+
+
+### <a id="wpp-uberon-missing-in-asctb"></a>Get Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Get Uberon IDs in WPP that are not in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -201,11 +265,13 @@ PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH WPP: {
-    [] a wpp:Record ;
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
-      wpp:record_source ?source .
+    ] .
     ?iri rdfs:label ?label .
 
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
@@ -239,7 +305,7 @@ ORDER BY ?id
 | ... | ... | ... |
 
 
-### <a id="wpp-uberon-present-in-asctb"></a>get WPP collection components and download URLs for them (wpp-uberon-present-in-asctb)
+### <a id="wpp-uberon-present-in-asctb"></a>Get Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)
 
 
 
@@ -247,7 +313,7 @@ ORDER BY ?id
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: Get Uberon IDs in WPP that are in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -268,11 +334,13 @@ WHERE {
     ?iri rdfs:label ?label .
   }
   GRAPH WPP: {
-    [] a wpp:Record ;
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
       ?field [
         wpp:source_concept ?iri ;
       ] ;
-      wpp:record_source ?source .
+    ] .
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
     FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
     BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
@@ -293,7 +361,7 @@ ORDER BY ?id
 | UBERON:0000002 | uterine cervix | female-reproductive-system |
 | UBERON:0000006 | islet of Langerhans | endocrine-system |
 | UBERON:0000010 | peripheral nervous system | nervous-system |
-| UBERON:0000029 | lymph node | immune-and-lymphatic-system|integumentary-system |
+| UBERON:0000029 | lymph node | integumentary-system|immune-and-lymphatic-system |
 | UBERON:0000044 | dorsal root ganglion | nervous-system |
 | ... | ... | ... |
 
