@@ -1,0 +1,25 @@
+#+ summary: get WPP collection components and download URLs for them
+
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX WPP_KG: <https://purl.wholepersonphysiome.org>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?named_graph ?download_url
+FROM WPP:
+FROM WPP_KG:
+WHERE {
+  WPP: prov:hadMember ?component .
+  [] a dcat:Dataset ;
+    rdfs:seeAlso ?component ;
+    dcat:distribution [
+      dcat:downloadURL ?download_url ;
+      dcat:mediaType "text/turtle"^^xsd:string
+    ] ;
+  .
+  BIND(REPLACE(STR(?component), '/draft', '') as ?named_graph)
+}
