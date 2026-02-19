@@ -1,0 +1,15 @@
+named_graph,download_url
+https://purl.wholepersonphysiome.org/wpp/cardiovascular-system,https://wholepersonproject.github.io/wpp-kg/wpp/cardiovascular-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/dental-and-craniofacial-system,https://wholepersonproject.github.io/wpp-kg/wpp/dental-and-craniofacial-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/digestive-system,https://wholepersonproject.github.io/wpp-kg/wpp/digestive-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/endocrine-system,https://wholepersonproject.github.io/wpp-kg/wpp/endocrine-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/fascia-system,https://wholepersonproject.github.io/wpp-kg/wpp/fascia-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/female-reproductive-system,https://wholepersonproject.github.io/wpp-kg/wpp/female-reproductive-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/immune-and-lymphatic-system,https://wholepersonproject.github.io/wpp-kg/wpp/immune-and-lymphatic-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/integumentary-system,https://wholepersonproject.github.io/wpp-kg/wpp/integumentary-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/male-reproductive-system,https://wholepersonproject.github.io/wpp-kg/wpp/male-reproductive-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/muscular-system,https://wholepersonproject.github.io/wpp-kg/wpp/muscular-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/nervous-system,https://wholepersonproject.github.io/wpp-kg/wpp/nervous-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/pulmonary-system,https://wholepersonproject.github.io/wpp-kg/wpp/pulmonary-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/skeletal-system,https://wholepersonproject.github.io/wpp-kg/wpp/skeletal-system/draft/graph.ttl
+https://purl.wholepersonphysiome.org/wpp/urinary-system,https://wholepersonproject.github.io/wpp-kg/wpp/urinary-system/draft/graph.ttl
