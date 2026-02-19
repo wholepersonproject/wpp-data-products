@@ -1,0 +1,32 @@
+#+ summary: get WPP collection components and download URLs for them
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?iri ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?tables)
+WHERE {
+  GRAPH HRA: {
+    ?iri ccf:ccf_asctb_type "CT"^^xsd:string .
+    ?iri rdfs:label ?label .
+  }
+  GRAPH WPP: {
+    [] a wpp:Record ;
+      ?field [
+        wpp:source_concept ?iri ;
+      ] ;
+      wpp:record_source ?source .
+    BIND(REPLACE(STR(?source), 'https://purl.humanatlas.io/wpp/', '') as ?table)
+    FILTER(STRSTARTS(STR(?iri), STR(CL:)))
+  }
+}
+GROUP BY ?iri ?label
+ORDER BY ?iri
