@@ -1,2 +1,6 @@
-# wpp-data-products
-Code and data to derive data products and reports from WPP sources
+# Whole Person Physiome (WPP) draft
+
+
+* [REPORTS.md](REPORTS.md) includes a report of all the reports generated as part of the HRAlit generation process. It shows the SPARQL queries used, output, and associated documentation.
+* [log.txt](log.txt) is a raw processing log showing the output of the workflow as it generated the HRAlit draft.
+* [CREATION_DATE](CREATION_DATE) was generated at the conclusion of the workflow run.
