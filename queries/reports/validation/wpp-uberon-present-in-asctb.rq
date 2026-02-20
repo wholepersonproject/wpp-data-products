@@ -1,4 +1,4 @@
-#+ summary: Get Uberon IDs in WPP that are in ASCT+B
+#+ summary: Uberon IDs in WPP that are in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>

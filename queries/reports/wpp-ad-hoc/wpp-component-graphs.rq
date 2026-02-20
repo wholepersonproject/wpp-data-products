@@ -1,4 +1,4 @@
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: WPP collection components and download URLs for them
 
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX prov: <http://www.w3.org/ns/prov#>

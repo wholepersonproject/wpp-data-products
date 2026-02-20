@@ -1,4 +1,4 @@
-#+ summary: CL IDs in WPP that are in ASCT+B
+#+ summary: FTUs in WPP that are in ASCT+B or 2D FTUs
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -7,28 +7,43 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
-PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?field;SEPARATOR='|') as ?fields) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH HRA: {
-    ?iri ccf:ccf_asctb_type "CT"^^xsd:string .
+    {
+      [
+        a ccf:FtuIllustration ;
+        ccf:representation_of ?iri ;
+      ] .
+    }
+    UNION
+    {
+      [
+        a ccf:AsctbRecord ;
+        ccf:ftu_types [
+          ccf:source_concept ?iri 
+        ];
+      ] .
+    }
     ?iri rdfs:label ?label .
   }
   GRAPH WPP: {
     [
       a wpp:Record ;
       wpp:record_source ?source ;
-      ?field [
+      ?field_pred [
         wpp:source_concept ?iri ;
       ] ;
     ] .
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
-    FILTER(STRSTARTS(STR(?iri), STR(CL:)))
-    BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
+    FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+    BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
+    BIND(REPLACE(REPLACE(STR(?field_pred), STR(wpp:), ''), '_field', '') as ?field)
   }
 }
 GROUP BY ?id ?label
