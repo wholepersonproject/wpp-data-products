@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs';
 
-const template = readFileSync('src/README-TEMPLATE.md').toString();
+const template = readFileSync('site/README.md').toString();
 const VERSION = process.argv[2];
 const CREATION_DATE = process.argv[3];
 const OUTPUT = process.argv[4];

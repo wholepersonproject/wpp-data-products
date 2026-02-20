@@ -25,4 +25,4 @@ while IFS=, read -r graph url _; do
   curl -s -L $url > graph.${format}
   blazegraph-runner load --journal=$JNL "--graph=${graph}" graph.${format}
 done
-rm -f component-graphs.csv
+rm -f component-graphs.csv graph.ttl

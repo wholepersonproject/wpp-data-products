@@ -5,6 +5,9 @@ set -ev
 
 OUT=$OUTPUT_DIR
 
+mkdir -p $OUTPUT_DIR
+cp -r site/* $OUTPUT_DIR
+
 node src/gen-report-markdown.js $OUT/REPORTS.md queries/reports $OUT/reports
 
 for file in `find $OUT -name "*.*" -size +95M`; do
