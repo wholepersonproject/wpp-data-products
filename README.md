@@ -1,5 +1,9 @@
 # Whole Person Physiome (WPP) draft
 
+## WPP KG
+
+[Click Here](https://wholepersonproject.github.io/wpp-kg/) to browse the current WPP KG.
+
 ## WPP KG in RDF Glance
 
 <img width="1633" height="898" alt="image" src="https://github.com/user-attachments/assets/0a90a296-7e27-4a04-947a-89dcaa876baa" />
@@ -8,8 +12,8 @@
 
 ## Visualizations
 
-* [WPP Temporal-Spatial Graph Visualization](./visualizations/wpp-temporal-spatial-counts.html)
+[WPP Temporal-Spatial Graph Visualization](./visualizations/wpp-temporal-spatial-counts.html)
 
 ## Reports
 
-* [REPORTS.md](https://github.com/wholepersonproject/wpp-data-products/blob/gh-pages/REPORTS.md) includes a report of all the reports generated as part of the HRAlit generation process. It shows the SPARQL queries used, output, and associated documentation.
+[REPORTS.md](https://github.com/wholepersonproject/wpp-data-products/blob/gh-pages/REPORTS.md) includes a report of all the reports generated as part of the HRAlit generation process. It shows the SPARQL queries used, output, and associated documentation.
