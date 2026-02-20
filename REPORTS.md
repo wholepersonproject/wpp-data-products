@@ -10,6 +10,7 @@
   * [WPP effectors that occur in multiple tables (wpp-effectors-in-multiple-tables)](#wpp-effectors-in-multiple-tables)
   * [WPP time scales in tables (wpp-fields-in-multiple-tables)](#wpp-fields-in-multiple-tables)
   * [FTUs in WPP that are in ASCT+B or 2D FTUs (wpp-ftus-present-in-hra)](#wpp-ftus-present-in-hra)
+  * [WPP time scales in tables (wpp-temporal-spatial-counts)](#wpp-temporal-spatial-counts)
   * [WPP time scales in tables (wpp-time-scales-in-multiple-tables)](#wpp-time-scales-in-multiple-tables)
   * [Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
   * [Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)](#wpp-uberon-present-in-asctb)
@@ -374,6 +375,66 @@ ORDER BY ?id
 | UBERON:0000966 | retina | effector_location | dental-and-craniofacial-system|nervous-system |
 | UBERON:0001263 | pancreatic acinus | effector_location | endocrine-system |
 | ... | ... | ... | ... |
+
+
+### <a id="wpp-temporal-spatial-counts"></a>WPP time scales in tables (wpp-temporal-spatial-counts)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: WPP time scales in tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?table ?time_scale ?effector_scale (COUNT(DISTINCT ?process) as ?process_count) (GROUP_CONCAT(DISTINCT ?process;SEPARATOR='|') as ?processes)
+FROM WPP:
+WHERE {
+  [
+    a wpp:Record ;
+    wpp:record_source ?source ;
+    wpp:time_scale_field ?raw_time_scale ;
+    wpp:effector_scale_field ?raw_effector_scale ;
+    wpp:process_field ?process ;
+  ] .
+
+  # TODO: Update these values at the source
+  BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LCASE(?raw_time_scale), '\\(.*\\)\\s*', ''), '^\\s+|\\s+$', ''), ', ', '-'), ' – ', '-'), ' to ', '-') as ?time_scale)
+  # TODO: Update these values at the source
+  BIND(LCASE(?raw_effector_scale) as ?effector_scale)
+  BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+}
+GROUP BY ?table ?time_scale ?effector_scale
+ORDER BY ?table ?time_scale ?effector_scale
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-temporal-spatial-counts.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-temporal-spatial-counts.csv))
+
+| table | time_scale | effector_scale | process_count | processes |
+| :--- | :--- | :--- | :--- | :--- |
+| cardiovascular-system | milliseconds | cell | 1 | baroreceptor reflex |
+| cardiovascular-system | milliseconds | tissue | 2 | cardiac conduction|baroreceptor reflex |
+| cardiovascular-system | minutes | cell | 5 | ANP triggers vasodilation of afferent arterioles to increase renal blood flow|BNP triggers vasodilation and natriuresis in response to increased preload|renin is released in response to decreased afferent arteriole pressure|angiotensin I is cleaved to angiotensin II by angiotensin converting enzyme in the lung endothelial cells|angiotensin I is cleaved to angiotensin II by angiotensin converting enzyme in the tubular endothelial cells |
+| cardiovascular-system | seconds | tissue | 4 | resistance to flow|reflex bradycardia|reflex tachycardia|baroreceptor reflex |
+| dental-and-craniofacial-system | hours | cell | 1 | collagen is produced by osteoblasts and indicates increased bone synthesis |
+| ... | ... | ... | ... | ... |
 
 
 ### <a id="wpp-time-scales-in-multiple-tables"></a>WPP time scales in tables (wpp-time-scales-in-multiple-tables)
