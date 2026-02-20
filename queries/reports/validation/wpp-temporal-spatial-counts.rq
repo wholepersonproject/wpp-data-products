@@ -1,0 +1,34 @@
+#+ summary: WPP time scales in tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?table ?time_scale ?effector_scale (COUNT(DISTINCT ?process) as ?process_count) (GROUP_CONCAT(DISTINCT ?process;SEPARATOR='|') as ?processes)
+FROM WPP:
+WHERE {
+  [
+    a wpp:Record ;
+    wpp:record_source ?source ;
+    wpp:time_scale_field ?raw_time_scale ;
+    wpp:effector_scale_field ?raw_effector_scale ;
+    wpp:process_field ?process ;
+  ] .
+
+  # TODO: Update these values at the source
+  BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LCASE(?raw_time_scale), '\\(.*\\)\\s*', ''), '^\\s+|\\s+$', ''), ', ', '-'), ' – ', '-'), ' to ', '-') as ?time_scale)
+  # TODO: Update these values at the source
+  BIND(LCASE(?raw_effector_scale) as ?effector_scale)
+  BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+}
+GROUP BY ?table ?time_scale ?effector_scale
+ORDER BY ?table ?time_scale ?effector_scale
