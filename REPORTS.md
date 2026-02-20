@@ -5,13 +5,16 @@
 * ad-hoc
   * [named graphs and number of tuples (named-graphs)](#named-graphs)
 * validation
-  * [Get CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)](#wpp-cl-missing-in-asctb)
-  * [Get CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)](#wpp-cl-present-in-asctb)
+  * [CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)](#wpp-cl-missing-in-asctb)
+  * [CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)](#wpp-cl-present-in-asctb)
   * [WPP effectors that occur in multiple tables (wpp-effectors-in-multiple-tables)](#wpp-effectors-in-multiple-tables)
-  * [Get Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
-  * [Get Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)](#wpp-uberon-present-in-asctb)
+  * [WPP time scales in tables (wpp-fields-in-multiple-tables)](#wpp-fields-in-multiple-tables)
+  * [FTUs in WPP that are in ASCT+B or 2D FTUs (wpp-ftus-present-in-hra)](#wpp-ftus-present-in-hra)
+  * [WPP time scales in tables (wpp-time-scales-in-multiple-tables)](#wpp-time-scales-in-multiple-tables)
+  * [Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
+  * [Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)](#wpp-uberon-present-in-asctb)
 * wpp-ad-hoc
-  * [get WPP collection components and download URLs for them (wpp-component-graphs)](#wpp-component-graphs)
+  * [WPP collection components and download URLs for them (wpp-component-graphs)](#wpp-component-graphs)
 
 
 
@@ -54,7 +57,7 @@ ORDER BY ?graph
 
 ## ad-hoc
 
-### <a id="wpp-cl-missing-in-asctb"></a>Get CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)
+### <a id="wpp-cl-missing-in-asctb"></a>CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)
 
 
 
@@ -62,7 +65,7 @@ ORDER BY ?graph
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Get CL IDs in WPP that are not in ASCT+B
+#+ summary: CL IDs in WPP that are not in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -115,12 +118,12 @@ ORDER BY ?id
 | CL:0000023 | oocyte | female-reproductive-system |
 | CL:0000043 | mature basophil | immune-and-lymphatic-system |
 | CL:0000060 | odontoblast | dental-and-craniofacial-system |
-| CL:0000062 | osteoblast | dental-and-craniofacial-system|endocrine-system|skeletal-system|integumentary-system|male-reproductive-system |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|male-reproductive-system|endocrine-system|skeletal-system|integumentary-system |
 | ... | ... | ... |
 
 ## validation
 
-### <a id="wpp-cl-present-in-asctb"></a>Get CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)
+### <a id="wpp-cl-present-in-asctb"></a>CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)
 
 
 
@@ -128,7 +131,7 @@ ORDER BY ?id
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Get CL IDs in WPP that are in ASCT+B
+#+ summary: CL IDs in WPP that are in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -232,15 +235,15 @@ ORDER BY DESC(?table_count) ?id
 
 | id | label | wpp_tables | table_count |
 | :--- | :--- | :--- | :--- |
-| CL:0000192 | smooth muscle cell | cardiovascular-system|pulmonary-system|digestive-system|integumentary-system|endocrine-system|muscular-system|nervous-system | 7 |
+| CL:0000192 | smooth muscle cell | cardiovascular-system|pulmonary-system|integumentary-system|digestive-system|endocrine-system|nervous-system|muscular-system | 7 |
 | CL:0000062 | osteoblast | dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system|integumentary-system | 5 |
-| CL:0008002 | skeletal muscle fiber | nervous-system|endocrine-system|muscular-system|male-reproductive-system|female-reproductive-system | 5 |
-| CL:1000838 | kidney proximal convoluted tubule epithelial cell | cardiovascular-system|dental-and-craniofacial-system|skeletal-system|endocrine-system|urinary-system | 5 |
+| CL:0008002 | skeletal muscle fiber | endocrine-system|male-reproductive-system|muscular-system|female-reproductive-system|nervous-system | 5 |
+| CL:1000838 | kidney proximal convoluted tubule epithelial cell | cardiovascular-system|dental-and-craniofacial-system|skeletal-system|urinary-system|endocrine-system | 5 |
 | CL:0000092 | osteoclast | dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system | 4 |
 | ... | ... | ... | ... |
 
 
-### <a id="wpp-uberon-missing-in-asctb"></a>Get Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)
+### <a id="wpp-fields-in-multiple-tables"></a>WPP time scales in tables (wpp-fields-in-multiple-tables)
 
 
 
@@ -248,7 +251,194 @@ ORDER BY DESC(?table_count) ?id
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Get Uberon IDs in WPP that are not in ASCT+B
+#+ summary: WPP time scales in tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?field ?value (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables) (COUNT(DISTINCT ?table) as ?table_count)
+FROM WPP:
+WHERE {
+  
+  [
+    a wpp:Record ;
+    wpp:record_source ?source ;
+    ?field_pred ?value ;
+  ] .
+
+  FILTER(isLITERAL(?value) && ?field_pred != wpp:record_number)
+  BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+  BIND(REPLACE(REPLACE(STR(?field_pred), STR(wpp:), ''), '_field', '') as ?field)
+}
+GROUP BY ?field ?value
+ORDER BY ?field DESC(?table_count)
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-fields-in-multiple-tables.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-fields-in-multiple-tables.csv))
+
+| field | value | wpp_tables | table_count |
+| :--- | :--- | :--- | :--- |
+| behavior | X secretion | dental-and-craniofacial-system|cardiovascular-system|digestive-system|nervous-system|endocrine-system|skeletal-system|immune-and-lymphatic-system|female-reproductive-system|fascia-system|urinary-system|male-reproductive-system|pulmonary-system|integumentary-system | 13 |
+| behavior | X conversion to Y | dental-and-craniofacial-system|nervous-system|endocrine-system|skeletal-system|pulmonary-system|female-reproductive-system|immune-and-lymphatic-system|fascia-system|urinary-system|muscular-system|integumentary-system|male-reproductive-system | 12 |
+| behavior | X synthesis | dental-and-craniofacial-system|nervous-system|endocrine-system|digestive-system|skeletal-system|immune-and-lymphatic-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system | 10 |
+| behavior | X uptake | cardiovascular-system|dental-and-craniofacial-system|digestive-system|endocrine-system|skeletal-system|nervous-system|immune-and-lymphatic-system|fascia-system|muscular-system | 9 |
+| behavior | X export | cardiovascular-system|dental-and-craniofacial-system|endocrine-system|nervous-system|female-reproductive-system|skeletal-system|digestive-system|male-reproductive-system|muscular-system | 9 |
+| ... | ... | ... | ... |
+
+
+### <a id="wpp-ftus-present-in-hra"></a>FTUs in WPP that are in ASCT+B or 2D FTUs (wpp-ftus-present-in-hra)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: FTUs in WPP that are in ASCT+B or 2D FTUs
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?field;SEPARATOR='|') as ?fields) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+WHERE {
+  GRAPH HRA: {
+    {
+      [
+        a ccf:FtuIllustration ;
+        ccf:representation_of ?iri ;
+      ] .
+    }
+    UNION
+    {
+      [
+        a ccf:AsctbRecord ;
+        ccf:ftu_types [
+          ccf:source_concept ?iri 
+        ];
+      ] .
+    }
+    ?iri rdfs:label ?label .
+  }
+  GRAPH WPP: {
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
+      ?field_pred [
+        wpp:source_concept ?iri ;
+      ] ;
+    ] .
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+    FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+    BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
+    BIND(REPLACE(REPLACE(STR(?field_pred), STR(wpp:), ''), '_field', '') as ?field)
+  }
+}
+GROUP BY ?id ?label
+ORDER BY ?id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-ftus-present-in-hra.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-ftus-present-in-hra.csv))
+
+| id | label | fields | wpp_tables |
+| :--- | :--- | :--- | :--- |
+| UBERON:0000006 | islet of Langerhans | effector_location | endocrine-system |
+| UBERON:0000412 | dermal papilla | effector_location|effector | integumentary-system |
+| UBERON:0000941 | cranial nerve II | effector | dental-and-craniofacial-system|nervous-system |
+| UBERON:0000966 | retina | effector_location | dental-and-craniofacial-system|nervous-system |
+| UBERON:0001263 | pancreatic acinus | effector_location | endocrine-system |
+| ... | ... | ... | ... |
+
+
+### <a id="wpp-time-scales-in-multiple-tables"></a>WPP time scales in tables (wpp-time-scales-in-multiple-tables)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: WPP time scales in tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?scale (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables) (COUNT(DISTINCT ?table) as ?table_count)
+FROM WPP:
+WHERE {
+  [
+    a wpp:Record ;
+    wpp:record_source ?source ;
+    wpp:time_scale_field ?scale ;
+  ] .
+
+  BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+}
+GROUP BY ?scale
+ORDER BY DESC(?table_count) ?scale
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-time-scales-in-multiple-tables.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-time-scales-in-multiple-tables.csv))
+
+| scale | wpp_tables | table_count |
+| :--- | :--- | :--- |
+| minutes | dental-and-craniofacial-system|cardiovascular-system|immune-and-lymphatic-system|nervous-system|endocrine-system|integumentary-system|skeletal-system|urinary-system|fascia-system|female-reproductive-system|male-reproductive-system | 11 |
+| seconds | cardiovascular-system|dental-and-craniofacial-system|nervous-system|immune-and-lymphatic-system|integumentary-system|urinary-system|endocrine-system|fascia-system|female-reproductive-system|male-reproductive-system|muscular-system | 11 |
+| milliseconds | cardiovascular-system|dental-and-craniofacial-system|nervous-system|immune-and-lymphatic-system|urinary-system|fascia-system|integumentary-system|female-reproductive-system|male-reproductive-system|muscular-system | 10 |
+| hours | dental-and-craniofacial-system|immune-and-lymphatic-system|endocrine-system|skeletal-system|urinary-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system | 9 |
+| days | immune-and-lymphatic-system|integumentary-system|urinary-system|fascia-system|female-reproductive-system|male-reproductive-system | 6 |
+| ... | ... | ... |
+
+
+### <a id="wpp-uberon-missing-in-asctb"></a>Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: Uberon IDs in WPP that are not in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -298,14 +488,14 @@ ORDER BY ?id
 | id | label | wpp_tables |
 | :--- | :--- | :--- |
 | UBERON:0000007 | pituitary gland | endocrine-system|female-reproductive-system|male-reproductive-system |
-| UBERON:0000011 | parasympathetic nervous system | nervous-system|urinary-system |
-| UBERON:0000013 | sympathetic nervous system | nervous-system|urinary-system |
+| UBERON:0000011 | parasympathetic nervous system | urinary-system|nervous-system |
+| UBERON:0000013 | sympathetic nervous system | urinary-system|nervous-system |
 | UBERON:0000033 | head | nervous-system |
 | UBERON:0000043 | tendon | fascia-system |
 | ... | ... | ... |
 
 
-### <a id="wpp-uberon-present-in-asctb"></a>Get Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)
+### <a id="wpp-uberon-present-in-asctb"></a>Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)
 
 
 
@@ -313,7 +503,7 @@ ORDER BY ?id
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: Get Uberon IDs in WPP that are in ASCT+B
+#+ summary: Uberon IDs in WPP that are in ASCT+B
 
 PREFIX ccf: <http://purl.org/ccf/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -361,12 +551,12 @@ ORDER BY ?id
 | UBERON:0000002 | uterine cervix | female-reproductive-system |
 | UBERON:0000006 | islet of Langerhans | endocrine-system |
 | UBERON:0000010 | peripheral nervous system | nervous-system |
-| UBERON:0000029 | lymph node | integumentary-system|immune-and-lymphatic-system |
+| UBERON:0000029 | lymph node | immune-and-lymphatic-system|integumentary-system |
 | UBERON:0000044 | dorsal root ganglion | nervous-system |
 | ... | ... | ... |
 
 
-### <a id="wpp-component-graphs"></a>get WPP collection components and download URLs for them (wpp-component-graphs)
+### <a id="wpp-component-graphs"></a>WPP collection components and download URLs for them (wpp-component-graphs)
 
 
 
@@ -374,7 +564,7 @@ ORDER BY ?id
   <summary>View Sparql Query</summary>
 
 ```sparql
-#+ summary: get WPP collection components and download URLs for them
+#+ summary: WPP collection components and download URLs for them
 
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX prov: <http://www.w3.org/ns/prov#>

@@ -1,45 +1,45 @@
 id,label,wpp_tables,table_count
-CL:0000192,smooth muscle cell,cardiovascular-system|pulmonary-system|digestive-system|integumentary-system|endocrine-system|muscular-system|nervous-system,7
+CL:0000192,smooth muscle cell,cardiovascular-system|pulmonary-system|integumentary-system|digestive-system|endocrine-system|nervous-system|muscular-system,7
 CL:0000062,osteoblast,dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system|integumentary-system,5
-CL:0008002,skeletal muscle fiber,nervous-system|endocrine-system|muscular-system|male-reproductive-system|female-reproductive-system,5
-CL:1000838,kidney proximal convoluted tubule epithelial cell,cardiovascular-system|dental-and-craniofacial-system|skeletal-system|endocrine-system|urinary-system,5
+CL:0008002,skeletal muscle fiber,endocrine-system|male-reproductive-system|muscular-system|female-reproductive-system|nervous-system,5
+CL:1000838,kidney proximal convoluted tubule epithelial cell,cardiovascular-system|dental-and-craniofacial-system|skeletal-system|urinary-system|endocrine-system,5
 CL:0000092,osteoclast,dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system,4
-CL:0000107,autonomic neuron,nervous-system|muscular-system|integumentary-system|immune-and-lymphatic-system,4
+CL:0000107,autonomic neuron,integumentary-system|immune-and-lymphatic-system|muscular-system|nervous-system,4
 CL:0000115,endothelial cell,cardiovascular-system|integumentary-system|endocrine-system|fascia-system,4
-CL:1000849,kidney distal convoluted tubule epithelial cell,dental-and-craniofacial-system|skeletal-system|endocrine-system|urinary-system,4
+CL:1000849,kidney distal convoluted tubule epithelial cell,dental-and-craniofacial-system|skeletal-system|urinary-system|endocrine-system,4
 CL:0000137,osteocyte,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
 CL:0000182,hepatocyte,digestive-system|immune-and-lymphatic-system|endocrine-system,3
 CL:0000446,chief cell of parathyroid gland,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
 CL:0000448,white adipocyte,endocrine-system|male-reproductive-system|female-reproductive-system,3
 CL:0000570,parafollicular cell,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
 CL:0002551,fibroblast of dermis,endocrine-system|male-reproductive-system|female-reproductive-system,3
-CL:1001505,parvocellular neurosecretory cell,male-reproductive-system|endocrine-system|female-reproductive-system,3
-UBERON:0001255,urinary bladder,nervous-system|urinary-system|male-reproductive-system,3
+CL:1001505,parvocellular neurosecretory cell,endocrine-system|male-reproductive-system|female-reproductive-system,3
+UBERON:0001255,urinary bladder,urinary-system|male-reproductive-system|nervous-system,3
 UBERON:0002055,zona reticularis of adrenal gland,endocrine-system|male-reproductive-system|female-reproductive-system,3
-UBERON:0002084,heart left ventricle,cardiovascular-system|nervous-system|female-reproductive-system,3
+UBERON:0002084,heart left ventricle,cardiovascular-system|female-reproductive-system|nervous-system,3
 UBERON:0002196,adenohypophysis,endocrine-system|male-reproductive-system|female-reproductive-system,3
-UBERON:0002299,alveolus of lung,pulmonary-system|nervous-system|female-reproductive-system,3
+UBERON:0002299,alveolus of lung,pulmonary-system|female-reproductive-system|nervous-system,3
 UBERON:0002371,bone marrow,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
 UBERON:0005215,kidney interstitium,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
-UBERON:0011390,pudendal nerve,nervous-system|male-reproductive-system|female-reproductive-system,3
+UBERON:0011390,pudendal nerve,male-reproductive-system|female-reproductive-system|nervous-system,3
 UBERON:0034729,sympathetic nerve,dental-and-craniofacial-system|nervous-system|male-reproductive-system,3
 CL:0000034,stem cell,digestive-system|integumentary-system,2
 CL:0000066,epithelial cell,digestive-system|immune-and-lymphatic-system,2
-CL:0000084,T cell,immune-and-lymphatic-system|integumentary-system,2
-CL:0000134,mesenchymal stem cell,immune-and-lymphatic-system|integumentary-system,2
+CL:0000084,T cell,integumentary-system|immune-and-lymphatic-system,2
+CL:0000134,mesenchymal stem cell,integumentary-system|immune-and-lymphatic-system,2
 CL:0000151,secretory cell,digestive-system|integumentary-system,2
 CL:0000162,parietal cell,digestive-system|endocrine-system,2
 CL:0000178,Leydig cell,male-reproductive-system|immune-and-lymphatic-system,2
 CL:0000202,auditory hair cell,dental-and-craniofacial-system|nervous-system,2
-CL:0000207,olfactory receptor cell,nervous-system|dental-and-craniofacial-system,2
-CL:0000210,photoreceptor cell,nervous-system|dental-and-craniofacial-system,2
+CL:0000207,olfactory receptor cell,dental-and-craniofacial-system|nervous-system,2
+CL:0000210,photoreceptor cell,dental-and-craniofacial-system|nervous-system,2
 CL:0000216,Sertoli cell,male-reproductive-system|immune-and-lymphatic-system,2
 CL:0000235,macrophage,immune-and-lymphatic-system|fascia-system,2
 CL:0000312,keratinocyte,integumentary-system|immune-and-lymphatic-system,2
 CL:0000453,Langerhans cell,immune-and-lymphatic-system|integumentary-system,2
 CL:0000485,mucosal type mast cell,immune-and-lymphatic-system|integumentary-system,2
 CL:0000492,CD4-positive helper T cell,immune-and-lymphatic-system|integumentary-system,2
-CL:0000540,neuron,nervous-system|digestive-system,2
+CL:0000540,neuron,digestive-system|nervous-system,2
 CL:0000583,alveolar macrophage,fascia-system|immune-and-lymphatic-system,2
 CL:0000609,vestibular hair cell,dental-and-craniofacial-system|nervous-system,2
 CL:0000649,spinous cell of epidermis,integumentary-system|immune-and-lymphatic-system,2
@@ -53,7 +53,7 @@ CL:0002129,regular atrial cardiac myocyte,cardiovascular-system|endocrine-system
 CL:0002131,regular ventricular cardiac myocyte,cardiovascular-system|endocrine-system,2
 CL:0002279,type L enteroendocrine cell,digestive-system|endocrine-system,2
 CL:0002320,connective tissue cell,integumentary-system|fascia-system,2
-CL:0008039,lower motor neuron,nervous-system|muscular-system,2
+CL:0008039,lower motor neuron,muscular-system|nervous-system,2
 CL:0011017,vagal neural crest cell,digestive-system|pulmonary-system,2
 CL:0011103,sympathetic neuron,fascia-system|immune-and-lymphatic-system,2
 CL:1000618,juxtaglomerular complex cell,cardiovascular-system|endocrine-system,2
@@ -65,22 +65,22 @@ CL:4028001,pulmonary capillary endothelial cell,cardiovascular-system|endocrine-
 CL:4047006,fetal artery endothelial cell,immune-and-lymphatic-system|integumentary-system,2
 UBERON:0000074,renal glomerulus,cardiovascular-system|urinary-system,2
 UBERON:0000114,lung connective tissue,pulmonary-system|fascia-system,2
-UBERON:0000423,eccrine sweat gland,nervous-system|integumentary-system,2
-UBERON:0000941,cranial nerve II,nervous-system|dental-and-craniofacial-system,2
+UBERON:0000423,eccrine sweat gland,integumentary-system|nervous-system,2
+UBERON:0000941,cranial nerve II,dental-and-craniofacial-system|nervous-system,2
 UBERON:0000949,endocrine system,urinary-system|endocrine-system,2
 UBERON:0001287,proximal convoluted tubule,dental-and-craniofacial-system|skeletal-system,2
 UBERON:0001570,inferior pharyngeal constrictor,dental-and-craniofacial-system|nervous-system,2
-UBERON:0001571,genioglossus muscle,nervous-system|dental-and-craniofacial-system,2
-UBERON:0001572,hyoglossus muscle,nervous-system|dental-and-craniofacial-system,2
-UBERON:0001573,styloglossus,nervous-system|dental-and-craniofacial-system,2
-UBERON:0001576,intrinsic muscle of tongue,nervous-system|dental-and-craniofacial-system,2
+UBERON:0001571,genioglossus muscle,dental-and-craniofacial-system|nervous-system,2
+UBERON:0001572,hyoglossus muscle,dental-and-craniofacial-system|nervous-system,2
+UBERON:0001573,styloglossus,dental-and-craniofacial-system|nervous-system,2
+UBERON:0001576,intrinsic muscle of tongue,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001578,orbicularis oculi muscle,dental-and-craniofacial-system|nervous-system,2
-UBERON:0001579,olfactory nerve,nervous-system|dental-and-craniofacial-system,2
+UBERON:0001579,olfactory nerve,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001597,masseter muscle,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001598,temporalis muscle,dental-and-craniofacial-system|nervous-system,2
-UBERON:0001602,medial rectus extraocular muscle,dental-and-craniofacial-system|nervous-system,2
+UBERON:0001602,medial rectus extraocular muscle,nervous-system|dental-and-craniofacial-system,2
 UBERON:0001603,lateral rectus extra-ocular muscle,dental-and-craniofacial-system|nervous-system,2
-UBERON:0001604,levator palpebrae superioris,dental-and-craniofacial-system|nervous-system,2
+UBERON:0001604,levator palpebrae superioris,nervous-system|dental-and-craniofacial-system,2
 UBERON:0001607,sphincter pupillae,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001608,dilatator pupillae,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001643,oculomotor nerve,nervous-system|dental-and-craniofacial-system,2
@@ -89,15 +89,15 @@ UBERON:0001645,trigeminal nerve,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001646,abducens nerve,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001647,facial nerve,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001648,vestibulocochlear nerve,dental-and-craniofacial-system|nervous-system,2
-UBERON:0001649,glossopharyngeal nerve,nervous-system|dental-and-craniofacial-system,2
-UBERON:0001650,hypoglossal nerve,nervous-system|dental-and-craniofacial-system,2
+UBERON:0001649,glossopharyngeal nerve,dental-and-craniofacial-system|nervous-system,2
+UBERON:0001650,hypoglossal nerve,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001727,taste bud,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001736,submandibular gland,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001759,vagus nerve,cardiovascular-system|nervous-system,2
 UBERON:0001817,lacrimal gland,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001831,parotid gland,dental-and-craniofacial-system|nervous-system,2
 UBERON:0001832,sublingual gland,dental-and-craniofacial-system|nervous-system,2
-UBERON:0002048,lung,nervous-system|pulmonary-system,2
+UBERON:0002048,lung,pulmonary-system|nervous-system,2
 UBERON:0002078,right cardiac atrium,cardiovascular-system|nervous-system,2
 UBERON:0002079,left cardiac atrium,cardiovascular-system|nervous-system,2
 UBERON:0002080,heart right ventricle,cardiovascular-system|nervous-system,2
@@ -108,14 +108,14 @@ UBERON:0002384,connective tissue,fascia-system|immune-and-lymphatic-system,2
 UBERON:0002481,bone tissue,dental-and-craniofacial-system|skeletal-system,2
 UBERON:0003700,temporomandibular joint,dental-and-craniofacial-system|nervous-system,2
 UBERON:0004019,baroreceptor,cardiovascular-system|nervous-system,2
-UBERON:0004293,parasympathetic nerve,nervous-system|male-reproductive-system,2
+UBERON:0004293,parasympathetic nerve,male-reproductive-system|nervous-system,2
 UBERON:0004572,arterial system,cardiovascular-system|nervous-system,2
 UBERON:0004582,venous system,cardiovascular-system|nervous-system,2
-UBERON:0005303,hypogastric nerve,nervous-system|male-reproductive-system,2
-UBERON:0006320,inferior oblique extraocular muscle,dental-and-craniofacial-system|nervous-system,2
+UBERON:0005303,hypogastric nerve,male-reproductive-system|nervous-system,2
+UBERON:0006320,inferior oblique extraocular muscle,nervous-system|dental-and-craniofacial-system,2
 UBERON:0006321,superior oblique extraocular muscle,dental-and-craniofacial-system|nervous-system,2
-UBERON:0006322,inferior rectus extraocular muscle,dental-and-craniofacial-system|nervous-system,2
-UBERON:0006323,superior rectus extraocular muscle,dental-and-craniofacial-system|nervous-system,2
+UBERON:0006322,inferior rectus extraocular muscle,nervous-system|dental-and-craniofacial-system,2
+UBERON:0006323,superior rectus extraocular muscle,nervous-system|dental-and-craniofacial-system,2
 UBERON:0006329,superior pharyngeal constrictor,dental-and-craniofacial-system|nervous-system,2
 UBERON:0006720,pterygoid muscle,dental-and-craniofacial-system|nervous-system,2
 UBERON:0008593,zygomaticus major muscle,dental-and-craniofacial-system|nervous-system,2
@@ -127,5 +127,5 @@ UBERON:0012450,Meissner's corpuscle,dental-and-craniofacial-system|nervous-syste
 UBERON:0012456,Merkel nerve ending,dental-and-craniofacial-system|nervous-system,2
 UBERON:0016405,pulmonary capillary,cardiovascular-system|pulmonary-system,2
 UBERON:0034986,sacral nerve plexus,male-reproductive-system|female-reproductive-system,2
-UBERON:0035017,nociceptor nerve ending,nervous-system|dental-and-craniofacial-system,2
+UBERON:0035017,nociceptor nerve ending,dental-and-craniofacial-system|nervous-system,2
 UBERON:8600077,pulmonary arteriole,cardiovascular-system|pulmonary-system,2
