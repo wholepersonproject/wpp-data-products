@@ -6,7 +6,7 @@
 
 ## WPP KG in RDF Glance
 
-<img width="1704" height="1056" alt="image" src="metagraph.png" />
+![WPP metagraph in RDF Glance](metagraph.png)
 
 [Click Here](https://xdobry.github.io/rdfglance/?url=https://wholepersonproject.github.io/wpp-kg/collection/wpp/draft/graph.ttl) to browse the [latest WPP draft](https://wholepersonproject.github.io/wpp-kg/collection/wpp/draft/) in RDF Glance. 
 
