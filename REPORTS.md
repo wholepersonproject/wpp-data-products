@@ -8,8 +8,10 @@
   * [CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)](#wpp-cl-missing-in-asctb)
   * [CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)](#wpp-cl-present-in-asctb)
   * [WPP effectors that occur in multiple tables (wpp-effectors-in-multiple-tables)](#wpp-effectors-in-multiple-tables)
+  * [WPP external ontology references (wpp-external-references)](#wpp-external-references)
   * [WPP time scales in tables (wpp-fields-in-multiple-tables)](#wpp-fields-in-multiple-tables)
   * [FTUs in WPP that are in ASCT+B or 2D FTUs (wpp-ftus-present-in-hra)](#wpp-ftus-present-in-hra)
+  * [WPP time scales in tables with imperfect cleaning (wpp-temporal-spatial-counts-cleaned)](#wpp-temporal-spatial-counts-cleaned)
   * [WPP time scales in tables (wpp-temporal-spatial-counts)](#wpp-temporal-spatial-counts)
   * [WPP time scales in tables (wpp-time-scales-in-multiple-tables)](#wpp-time-scales-in-multiple-tables)
   * [Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
@@ -244,6 +246,70 @@ ORDER BY DESC(?table_count) ?id
 | ... | ... | ... | ... |
 
 
+### <a id="wpp-external-references"></a>WPP external ontology references (wpp-external-references)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: WPP external ontology references
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?iri ?sme_label ?label  (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+WHERE {
+  GRAPH WPP: {
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
+      ?field_pred ?field_obj ;
+    ] .
+    ?field_obj wpp:source_concept ?iri .
+
+    OPTIONAL {
+      ?field_obj skos:prefLabel ?sme_label .
+    }
+    OPTIONAL {
+      ?field_obj skos:prefLabel ?label .
+    }
+
+    FILTER(!STRSTARTS(STR(?iri), 'https://purl.wholepersonphysiome.org/'))
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+    BIND(REPLACE(REPLACE(STR(?field_pred), STR(wpp:), ''), '_field', '') as ?field)
+  }
+}
+GROUP BY ?iri ?sme_label ?label
+ORDER BY ?iri
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-external-references.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-external-references.csv))
+
+| iri | sme_label | label | wpp_tables |
+| :--- | :--- | :--- | :--- |
+| http://identifiers.org/isbn/0323532662 | Brenner & Rector’s The Kidney, 11th Edition (2020) | Brenner & Rector’s The Kidney, 11th Edition (2020) | urinary-system |
+| http://identifiers.org/isbn/978-0-323-69463-8 | Mulroney & Myers, Netter’s Essential Physiology | Mulroney & Myers, Netter’s Essential Physiology | urinary-system |
+| http://identifiers.org/isbn/978-0781745871 | High-Yield Physiology, 1st edition. Dudek, 2008. | High-Yield Physiology, 1st edition. Dudek, 2008. | digestive-system|urinary-system |
+| http://identifiers.org/isbn/9781118453889 | Primer on the Metabolic Bone Diseases and Disorders of Mineral Metabolism, Eighth Edition (2013) | Primer on the Metabolic Bone Diseases and Disorders of Mineral Metabolism, Eighth Edition (2013) | dental-and-craniofacial-system|skeletal-system |
+| http://identifiers.org/isbn/9781119600206 | Yamada’s Textbook of Gastroenterology | Yamada’s Textbook of Gastroenterology | digestive-system |
+| ... | ... | ... | ... |
+
+
 ### <a id="wpp-fields-in-multiple-tables"></a>WPP time scales in tables (wpp-fields-in-multiple-tables)
 
 
@@ -375,6 +441,119 @@ ORDER BY ?id
 | UBERON:0000966 | retina | effector_location | dental-and-craniofacial-system|nervous-system |
 | UBERON:0001263 | pancreatic acinus | effector_location | endocrine-system |
 | ... | ... | ... | ... |
+
+
+### <a id="wpp-temporal-spatial-counts-cleaned"></a>WPP time scales in tables with imperfect cleaning (wpp-temporal-spatial-counts-cleaned)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: WPP time scales in tables with imperfect cleaning
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?table ?time_scale ?effector_scale (COUNT(DISTINCT ?process) as ?process_count) 
+  (GROUP_CONCAT(DISTINCT ?time_scale_clean;SEPARATOR='|') as ?raw_time_scales)
+  (GROUP_CONCAT(DISTINCT ?process;SEPARATOR='|') as ?processes)
+
+WITH {
+  SELECT * 
+  WHERE {
+    GRAPH WPP: {
+      [
+        a wpp:Record ;
+        wpp:record_source ?source ;
+        wpp:time_scale_field ?raw_time_scale ;
+        wpp:effector_scale_field ?raw_effector_scale ;
+        wpp:process_field ?process ;
+      ] .
+    }
+
+    # TODO: Update these values at the source
+    BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LCASE(?raw_time_scale), '\\(.*\\)\\s*', ''), '^\\s+|\\s+$', ''), ', ', '-'), ' – ', '-'), ' to ', '-') as ?time_scale_clean)
+    # TODO: Update these values at the source
+    BIND(CONCAT(UCASE(SUBSTR(?raw_effector_scale, 1, 1)), LCASE(SUBSTR(?raw_effector_scale, 2))) as ?effector_scale)
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+  }
+
+} AS %table
+
+WHERE {
+  {
+    INCLUDE %table
+    FILTER(?time_scale_clean = 'milliseconds' || STRBEFORE(?time_scale_clean, '-') = 'milliseconds' || STRAFTER(?time_scale_clean, '-') = 'milliseconds')
+    BIND('<1 second' as ?time_scale)
+  }
+  UNION
+  {
+    INCLUDE %table
+    FILTER(?time_scale_clean = 'breath-to-breath' || ?time_scale_clean = 'seconds' || STRBEFORE(?time_scale_clean, '-') = 'seconds' || STRAFTER(?time_scale_clean, '-') = 'seconds')
+    BIND('1s - < 1min' as ?time_scale)
+  }
+  UNION
+  {
+    INCLUDE %table
+    FILTER(?time_scale_clean = 'minutes' || STRBEFORE(?time_scale_clean, '-') = 'minutes' || STRAFTER(?time_scale_clean, '-') = 'minutes')
+    BIND('1min - < 1hr' as ?time_scale)
+  }
+  UNION
+  {
+    INCLUDE %table
+    FILTER(?time_scale_clean = 'hours' || STRBEFORE(?time_scale_clean, '-') = 'hours' || STRAFTER(?time_scale_clean, '-') = 'hours')
+    BIND('1hr - < 1day' as ?time_scale)
+  }
+  UNION
+  {
+    INCLUDE %table
+    FILTER(?time_scale_clean = 'days' || STRBEFORE(?time_scale_clean, '-') = 'days' || STRAFTER(?time_scale_clean, '-') = 'days')
+    BIND('1day - < 1week' as ?time_scale)
+  }
+  UNION
+  {
+    INCLUDE %table
+    FILTER(?time_scale_clean = 'weeks' || STRBEFORE(?time_scale_clean, '-') = 'weeks' || STRAFTER(?time_scale_clean, '-') = 'weeks'
+      || ?time_scale_clean = 'months' || STRBEFORE(?time_scale_clean, '-') = 'months' || STRAFTER(?time_scale_clean, '-') = 'months')
+    BIND('1week - < 1year' as ?time_scale)
+  }
+  UNION
+  {
+    INCLUDE %table
+    FILTER(?time_scale_clean = 'years' || STRBEFORE(?time_scale_clean, '-') = 'years' || STRAFTER(?time_scale_clean, '-') = 'years')
+    BIND('1year or longer' as ?time_scale)
+  }
+}
+GROUP BY ?table ?time_scale ?effector_scale
+ORDER BY ?table ?time_scale ?effector_scale
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-temporal-spatial-counts-cleaned.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-temporal-spatial-counts-cleaned.csv))
+
+| table | time_scale | effector_scale | process_count | raw_time_scales | processes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| cardiovascular-system | 1min - < 1hr | Cell | 5 | minutes | ANP triggers vasodilation of afferent arterioles to increase renal blood flow|BNP triggers vasodilation and natriuresis in response to increased preload|renin is released in response to decreased afferent arteriole pressure|angiotensin I is cleaved to angiotensin II by angiotensin converting enzyme in the lung endothelial cells|angiotensin I is cleaved to angiotensin II by angiotensin converting enzyme in the tubular endothelial cells |
+| cardiovascular-system | 1s - < 1min | Tissue | 4 | seconds | reflex bradycardia|reflex tachycardia|baroreceptor reflex|resistance to flow |
+| cardiovascular-system | <1 second | Cell | 1 | milliseconds | baroreceptor reflex |
+| cardiovascular-system | <1 second | Tissue | 2 | milliseconds | cardiac conduction|baroreceptor reflex |
+| dental-and-craniofacial-system | 1hr - < 1day | Cell | 1 | hours | collagen is produced by osteoblasts and indicates increased bone synthesis |
+| ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="wpp-temporal-spatial-counts"></a>WPP time scales in tables (wpp-temporal-spatial-counts)
