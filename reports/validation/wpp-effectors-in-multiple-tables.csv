@@ -1,13 +1,13 @@
 id,label,wpp_tables,table_count
-CL:0000192,smooth muscle cell,cardiovascular-system|nervous-system|digestive-system|pulmonary-system|endocrine-system|integumentary-system|muscular-system,7
-CL:0000062,osteoblast,dental-and-craniofacial-system|skeletal-system|endocrine-system|integumentary-system|male-reproductive-system,5
-CL:0008002,skeletal muscle fiber,endocrine-system|nervous-system|muscular-system|female-reproductive-system|male-reproductive-system,5
+CL:0000192,smooth muscle cell,cardiovascular-system|muscular-system|nervous-system|digestive-system|endocrine-system|pulmonary-system|integumentary-system,7
+CL:0000062,osteoblast,dental-and-craniofacial-system|endocrine-system|skeletal-system|integumentary-system|male-reproductive-system,5
+CL:0008002,skeletal muscle fiber,muscular-system|endocrine-system|nervous-system|female-reproductive-system|male-reproductive-system,5
 CL:1000838,kidney proximal convoluted tubule epithelial cell,dental-and-craniofacial-system|cardiovascular-system|endocrine-system|skeletal-system|urinary-system,5
 CL:0000092,osteoclast,dental-and-craniofacial-system|endocrine-system|skeletal-system|male-reproductive-system,4
-CL:0000107,autonomic neuron,nervous-system|immune-and-lymphatic-system|muscular-system|integumentary-system,4
-CL:0000115,endothelial cell,cardiovascular-system|fascia-system|endocrine-system|integumentary-system,4
+CL:0000107,autonomic neuron,muscular-system|nervous-system|immune-and-lymphatic-system|integumentary-system,4
+CL:0000115,endothelial cell,cardiovascular-system|endocrine-system|fascia-system|integumentary-system,4
 CL:1000849,kidney distal convoluted tubule epithelial cell,dental-and-craniofacial-system|endocrine-system|skeletal-system|urinary-system,4
-CL:0000137,osteocyte,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
+CL:0000137,osteocyte,dental-and-craniofacial-system|endocrine-system|skeletal-system,3
 CL:0000182,hepatocyte,digestive-system|immune-and-lymphatic-system|endocrine-system,3
 CL:0000446,chief cell of parathyroid gland,dental-and-craniofacial-system|endocrine-system|skeletal-system,3
 CL:0000448,white adipocyte,endocrine-system|female-reproductive-system|male-reproductive-system,3
@@ -19,8 +19,8 @@ UBERON:0002055,zona reticularis of adrenal gland,endocrine-system|female-reprodu
 UBERON:0002084,heart left ventricle,cardiovascular-system|nervous-system|female-reproductive-system,3
 UBERON:0002196,adenohypophysis,endocrine-system|female-reproductive-system|male-reproductive-system,3
 UBERON:0002299,alveolus of lung,nervous-system|pulmonary-system|female-reproductive-system,3
-UBERON:0002371,bone marrow,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
-UBERON:0005215,kidney interstitium,dental-and-craniofacial-system|skeletal-system|endocrine-system,3
+UBERON:0002371,bone marrow,dental-and-craniofacial-system|endocrine-system|skeletal-system,3
+UBERON:0005215,kidney interstitium,dental-and-craniofacial-system|endocrine-system|skeletal-system,3
 UBERON:0011390,pudendal nerve,nervous-system|female-reproductive-system|male-reproductive-system,3
 UBERON:0034729,sympathetic nerve,dental-and-craniofacial-system|nervous-system|male-reproductive-system,3
 CL:0000034,stem cell,digestive-system|integumentary-system,2
@@ -60,7 +60,7 @@ CL:1000618,juxtaglomerular complex cell,cardiovascular-system|endocrine-system,2
 CL:1001006,kidney afferent arteriole cell,cardiovascular-system|endocrine-system,2
 CL:1001573,nasopharyngeal epithelial cell,immune-and-lymphatic-system|integumentary-system,2
 CL:2000011,dermis lymphatic vessel endothelial cell,immune-and-lymphatic-system|integumentary-system,2
-CL:2000055,liver dendritic cell,digestive-system|immune-and-lymphatic-system,2
+CL:2000055,liver dendritic cell,immune-and-lymphatic-system|digestive-system,2
 CL:4028001,pulmonary capillary endothelial cell,cardiovascular-system|endocrine-system,2
 CL:4047006,fetal artery endothelial cell,immune-and-lymphatic-system|integumentary-system,2
 UBERON:0000074,renal glomerulus,cardiovascular-system|urinary-system,2

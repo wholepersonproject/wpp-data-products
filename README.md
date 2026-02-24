@@ -1,4 +1,4 @@
-# Whole Person Physiome (WPP) {{VERSION}}
+# Whole Person Physiome (WPP) draft
 
 ## WPP KG
 
@@ -6,7 +6,7 @@
 
 ## WPP KG in RDF Glance
 
-<img width="1633" height="898" alt="image" src="https://github.com/user-attachments/assets/0a90a296-7e27-4a04-947a-89dcaa876baa" />
+<img width="1704" height="1056" alt="image" src="metagraph.png" />
 
 [Click Here](https://xdobry.github.io/rdfglance/?url=https://wholepersonproject.github.io/wpp-kg/collection/wpp/draft/graph.ttl) to browse the [latest WPP draft](https://wholepersonproject.github.io/wpp-kg/collection/wpp/draft/) in RDF Glance. 
 
