@@ -121,7 +121,7 @@ ORDER BY ?id
 | CL:0000023 | oocyte | female-reproductive-system |
 | CL:0000043 | mature basophil | immune-and-lymphatic-system |
 | CL:0000060 | odontoblast | dental-and-craniofacial-system |
-| CL:0000062 | osteoblast | dental-and-craniofacial-system|male-reproductive-system|skeletal-system|endocrine-system|integumentary-system |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|endocrine-system|male-reproductive-system|skeletal-system|integumentary-system |
 | ... | ... | ... |
 
 ## validation
@@ -238,10 +238,10 @@ ORDER BY DESC(?table_count) ?id
 
 | id | label | wpp_tables | table_count |
 | :--- | :--- | :--- | :--- |
-| CL:0000192 | smooth muscle cell | cardiovascular-system|muscular-system|digestive-system|integumentary-system|pulmonary-system|nervous-system|endocrine-system | 7 |
-| CL:0000062 | osteoblast | dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system|integumentary-system | 5 |
-| CL:0008002 | skeletal muscle fiber | nervous-system|muscular-system|endocrine-system|male-reproductive-system|female-reproductive-system | 5 |
-| CL:1000838 | kidney proximal convoluted tubule epithelial cell | dental-and-craniofacial-system|cardiovascular-system|endocrine-system|urinary-system|skeletal-system | 5 |
+| CL:0000192 | smooth muscle cell | cardiovascular-system|nervous-system|digestive-system|pulmonary-system|endocrine-system|integumentary-system|muscular-system | 7 |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|skeletal-system|endocrine-system|integumentary-system|male-reproductive-system | 5 |
+| CL:0008002 | skeletal muscle fiber | endocrine-system|nervous-system|muscular-system|female-reproductive-system|male-reproductive-system | 5 |
+| CL:1000838 | kidney proximal convoluted tubule epithelial cell | dental-and-craniofacial-system|cardiovascular-system|endocrine-system|skeletal-system|urinary-system | 5 |
 | CL:0000092 | osteoclast | dental-and-craniofacial-system|endocrine-system|skeletal-system|male-reproductive-system | 4 |
 | ... | ... | ... | ... |
 
@@ -304,7 +304,7 @@ ORDER BY ?iri
 | :--- | :--- | :--- | :--- |
 | http://identifiers.org/isbn/0323532662 | Brenner & Rector’s The Kidney, 11th Edition (2020) | Brenner & Rector’s The Kidney, 11th Edition (2020) | urinary-system |
 | http://identifiers.org/isbn/978-0-323-69463-8 | Mulroney & Myers, Netter’s Essential Physiology | Mulroney & Myers, Netter’s Essential Physiology | urinary-system |
-| http://identifiers.org/isbn/978-0781745871 | High-Yield Physiology, 1st edition. Dudek, 2008. | High-Yield Physiology, 1st edition. Dudek, 2008. | digestive-system|urinary-system |
+| http://identifiers.org/isbn/978-0781745871 | High-Yield Physiology, 1st edition. Dudek, 2008. | High-Yield Physiology, 1st edition. Dudek, 2008. | urinary-system|digestive-system |
 | http://identifiers.org/isbn/9781118453889 | Primer on the Metabolic Bone Diseases and Disorders of Mineral Metabolism, Eighth Edition (2013) | Primer on the Metabolic Bone Diseases and Disorders of Mineral Metabolism, Eighth Edition (2013) | dental-and-craniofacial-system|skeletal-system |
 | http://identifiers.org/isbn/9781119600206 | Yamada’s Textbook of Gastroenterology | Yamada’s Textbook of Gastroenterology | digestive-system |
 | ... | ... | ... | ... |
@@ -359,11 +359,11 @@ ORDER BY ?field DESC(?table_count)
 
 | field | value | wpp_tables | table_count |
 | :--- | :--- | :--- | :--- |
-| behavior | X secretion | dental-and-craniofacial-system|cardiovascular-system|nervous-system|immune-and-lymphatic-system|skeletal-system|endocrine-system|pulmonary-system|digestive-system|urinary-system|integumentary-system|male-reproductive-system|fascia-system|female-reproductive-system | 13 |
-| behavior | X conversion to Y | dental-and-craniofacial-system|nervous-system|pulmonary-system|skeletal-system|endocrine-system|urinary-system|fascia-system|integumentary-system|male-reproductive-system|muscular-system|female-reproductive-system|immune-and-lymphatic-system | 12 |
-| behavior | X synthesis | dental-and-craniofacial-system|immune-and-lymphatic-system|skeletal-system|nervous-system|digestive-system|endocrine-system|fascia-system|integumentary-system|female-reproductive-system|male-reproductive-system | 10 |
-| behavior | X export | cardiovascular-system|endocrine-system|digestive-system|nervous-system|dental-and-craniofacial-system|male-reproductive-system|skeletal-system|female-reproductive-system|muscular-system | 9 |
-| behavior | X uptake | cardiovascular-system|dental-and-craniofacial-system|immune-and-lymphatic-system|skeletal-system|digestive-system|nervous-system|endocrine-system|fascia-system|muscular-system | 9 |
+| behavior | X secretion | dental-and-craniofacial-system|cardiovascular-system|digestive-system|endocrine-system|immune-and-lymphatic-system|nervous-system|skeletal-system|male-reproductive-system|fascia-system|female-reproductive-system|urinary-system|integumentary-system|pulmonary-system | 13 |
+| behavior | X conversion to Y | dental-and-craniofacial-system|endocrine-system|muscular-system|pulmonary-system|skeletal-system|male-reproductive-system|fascia-system|integumentary-system|female-reproductive-system|nervous-system|urinary-system|immune-and-lymphatic-system | 12 |
+| behavior | X synthesis | dental-and-craniofacial-system|digestive-system|skeletal-system|endocrine-system|male-reproductive-system|immune-and-lymphatic-system|fascia-system|female-reproductive-system|nervous-system|integumentary-system | 10 |
+| behavior | X export | cardiovascular-system|muscular-system|endocrine-system|dental-and-craniofacial-system|digestive-system|male-reproductive-system|female-reproductive-system|nervous-system|skeletal-system | 9 |
+| behavior | X uptake | cardiovascular-system|dental-and-craniofacial-system|digestive-system|endocrine-system|muscular-system|skeletal-system|fascia-system|nervous-system|immune-and-lymphatic-system | 9 |
 | ... | ... | ... | ... |
 
 
@@ -549,7 +549,7 @@ ORDER BY ?table ?time_scale ?effector_scale
 | table | time_scale | effector_scale | process_count | raw_time_scales | processes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | cardiovascular-system | 1min - < 1hr | Cell | 5 | minutes | ANP triggers vasodilation of afferent arterioles to increase renal blood flow|BNP triggers vasodilation and natriuresis in response to increased preload|renin is released in response to decreased afferent arteriole pressure|angiotensin I is cleaved to angiotensin II by angiotensin converting enzyme in the lung endothelial cells|angiotensin I is cleaved to angiotensin II by angiotensin converting enzyme in the tubular endothelial cells |
-| cardiovascular-system | 1s - < 1min | Tissue | 4 | seconds | reflex bradycardia|reflex tachycardia|baroreceptor reflex|resistance to flow |
+| cardiovascular-system | 1s - < 1min | Tissue | 4 | seconds | resistance to flow|reflex bradycardia|reflex tachycardia|baroreceptor reflex |
 | cardiovascular-system | <1 second | Cell | 1 | milliseconds | baroreceptor reflex |
 | cardiovascular-system | <1 second | Tissue | 2 | milliseconds | cardiac conduction|baroreceptor reflex |
 | dental-and-craniofacial-system | 1hr - < 1day | Cell | 1 | hours | collagen is produced by osteoblasts and indicates increased bone synthesis |
@@ -662,11 +662,11 @@ ORDER BY DESC(?table_count) ?scale
 
 | scale | wpp_tables | table_count |
 | :--- | :--- | :--- |
-| milliseconds | cardiovascular-system|dental-and-craniofacial-system|immune-and-lymphatic-system|nervous-system|male-reproductive-system|muscular-system|digestive-system|fascia-system|urinary-system|female-reproductive-system|integumentary-system | 11 |
-| minutes | dental-and-craniofacial-system|cardiovascular-system|immune-and-lymphatic-system|nervous-system|male-reproductive-system|endocrine-system|skeletal-system|urinary-system|fascia-system|female-reproductive-system|integumentary-system | 11 |
-| seconds | cardiovascular-system|dental-and-craniofacial-system|nervous-system|muscular-system|male-reproductive-system|endocrine-system|urinary-system|fascia-system|immune-and-lymphatic-system|female-reproductive-system|integumentary-system | 11 |
-| hours | dental-and-craniofacial-system|immune-and-lymphatic-system|male-reproductive-system|endocrine-system|skeletal-system|urinary-system|fascia-system|female-reproductive-system|integumentary-system | 9 |
-| days | immune-and-lymphatic-system|male-reproductive-system|fascia-system|urinary-system|female-reproductive-system|integumentary-system | 6 |
+| milliseconds | cardiovascular-system|dental-and-craniofacial-system|nervous-system|immune-and-lymphatic-system|digestive-system|urinary-system|integumentary-system|fascia-system|male-reproductive-system|female-reproductive-system|muscular-system | 11 |
+| minutes | dental-and-craniofacial-system|cardiovascular-system|immune-and-lymphatic-system|skeletal-system|urinary-system|endocrine-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system|nervous-system | 11 |
+| seconds | cardiovascular-system|dental-and-craniofacial-system|immune-and-lymphatic-system|urinary-system|endocrine-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system|muscular-system|nervous-system | 11 |
+| hours | dental-and-craniofacial-system|immune-and-lymphatic-system|skeletal-system|urinary-system|endocrine-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system | 9 |
+| days | immune-and-lymphatic-system|integumentary-system|urinary-system|fascia-system|female-reproductive-system|male-reproductive-system | 6 |
 | ... | ... | ... |
 
 
@@ -727,7 +727,7 @@ ORDER BY ?id
 
 | id | label | wpp_tables |
 | :--- | :--- | :--- |
-| UBERON:0000007 | pituitary gland | endocrine-system|female-reproductive-system|male-reproductive-system |
+| UBERON:0000007 | pituitary gland | male-reproductive-system|endocrine-system|female-reproductive-system |
 | UBERON:0000011 | parasympathetic nervous system | nervous-system|urinary-system |
 | UBERON:0000013 | sympathetic nervous system | nervous-system|urinary-system |
 | UBERON:0000033 | head | nervous-system |

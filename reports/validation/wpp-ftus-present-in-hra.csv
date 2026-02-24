@@ -14,7 +14,7 @@ UBERON:0001992,papillary layer of dermis,effector|effector_location,integumentar
 UBERON:0002073,hair follicle,effector|effector_location,integumentary-system
 UBERON:0002299,alveolus of lung,effector,female-reproductive-system|nervous-system|pulmonary-system
 UBERON:0002303,juxtaglomerular apparatus,effector_location,cardiovascular-system|endocrine-system|urinary-system
-UBERON:0004134,proximal tubule,effector_location,cardiovascular-system|dental-and-craniofacial-system|endocrine-system|skeletal-system
+UBERON:0004134,proximal tubule,effector_location,skeletal-system|cardiovascular-system|dental-and-craniofacial-system|endocrine-system
 UBERON:0004179,prostate glandular acinus,effector_location,male-reproductive-system
 UBERON:0004647,liver lobule,effector_location,endocrine-system
 UBERON:0010753,lymph node secondary follicle,effector_location,immune-and-lymphatic-system

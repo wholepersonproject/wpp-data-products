@@ -1,31 +1,31 @@
 scale,wpp_tables,table_count
-milliseconds,cardiovascular-system|dental-and-craniofacial-system|immune-and-lymphatic-system|nervous-system|male-reproductive-system|muscular-system|digestive-system|fascia-system|urinary-system|female-reproductive-system|integumentary-system,11
-minutes,dental-and-craniofacial-system|cardiovascular-system|immune-and-lymphatic-system|nervous-system|male-reproductive-system|endocrine-system|skeletal-system|urinary-system|fascia-system|female-reproductive-system|integumentary-system,11
-seconds,cardiovascular-system|dental-and-craniofacial-system|nervous-system|muscular-system|male-reproductive-system|endocrine-system|urinary-system|fascia-system|immune-and-lymphatic-system|female-reproductive-system|integumentary-system,11
-hours,dental-and-craniofacial-system|immune-and-lymphatic-system|male-reproductive-system|endocrine-system|skeletal-system|urinary-system|fascia-system|female-reproductive-system|integumentary-system,9
-days,immune-and-lymphatic-system|male-reproductive-system|fascia-system|urinary-system|female-reproductive-system|integumentary-system,6
-"minutes, hours",dental-and-craniofacial-system|muscular-system|male-reproductive-system|endocrine-system|skeletal-system|female-reproductive-system,6
+milliseconds,cardiovascular-system|dental-and-craniofacial-system|nervous-system|immune-and-lymphatic-system|digestive-system|urinary-system|integumentary-system|fascia-system|male-reproductive-system|female-reproductive-system|muscular-system,11
+minutes,dental-and-craniofacial-system|cardiovascular-system|immune-and-lymphatic-system|skeletal-system|urinary-system|endocrine-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system|nervous-system,11
+seconds,cardiovascular-system|dental-and-craniofacial-system|immune-and-lymphatic-system|urinary-system|endocrine-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system|muscular-system|nervous-system,11
+hours,dental-and-craniofacial-system|immune-and-lymphatic-system|skeletal-system|urinary-system|endocrine-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system,9
+days,immune-and-lymphatic-system|integumentary-system|urinary-system|fascia-system|female-reproductive-system|male-reproductive-system,6
+"minutes, hours",dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system|muscular-system|female-reproductive-system,6
 Minutes,digestive-system|pulmonary-system|immune-and-lymphatic-system|urinary-system|integumentary-system,5
-Minutes–hours,digestive-system|immune-and-lymphatic-system|pulmonary-system|urinary-system|integumentary-system,5
+Minutes–hours,digestive-system|immune-and-lymphatic-system|pulmonary-system|integumentary-system|urinary-system,5
 Seconds,digestive-system|pulmonary-system|immune-and-lymphatic-system|urinary-system|integumentary-system,5
-"seconds, minutes",cardiovascular-system|muscular-system|male-reproductive-system|endocrine-system|female-reproductive-system,5
-weeks,immune-and-lymphatic-system|male-reproductive-system|fascia-system|female-reproductive-system|integumentary-system,5
+"seconds, minutes",cardiovascular-system|endocrine-system|male-reproductive-system|female-reproductive-system|muscular-system,5
+weeks,immune-and-lymphatic-system|integumentary-system|fascia-system|female-reproductive-system|male-reproductive-system,5
 Days,digestive-system|immune-and-lymphatic-system|urinary-system|integumentary-system,4
-Hours–days,digestive-system|immune-and-lymphatic-system|urinary-system|integumentary-system,4
-Minutes–days,digestive-system|immune-and-lymphatic-system|pulmonary-system|integumentary-system,4
-Seconds–hours,digestive-system|pulmonary-system|immune-and-lymphatic-system|integumentary-system,4
+Hours–days,digestive-system|immune-and-lymphatic-system|integumentary-system|urinary-system,4
+Minutes–days,pulmonary-system|digestive-system|immune-and-lymphatic-system|integumentary-system,4
+Seconds–hours,pulmonary-system|digestive-system|integumentary-system|immune-and-lymphatic-system,4
 Seconds–minutes,digestive-system|immune-and-lymphatic-system|pulmonary-system|integumentary-system,4
-"hours, days",cardiovascular-system|dental-and-craniofacial-system|muscular-system|male-reproductive-system,4
+"hours, days",cardiovascular-system|dental-and-craniofacial-system|male-reproductive-system|muscular-system,4
 minutes–hours,immune-and-lymphatic-system|digestive-system|urinary-system|integumentary-system,4
-seconds–minutes,immune-and-lymphatic-system|digestive-system|urinary-system|integumentary-system,4
-years,immune-and-lymphatic-system|fascia-system|female-reproductive-system|integumentary-system,4
-Days–months,digestive-system|immune-and-lymphatic-system|integumentary-system,3
+seconds–minutes,immune-and-lymphatic-system|digestive-system|integumentary-system|urinary-system,4
+years,immune-and-lymphatic-system|integumentary-system|fascia-system|female-reproductive-system,4
+Days–months,immune-and-lymphatic-system|digestive-system|integumentary-system,3
 Days–weeks,immune-and-lymphatic-system|digestive-system|integumentary-system,3
 Hours,digestive-system|immune-and-lymphatic-system|integumentary-system,3
 Milliseconds–seconds,immune-and-lymphatic-system|pulmonary-system|integumentary-system,3
 hours–days,immune-and-lymphatic-system|urinary-system|integumentary-system,3
 milliseconds–seconds,immune-and-lymphatic-system|digestive-system|integumentary-system,3
-Days–years,immune-and-lymphatic-system|integumentary-system,2
+Days–years,integumentary-system|immune-and-lymphatic-system,2
 Months–years,integumentary-system|immune-and-lymphatic-system,2
 Seconds–Minutes,urinary-system|integumentary-system,2
 Weeks,immune-and-lymphatic-system|integumentary-system,2
@@ -39,7 +39,7 @@ hours-days,immune-and-lymphatic-system|urinary-system,2
 minutes-hours,immune-and-lymphatic-system|urinary-system,2
 months,fascia-system|immune-and-lymphatic-system,2
 seconds–hours,immune-and-lymphatic-system|integumentary-system,2
-weeks–years,immune-and-lymphatic-system|integumentary-system,2
+weeks–years,integumentary-system|immune-and-lymphatic-system,2
 Breath-to-breath,pulmonary-system,1
 Days–Weeks,integumentary-system,1
 Hours–Days,integumentary-system,1
