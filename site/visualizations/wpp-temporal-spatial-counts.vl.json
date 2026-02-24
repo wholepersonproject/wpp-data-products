@@ -6,7 +6,7 @@
   "width": "container",
   "height": "container",
   "padding": {
-    "left": 100,
+    "left": 10,
     "right": 10
   },
   "config": {
@@ -75,6 +75,10 @@
   "transform": [
     {
       "filter": "group_by === '<all tables combined>' || datum.table === group_by"
+    },
+    {
+      "calculate": "datum.process_count", 
+      "as": "process_count_for_shape"
     }
   ],
   "encoding": {
@@ -98,9 +102,10 @@
     },
     "size": {
       "aggregate": "sum",
-      "field": "process_count",
+      "field": "process_count_for_shape",
       "type": "quantitative",
-      "title": "# Processes"
+      "title": "# Processes",
+      "legend": false
     },
     "color": {
       "aggregate": "sum",
@@ -108,7 +113,10 @@
       "type": "quantitative",
       "title": "# Processes",
       "scale": {
-        "scheme": "yellowgreen"
+        "scheme": "yellowgreen",
+        "domain": [0,150],
+        "zero": true,
+        "clamp": true
       }
     }
   }
