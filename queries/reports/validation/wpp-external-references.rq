@@ -1,0 +1,38 @@
+#+ summary: WPP external ontology references
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?iri ?sme_label ?label  (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+WHERE {
+  GRAPH WPP: {
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
+      ?field_pred ?field_obj ;
+    ] .
+    ?field_obj wpp:source_concept ?iri .
+
+    OPTIONAL {
+      ?field_obj skos:prefLabel ?sme_label .
+    }
+    OPTIONAL {
+      ?field_obj skos:prefLabel ?label .
+    }
+
+    FILTER(!STRSTARTS(STR(?iri), 'https://purl.wholepersonphysiome.org/'))
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
+    BIND(REPLACE(REPLACE(STR(?field_pred), STR(wpp:), ''), '_field', '') as ?field)
+  }
+}
+GROUP BY ?iri ?sme_label ?label
+ORDER BY ?iri
