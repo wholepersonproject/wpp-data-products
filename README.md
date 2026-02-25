@@ -13,7 +13,7 @@
 ## Visualizations
 
 * [WPP Temporal-Spatial Graph Visualization](./visualizations/wpp-temporal-spatial-counts.html) -- for validation
-* [WPP Temporal-Spatial Graph Visualization (imperfectly cleaned)](./visualizations/wpp-temporal-spatial-counts--cleaned.html) -- closer to original, but flawed cleaning
+* [WPP Temporal-Spatial Graph Visualization (imperfectly cleaned)](./visualizations/wpp-temporal-spatial-counts-cleaned.html) -- closer to original, but flawed cleaning
 
 ## Reports
 
