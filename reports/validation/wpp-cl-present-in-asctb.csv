@@ -18,7 +18,7 @@ CL:0000173,pancreatic D cell,endocrine-system
 CL:0000175,luteal cell,female-reproductive-system
 CL:0000182,hepatocyte,digestive-system|endocrine-system|immune-and-lymphatic-system
 CL:0000186,myofibroblast cell,fascia-system
-CL:0000192,smooth muscle cell,endocrine-system|integumentary-system|muscular-system|nervous-system|pulmonary-system|cardiovascular-system|digestive-system
+CL:0000192,smooth muscle cell,cardiovascular-system|digestive-system|endocrine-system|integumentary-system|muscular-system|nervous-system|pulmonary-system
 CL:0000232,erythrocyte,female-reproductive-system
 CL:0000233,platelet,endocrine-system
 CL:0000235,macrophage,immune-and-lymphatic-system|fascia-system
