@@ -5,7 +5,7 @@ UBERON:0000941,cranial nerve II,effector,dental-and-craniofacial-system|nervous-
 UBERON:0000966,retina,effector_location,dental-and-craniofacial-system|nervous-system
 UBERON:0001263,pancreatic acinus,effector_location,endocrine-system
 UBERON:0001291,thick ascending limb of loop of Henle,effector_location,urinary-system
-UBERON:0001292,distal convoluted tubule,effector_location,dental-and-craniofacial-system|endocrine-system|skeletal-system|urinary-system
+UBERON:0001292,distal convoluted tubule,effector_location,skeletal-system|urinary-system|dental-and-craniofacial-system|endocrine-system
 UBERON:0001736,submandibular gland,effector,dental-and-craniofacial-system|nervous-system
 UBERON:0001769,iris,effector_location,dental-and-craniofacial-system|nervous-system
 UBERON:0001831,parotid gland,effector,dental-and-craniofacial-system|nervous-system
