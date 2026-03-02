@@ -91,7 +91,7 @@
         "labelExpr": "upper(slice(datum.label, 0, 1)) + slice(datum.label, 1)"
       },
       "scale": {
-        "domain": ["Body", "Organ system", "Organ", "Tissue", "Cell"]
+        "domain": ["Body", "Organ system", "Organ", "Tissue", "FTU", "Cell"]
       }
     },
     "y": {
@@ -111,7 +111,18 @@
       "field": "process_count_for_shape",
       "type": "quantitative",
       "title": "# Processes",
-      "legend": false
+      "scale": {
+        "scheme": "yellowgreen",
+        "domain": [0,150],
+        "zero": true,
+        "clamp": true
+      },
+      "legend": {
+        "title": " ",
+        "type": "symbol",
+        "symbolFillColor": "white",
+        "tickCount": 4
+      }
     },
     "color": {
       "aggregate": "sum",
