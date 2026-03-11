@@ -12,7 +12,7 @@ PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+SELECT ?id (SAMPLE(?label) as ?label) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH WPP: {
     [
@@ -30,10 +30,11 @@ WHERE {
 
     FILTER NOT EXISTS {
       GRAPH HRA: {
-        ?iri ccf:ccf_asctb_type "AS"^^xsd:string .
+        ?iri ccf:ccf_asctb_type ?asctb_type .
+        FILTER(STR(?asctb_type) = 'AS')
       }
     }
   }
 }
-GROUP BY ?id ?label
+GROUP BY ?id
 ORDER BY ?id
