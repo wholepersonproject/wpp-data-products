@@ -1,0 +1,4 @@
+#+ summary: WPP and HRA ASCT+B shared terminology summary table
+
+# I'm actually just a duckdb query, but this needs to be here to work.
+SELECT (?s as ?label) (?p as ?count) WHERE { ?s ?p ?o . } LIMIT 0

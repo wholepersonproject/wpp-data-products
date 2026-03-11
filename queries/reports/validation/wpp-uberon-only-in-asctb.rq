@@ -1,0 +1,49 @@
+#+ summary: UBERON IDs in ASCT+B that are not in WPP tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?asctb_tables)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRA: {
+    ?record a ccf:AsctbRecord ;
+      ccf:anatomical_structure [
+        ccf:source_concept ?iri 
+      ] .
+    
+    ?iri rdfs:label ?label .
+    BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
+    BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?table)
+
+    FILTER NOT EXISTS {
+      SELECT DISTINCT ?iri
+      WHERE {
+        GRAPH WPP: {
+          [
+            a wpp:Record ;
+            wpp:record_source ?source ;
+            ?field [
+              wpp:source_concept ?iri ;
+            ] ;
+          ] .
+          FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+          hint:SubQuery hint:runOnce true .
+        }
+      }
+    }
+  }
+}
+GROUP BY ?id ?label
+ORDER BY ?id
