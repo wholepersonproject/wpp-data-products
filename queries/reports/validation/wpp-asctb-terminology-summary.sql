@@ -13,12 +13,12 @@ UNION ALL (
   FROM read_csv(getenv('OUTPUT_DIR') || '/reports/validation/wpp-uberon-present-in-asctb.csv')
 )
 UNION ALL (
-  SELECT '# CT only in HRA' as label, COUNT(*) as count
-  FROM read_csv(getenv('OUTPUT_DIR') || '/reports/validation/wpp-cl-only-in-asctb.csv')
-)
-UNION ALL (
   SELECT '# CT only in WPP' as label, COUNT(*) as count
   FROM read_csv(getenv('OUTPUT_DIR') || '/reports/validation/wpp-cl-missing-in-asctb.csv')
+)
+UNION ALL (
+  SELECT '# CT only in HRA' as label, COUNT(*) as count
+  FROM read_csv(getenv('OUTPUT_DIR') || '/reports/validation/wpp-cl-only-in-asctb.csv')
 )
 UNION ALL (
   SELECT '# CT in WPP & HRA' as label, COUNT(*) as count

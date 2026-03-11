@@ -30,7 +30,7 @@ WHERE {
       FILTER(STR(?asctb_type) = 'CT')
     }
     
-    ?iri rdfs:label ?label .
+    OPTIONAL { ?iri rdfs:label ?label . }
     BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
     BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?table)
 
