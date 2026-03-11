@@ -86,9 +86,9 @@ SELECT (?s as ?label) (?p as ?count) WHERE { ?s ?p ?o . } LIMIT 0
 | label | count |
 | :--- | :--- |
 | # AS only in WPP | 274 |
-| # AS only in HRA | 4523 |
+| # AS only in HRA | 4537 |
 | # AS in WPP & HRA | 271 |
-| # CT only in HRA | 1215 |
+| # CT only in HRA | 1210 |
 | # CT only in WPP | 220 |
 | # CT in WPP & HRA | 123 |
 
@@ -116,7 +116,7 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+SELECT ?id (SAMPLE(?label) as ?label) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH WPP: {
     [
@@ -134,12 +134,13 @@ WHERE {
 
     FILTER NOT EXISTS {
       GRAPH HRA: {
-        ?iri ccf:ccf_asctb_type "CT"^^xsd:string .
+        ?iri ccf:ccf_asctb_type ?asctb_type .
+        FILTER(STR(?asctb_type) = 'CT')
       }
     }
   }
 }
-GROUP BY ?id ?label
+GROUP BY ?id
 ORDER BY ?id
 
 ```
@@ -155,7 +156,7 @@ ORDER BY ?id
 | CL:0000023 | oocyte | female-reproductive-system |
 | CL:0000043 | mature basophil | immune-and-lymphatic-system |
 | CL:0000060 | odontoblast | dental-and-craniofacial-system |
-| CL:0000062 | osteoblast | dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system|integumentary-system |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|endocrine-system|male-reproductive-system|skeletal-system|integumentary-system |
 | ... | ... | ... |
 
 
@@ -182,15 +183,22 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?asctb_tables)
+SELECT ?id (SAMPLE(?label) as ?label) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?asctb_tables)
 WHERE {
   hint:Query hint:analytic "true" .
 
   GRAPH HRA: {
-    ?record a ccf:AsctbRecord ;
-      ccf:cell_type [
-        ccf:source_concept ?iri 
-      ] .
+    {
+      ?record a ccf:AsctbRecord ;
+        ccf:cell_type [
+          ccf:source_concept ?iri 
+        ] .
+    }
+    UNION
+    {
+      ?iri ccf:ccf_asctb_type ?asctb_type .
+      FILTER(STR(?asctb_type) = 'CT')
+    }
     
     ?iri rdfs:label ?label .
     BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
@@ -214,7 +222,7 @@ WHERE {
     }
   }
 }
-GROUP BY ?id ?label
+GROUP BY ?id
 ORDER BY ?id
 
 ```
@@ -226,11 +234,11 @@ ORDER BY ?id
 
 | id | label | asctb_tables |
 | :--- | :--- | :--- |
+| CL:0000000 | cell |  |
 | CL:0000033 | apocrine cell | large-intestine |
 | CL:0000036 | epithelial fate stem cell | small-intestine|eye |
 | CL:0000041 | mature eosinophil | large-intestine |
 | CL:0000049 | common myeloid progenitor | bone-marrow |
-| CL:0000050 | megakaryocyte-erythroid progenitor cell | bone-marrow |
 | ... | ... | ... |
 
 
@@ -256,11 +264,12 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+SELECT ?id (SAMPLE(?label) as ?label) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH HRA: {
-    ?iri ccf:ccf_asctb_type "CT"^^xsd:string .
+    ?iri ccf:ccf_asctb_type ?asctb_type .
     ?iri rdfs:label ?label .
+    FILTER(STR(?asctb_type) = 'CT')
   }
   GRAPH WPP: {
     [
@@ -275,7 +284,7 @@ WHERE {
     BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
   }
 }
-GROUP BY ?id ?label
+GROUP BY ?id
 ORDER BY ?id
 
 ```
@@ -290,8 +299,8 @@ ORDER BY ?id
 | CL:0000034 | stem cell | digestive-system|integumentary-system |
 | CL:0000037 | hematopoietic stem cell | immune-and-lymphatic-system |
 | CL:0000057 | fibroblast | fascia-system |
-| CL:0000066 | epithelial cell | digestive-system|immune-and-lymphatic-system |
-| CL:0000084 | T cell | immune-and-lymphatic-system|integumentary-system |
+| CL:0000066 | epithelial cell | immune-and-lymphatic-system|digestive-system |
+| CL:0000084 | T cell | integumentary-system|immune-and-lymphatic-system |
 | ... | ... | ... |
 
 
@@ -800,7 +809,7 @@ PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+SELECT ?id (SAMPLE(?label) as ?label) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH WPP: {
     [
@@ -818,12 +827,13 @@ WHERE {
 
     FILTER NOT EXISTS {
       GRAPH HRA: {
-        ?iri ccf:ccf_asctb_type "AS"^^xsd:string .
+        ?iri ccf:ccf_asctb_type ?asctb_type .
+        FILTER(STR(?asctb_type) = 'AS')
       }
     }
   }
 }
-GROUP BY ?id ?label
+GROUP BY ?id
 ORDER BY ?id
 
 ```
@@ -866,15 +876,22 @@ PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?asctb_tables)
+SELECT ?id (SAMPLE(?label) as ?label) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?asctb_tables)
 WHERE {
   hint:Query hint:analytic "true" .
 
   GRAPH HRA: {
-    ?record a ccf:AsctbRecord ;
-      ccf:anatomical_structure [
-        ccf:source_concept ?iri 
-      ] .
+    {
+      ?record a ccf:AsctbRecord ;
+        ccf:anatomical_structure [
+          ccf:source_concept ?iri 
+        ] .
+    }
+    UNION
+    {
+      ?iri ccf:ccf_asctb_type ?asctb_type .
+      FILTER(STR(?asctb_type) = 'AS')
+    }
     
     ?iri rdfs:label ?label .
     BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
@@ -898,7 +915,7 @@ WHERE {
     }
   }
 }
-GROUP BY ?id ?label
+GROUP BY ?id
 ORDER BY ?id
 
 ```
@@ -940,11 +957,12 @@ PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
 PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 
-SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
+SELECT ?id (SAMPLE(?label) as ?label) (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?wpp_tables)
 WHERE {
   GRAPH HRA: {
-    ?iri ccf:ccf_asctb_type "AS"^^xsd:string .
+    ?iri ccf:ccf_asctb_type ?asctb_type .
     ?iri rdfs:label ?label .
+    FILTER(STR(?asctb_type) = 'AS')
   }
   GRAPH WPP: {
     [
@@ -959,7 +977,7 @@ WHERE {
     BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
   }
 }
-GROUP BY ?id ?label
+GROUP BY ?id
 ORDER BY ?id
 
 ```
