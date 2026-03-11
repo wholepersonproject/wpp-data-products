@@ -5,7 +5,9 @@
 * ad-hoc
   * [named graphs and number of tuples (named-graphs)](#named-graphs)
 * validation
+  * [WPP and HRA ASCT+B shared terminology summary table (wpp-asctb-terminology-summary)](#wpp-asctb-terminology-summary)
   * [CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)](#wpp-cl-missing-in-asctb)
+  * [CL IDs in ASCT+B that are not in WPP tables (wpp-cl-only-in-asctb)](#wpp-cl-only-in-asctb)
   * [CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)](#wpp-cl-present-in-asctb)
   * [WPP effectors that occur in multiple tables (wpp-effectors-in-multiple-tables)](#wpp-effectors-in-multiple-tables)
   * [WPP external ontology references (wpp-external-references)](#wpp-external-references)
@@ -15,6 +17,7 @@
   * [WPP time scales in tables (wpp-temporal-spatial-counts)](#wpp-temporal-spatial-counts)
   * [WPP time scales in tables (wpp-time-scales-in-multiple-tables)](#wpp-time-scales-in-multiple-tables)
   * [Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
+  * [UBERON IDs in ASCT+B that are not in WPP tables (wpp-uberon-only-in-asctb)](#wpp-uberon-only-in-asctb)
   * [Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)](#wpp-uberon-present-in-asctb)
 * wpp-ad-hoc
   * [WPP collection components and download URLs for them (wpp-component-graphs)](#wpp-component-graphs)
@@ -59,6 +62,37 @@ ORDER BY ?graph
 | ... | ... |
 
 ## ad-hoc
+
+### <a id="wpp-asctb-terminology-summary"></a>WPP and HRA ASCT+B shared terminology summary table (wpp-asctb-terminology-summary)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: WPP and HRA ASCT+B shared terminology summary table
+
+# I'm actually just a duckdb query, but this needs to be here to work.
+SELECT (?s as ?label) (?p as ?count) WHERE { ?s ?p ?o . } LIMIT 0
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-asctb-terminology-summary.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-asctb-terminology-summary.csv))
+
+| label | count |
+| :--- | :--- |
+| # AS only in WPP | 274 |
+| # AS only in HRA | 4523 |
+| # AS in WPP & HRA | 271 |
+| # CT only in HRA | 1215 |
+| # CT only in WPP | 220 |
+| # CT in WPP & HRA | 123 |
+
+## validation
 
 ### <a id="wpp-cl-missing-in-asctb"></a>CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)
 
@@ -121,10 +155,84 @@ ORDER BY ?id
 | CL:0000023 | oocyte | female-reproductive-system |
 | CL:0000043 | mature basophil | immune-and-lymphatic-system |
 | CL:0000060 | odontoblast | dental-and-craniofacial-system |
-| CL:0000062 | osteoblast | dental-and-craniofacial-system|male-reproductive-system|endocrine-system|skeletal-system|integumentary-system |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|skeletal-system|endocrine-system|male-reproductive-system|integumentary-system |
 | ... | ... | ... |
 
-## validation
+
+### <a id="wpp-cl-only-in-asctb"></a>CL IDs in ASCT+B that are not in WPP tables (wpp-cl-only-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: CL IDs in ASCT+B that are not in WPP tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?asctb_tables)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRA: {
+    ?record a ccf:AsctbRecord ;
+      ccf:cell_type [
+        ccf:source_concept ?iri 
+      ] .
+    
+    ?iri rdfs:label ?label .
+    BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
+    BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?table)
+
+    FILTER NOT EXISTS {
+      SELECT DISTINCT ?iri
+      WHERE {
+        GRAPH WPP: {
+          [
+            a wpp:Record ;
+            wpp:record_source ?source ;
+            ?field [
+              wpp:source_concept ?iri ;
+            ] ;
+          ] .
+          FILTER(STRSTARTS(STR(?iri), STR(CL:)))
+          hint:SubQuery hint:runOnce true .
+        }
+      }
+    }
+  }
+}
+GROUP BY ?id ?label
+ORDER BY ?id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-cl-only-in-asctb.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-cl-only-in-asctb.csv))
+
+| id | label | asctb_tables |
+| :--- | :--- | :--- |
+| CL:0000033 | apocrine cell | large-intestine |
+| CL:0000036 | epithelial fate stem cell | small-intestine|eye |
+| CL:0000041 | mature eosinophil | large-intestine |
+| CL:0000049 | common myeloid progenitor | bone-marrow |
+| CL:0000050 | megakaryocyte-erythroid progenitor cell | bone-marrow |
+| ... | ... | ... |
+
 
 ### <a id="wpp-cl-present-in-asctb"></a>CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)
 
@@ -728,10 +836,85 @@ ORDER BY ?id
 | id | label | wpp_tables |
 | :--- | :--- | :--- |
 | UBERON:0000007 | pituitary gland | endocrine-system|male-reproductive-system|female-reproductive-system |
-| UBERON:0000011 | parasympathetic nervous system | urinary-system|nervous-system |
-| UBERON:0000013 | sympathetic nervous system | urinary-system|nervous-system |
+| UBERON:0000011 | parasympathetic nervous system | nervous-system|urinary-system |
+| UBERON:0000013 | sympathetic nervous system | nervous-system|urinary-system |
 | UBERON:0000033 | head | nervous-system |
 | UBERON:0000043 | tendon | fascia-system |
+| ... | ... | ... |
+
+
+### <a id="wpp-uberon-only-in-asctb"></a>UBERON IDs in ASCT+B that are not in WPP tables (wpp-uberon-only-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: UBERON IDs in ASCT+B that are not in WPP tables
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id ?label (GROUP_CONCAT(DISTINCT ?table;SEPARATOR='|') as ?asctb_tables)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH HRA: {
+    ?record a ccf:AsctbRecord ;
+      ccf:anatomical_structure [
+        ccf:source_concept ?iri 
+      ] .
+    
+    ?iri rdfs:label ?label .
+    BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
+    BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?table)
+
+    FILTER NOT EXISTS {
+      SELECT DISTINCT ?iri
+      WHERE {
+        GRAPH WPP: {
+          [
+            a wpp:Record ;
+            wpp:record_source ?source ;
+            ?field [
+              wpp:source_concept ?iri ;
+            ] ;
+          ] .
+          FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+          hint:SubQuery hint:runOnce true .
+        }
+      }
+    }
+  }
+}
+GROUP BY ?id ?label
+ORDER BY ?id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-uberon-only-in-asctb.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-uberon-only-in-asctb.csv))
+
+| id | label | asctb_tables |
+| :--- | :--- | :--- |
+| UBERON:0000016 | endocrine pancreas | pancreas |
+| UBERON:0000017 | exocrine pancreas | pancreas|anatomical-systems |
+| UBERON:0000035 | primary ovarian follicle | ovary |
+| UBERON:0000036 | secondary ovarian follicle | ovary |
+| UBERON:0000038 | follicular fluid | ovary |
 | ... | ... | ... |
 
 

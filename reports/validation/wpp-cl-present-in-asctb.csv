@@ -21,7 +21,7 @@ CL:0000186,myofibroblast cell,fascia-system
 CL:0000192,smooth muscle cell,cardiovascular-system|digestive-system|endocrine-system|integumentary-system|muscular-system|nervous-system|pulmonary-system
 CL:0000232,erythrocyte,female-reproductive-system
 CL:0000233,platelet,endocrine-system
-CL:0000235,macrophage,fascia-system|immune-and-lymphatic-system
+CL:0000235,macrophage,immune-and-lymphatic-system|fascia-system
 CL:0000236,B cell,immune-and-lymphatic-system
 CL:0000312,keratinocyte,immune-and-lymphatic-system|integumentary-system
 CL:0000442,follicular dendritic cell,immune-and-lymphatic-system
@@ -44,7 +44,7 @@ CL:0000625,"CD8-positive, alpha-beta T cell",immune-and-lymphatic-system
 CL:0000632,hepatic stellate cell,immune-and-lymphatic-system
 CL:0000646,basal cell,integumentary-system
 CL:0000648,kidney granular cell,urinary-system
-CL:0000649,spinous cell of epidermis,integumentary-system|immune-and-lymphatic-system
+CL:0000649,spinous cell of epidermis,immune-and-lymphatic-system|integumentary-system
 CL:0000653,podocyte,urinary-system
 CL:0000669,pericyte,integumentary-system
 CL:0000682,M cell of gut,immune-and-lymphatic-system
@@ -110,7 +110,7 @@ CL:0017004,telocyte,fascia-system
 CL:1000417,myoepithelial cell of sweat gland,integumentary-system
 CL:1000454,kidney collecting duct epithelial cell,urinary-system
 CL:1000458,melanocyte of skin,integumentary-system
-CL:1000849,kidney distal convoluted tubule epithelial cell,dental-and-craniofacial-system|endocrine-system|skeletal-system|urinary-system
+CL:1000849,kidney distal convoluted tubule epithelial cell,skeletal-system|urinary-system|dental-and-craniofacial-system|endocrine-system
 CL:1000850,macula densa epithelial cell,urinary-system
 CL:1001099,kidney efferent arteriole endothelial cell,urinary-system
 CL:1001106,kidney loop of Henle thick ascending limb epithelial cell,urinary-system

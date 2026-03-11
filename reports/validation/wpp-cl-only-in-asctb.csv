@@ -1,0 +1,1216 @@
+id,label,asctb_tables
+CL:0000033,apocrine cell,large-intestine
+CL:0000036,epithelial fate stem cell,small-intestine|eye
+CL:0000041,mature eosinophil,large-intestine
+CL:0000049,common myeloid progenitor,bone-marrow
+CL:0000050,megakaryocyte-erythroid progenitor cell,bone-marrow
+CL:0000051,common lymphoid progenitor,bone-marrow
+CL:0000065,ependymal cell,spinal-cord|allen-brain
+CL:0000071,blood vessel endothelial cell,blood-vasculature|palatine-tonsil|lymph-node|heart|placenta|prostate|thymus
+CL:0000075,columnar/cuboidal epithelial cell,pancreas|liver
+CL:0000077,mesothelial cell,small-intestine|heart
+CL:0000091,Kupffer cell,liver
+CL:0000094,granulocyte,pancreas|bone-marrow|blood-pelvis
+CL:0000096,mature neutrophil,large-intestine
+CL:0000099,interneuron,eye
+CL:0000108,cholinergic neuron,allen-brain
+CL:0000113,mononuclear phagocyte,kidney
+CL:0000125,glial cell,peripheral-nervous-system|eye
+CL:0000129,microglial cell,spinal-cord|eye|allen-brain
+CL:0000132,corneal endothelial cell,eye
+CL:0000146,simple columnar epithelial cell,pancreas|large-intestine
+CL:0000158,club cell,lung
+CL:0000163,endocrine cell,small-intestine
+CL:0000188,cell of skeletal muscle,muscular-system|large-intestine
+CL:0000212,obsolete absorptive cell,small-intestine
+CL:0000240,stratified squamous epithelial cell,large-intestine
+CL:0000241,stratified cuboidal epithelial cell,liver
+CL:0000242,Merkel cell,skin|mouth|large-intestine
+CL:0000244,transitional epithelial cell,large-intestine
+CL:0000287,eye photoreceptor cell,eye
+CL:0000317,sebocyte,skin|large-intestine
+CL:0000359,vascular associated smooth muscle cell,blood-vasculature|skin|prostate|placenta|heart|large-intestine
+CL:0000402,obsolete CNS interneuron,allen-brain
+CL:0000432,reticular cell,palatine-tonsil
+CL:0000434,eccrine cell,large-intestine
+CL:0000516,perineuronal satellite cell,peripheral-nervous-system
+CL:0000523,mononuclear cytotrophoblast cell,placenta
+CL:0000525,syncytiotrophoblast cell,placenta
+CL:0000553,megakaryocyte progenitor cell,bone-marrow
+CL:0000556,megakaryocyte,bone-marrow
+CL:0000557,granulocyte monocyte progenitor cell,bone-marrow
+CL:0000559,promonocyte,bone-marrow
+CL:0000561,amacrine cell,eye
+CL:0000573,retinal cone cell,eye
+CL:0000575,corneal epithelial cell,eye
+CL:0000576,monocyte,thymus|fallopian-tube|bone-marrow|kidney|blood-pelvis|allen-brain
+CL:0000577,type EC enteroendocrine cell,pancreas
+CL:0000604,retinal rod cell,eye
+CL:0000617,GABAergic neuron,allen-brain
+CL:0000623,natural killer cell,small-intestine|spleen|skin|thymus|mouth|fallopian-tube|lymph-node|heart|lung|liver|kidney|allen-brain
+CL:0000624,"CD4-positive, alpha-beta T cell",fallopian-tube|palatine-tonsil|liver
+CL:0000636,Mueller cell,eye
+CL:0000644,Bergmann glial cell,allen-brain
+CL:0000654,primary oocyte,ovary
+CL:0000679,glutamatergic neuron,allen-brain
+CL:0000706,choroid plexus epithelial cell,allen-brain
+CL:0000711,cumulus granulosa cell,ovary
+CL:0000740,retinal ganglion cell,eye
+CL:0000743,hypertrophic chondrocyte,knee
+CL:0000745,retina horizontal cell,eye
+CL:0000748,retinal bipolar neuron,eye
+CL:0000749,ON-bipolar cell,eye
+CL:0000750,OFF-bipolar cell,eye
+CL:0000767,basophil,bone-marrow|lung|blood-pelvis
+CL:0000793,"CD4-positive, alpha-beta intraepithelial T cell",large-intestine
+CL:0000796,"CD8-alpha-beta-positive, alpha-beta intraepithelial T cell",large-intestine
+CL:0000798,gamma-delta T cell,spleen|thymus|lymph-node|liver
+CL:0000802,"CD8-alpha alpha positive, gamma-delta intraepithelial T cell",large-intestine
+CL:0000815,regulatory T cell,skin|spleen|placenta|mouth|palatine-tonsil|lymph-node|bone-marrow|lung|kidney|large-intestine|blood-pelvis
+CL:0000818,transitional stage B cell,spleen|bone-marrow|blood-pelvis
+CL:0000824,mature natural killer cell,bone-marrow|blood-pelvis
+CL:0000836,promyelocyte,bone-marrow
+CL:0000837,hematopoietic multipotent progenitor cell,bone-marrow
+CL:0000839,myeloid lineage restricted progenitor cell,bone-marrow
+CL:0000840,immature conventional dendritic cell,bone-marrow|blood-pelvis
+CL:0000860,classical monocyte,lung
+CL:0000872,splenic marginal zone macrophage,spleen
+CL:0000874,splenic red pulp macrophage,spleen
+CL:0000875,non-classical monocyte,lung|kidney
+CL:0000876,splenic white pulp macrophage,spleen
+CL:0000877,splenic tingible body macrophage,spleen
+CL:0000882,thymic medullary macrophage,thymus
+CL:0000883,thymic cortical macrophage,thymus
+CL:0000888,lymph node tingible body macrophage,lymph-node
+CL:0000897,"CD4-positive, alpha-beta memory T cell",spleen|thymus|lymph-node|bone-marrow|blood-pelvis
+CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",spleen|lymph-node|bone-marrow|lung|blood-pelvis
+CL:0000910,cytotoxic T cell,skin|placenta|lymph-node|kidney|large-intestine
+CL:0000913,"effector memory CD8-positive, alpha-beta T cell",bone-marrow|lung
+CL:0000915,"CD8-alpha-alpha-positive, alpha-beta intraepithelial T cell",large-intestine
+CL:0000921,type I NK T cell,liver
+CL:0000934,"CD4-positive, alpha-beta cytotoxic T cell",thymus
+CL:0000935,"CD4-negative, CD8-negative, alpha-beta intraepithelial T cell",large-intestine
+CL:0000936,early lymphoid progenitor,bone-marrow
+CL:0000938,"CD16-negative, CD56-bright natural killer cell, human",bone-marrow|lung|blood-pelvis
+CL:0000940,mucosal-associated invariant T cell,thymus|lung
+CL:0000942,thymic plasmacytoid dendritic cell,thymus
+CL:0000970,unswitched memory B cell,thymus
+CL:0000972,class switched memory B cell,spleen|thymus
+CL:0001035,bone cell,skeleton
+CL:0001054,CD14-positive monocyte,bone-marrow|blood-pelvis
+CL:0001055,"CD14-positive, CD16-low monocyte",spleen
+CL:0001056,"dendritic cell, human",bone-marrow|heart|liver|kidney|blood-pelvis|spleen
+CL:0001058,"plasmacytoid dendritic cell, human",spleen|bone-marrow|lymph-node|kidney|blood-pelvis
+CL:0001062,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",bone-marrow|blood-pelvis
+CL:0001067,group 1 innate lymphoid cell,skin
+CL:0001070,beige adipocyte,thymus
+CL:0001078,"group 3 innate lymphoid cell, human",thymus|spleen
+CL:0001087,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",bone-marrow|blood-pelvis
+CL:0001203,"CD8-positive, alpha-beta memory T cell, CD45RO-positive",liver
+CL:0002042,"immature NK T cell stage IV, mouse",large-intestine
+CL:0002059,CD8-alpha-positive thymic conventional dendritic cell,thymus
+CL:0002062,pulmonary alveolar type 1 cell,lung
+CL:0002068,Purkinje myocyte,heart
+CL:0002079,pancreatic ductal cell,pancreas
+CL:0002080,pancreatic centro-acinar cell,pancreas
+CL:0002095,hilus cell of ovary,ovary
+CL:0002138,endothelial cell of lymphatic vessel,large-intestine|spleen|skin|thymus|prostate|placenta|lymph-vasculature|lymph-node|heart|liver|kidney
+CL:0002144,capillary endothelial cell,large-intestine|prostate|blood-vasculature|heart
+CL:0002145,multiciliated columnar cell of tracheobronchial tree,trachea
+CL:0002153,corneocyte,skin
+CL:0002193,myelocyte,bone-marrow
+CL:0002196,hepatic oval stem cell,liver
+CL:0002201,renal beta-intercalated cell,kidney
+CL:0002207,brush cell of trachea,trachea
+CL:0002208,brush cell of bronchus,lung
+CL:0002224,lens epithelial cell,eye
+CL:0002225,secondary lens fiber,eye
+CL:0002228,primary lens fiber,eye
+CL:0002262,endothelial cell of sinusoid,blood-vasculature
+CL:0002275,pancreatic PP cell,pancreas
+CL:0002303,pigmented ciliary epithelial cell,eye
+CL:0002304,non-pigmented ciliary epithelial cell,eye
+CL:0002329,basal epithelial cell of tracheobronchial tree,lung
+CL:0002332,multiciliated epithelial cell of the bronchus,main-bronchus|lung
+CL:0002341,basal cell of prostate epithelium,prostate
+CL:0002343,"decidual natural killer cell, human",placenta
+CL:0002350,endocardial cell,heart
+CL:0002363,keratocyte,eye
+CL:0002364,cortical thymic epithelial cell,thymus
+CL:0002394,CD141-positive myeloid dendritic cell,spleen|lung|lymph-node|blood-pelvis
+CL:0002396,"CD14-low, CD16-positive monocyte",bone-marrow|blood-pelvis
+CL:0002399,CD1c-positive myeloid dendritic cell,spleen|lung|lymph-node|liver|blood-pelvis
+CL:0002410,pancreatic stellate cell,pancreas
+CL:0002453,oligodendrocyte precursor cell,spinal-cord|allen-brain
+CL:0002457,epidermal Langerhans cell,skin
+CL:0002460,CD8-alpha-negative thymic conventional dendritic cell,thymus
+CL:0002483,hair follicle melanocyte,skin
+CL:0002521,subcutaneous adipocyte,skin
+CL:0002536,epithelial cell of amnion,placenta
+CL:0002543,vein endothelial cell,spleen|prostate|blood-vasculature|liver|large-intestine
+CL:0002557,fibroblast of pulmonary artery,lung
+CL:0002558,fibroblast of villous mesenchyme,placenta
+CL:0002568,mesenchymal stem cell of Wharton's jelly,placenta
+CL:0002574,stromal cell of pancreas,pancreas
+CL:0002576,perineurial cell,skin|large-intestine
+CL:0002586,retinal pigment epithelial cell,eye
+CL:0002591,smooth muscle cell of the pulmonary artery,lung
+CL:0002592,smooth muscle cell of the coronary artery,heart
+CL:0002597,smooth muscle cell of bladder,urinary-bladder
+CL:0002598,bronchial smooth muscle cell,main-bronchus|lung
+CL:0002604,hippocampal astrocyte,allen-brain
+CL:0002605,astrocyte of the cerebral cortex,allen-brain
+CL:0002619,adult endothelial progenitor cell,lung
+CL:0002621,gingival epithelial cell,mouth
+CL:0002677,naive regulatory T cell,thymus
+CL:0005006,ionocyte,prostate
+CL:0005019,pancreatic epsilon cell,pancreas
+CL:0008019,mesenchymal cell,fallopian-tube
+CL:0008024,pancreatic endocrine cell,pancreas
+CL:0008034,mural cell,eye
+CL:0008036,extravillous trophoblast,placenta
+CL:0009009,paneth cell of colon,large-intestine
+CL:0009011,transit amplifying cell of colon,large-intestine
+CL:0009016,intestinal crypt stem cell of large intestine,large-intestine
+CL:0009018,lymphocyte of large intestine lamina propria,large-intestine
+CL:0009068,CD8aa(I) thymocyte,thymus
+CL:0009070,corticomedullary thymic epithelial cell,thymus
+CL:0009071,medullary thymic epithelial cell type 1,thymus
+CL:0009072,medullary thymic epithelial cell type 2,thymus
+CL:0009074,medullary thymic epithelial cell type 4,thymus
+CL:0009075,myo-medullary thymic epithelial cell,thymus
+CL:0009076,neuro-medullary thymic epithelial cell,thymus
+CL:0009077,subcapsular thymic epithelial cell,thymus
+CL:0009078,thymic fibroblast type 1,thymus
+CL:0009079,thymic fibroblast type 2,thymus
+CL:0009080,tuft cell of small intestine,small-intestine
+CL:0009081,specified double negative thymocyte (Homo sapiens),thymus
+CL:0009082,committed double negative thymocyte (Homo sapiens),thymus
+CL:0009083,rearranging double negative thymocyte (Homo sapiens),thymus
+CL:0009084,glandular epithelial cell of endometrium,placenta
+CL:0009086,endothelial cell of respiratory system lymphatic vessel,lung
+CL:0009089,lung pericyte,lung
+CL:0009100,hepatic portal fibroblast,liver
+CL:0009103,lymph node marginal reticular cell,lymph-node
+CL:0009104,B cell zone reticular cell,lymph-node
+CL:0009105,T cell zone reticular cell,lymph-node
+CL:0009106,medullary reticular cell,lymph-node
+CL:0009107,lymphatic endothelial cell of subcapsular sinus ceiling,lymph-node
+CL:0009108,lymphatic endothelial cell of subcapsular sinus floor,lymph-node
+CL:0009109,lymphatic endothelial cell of trabecula,lymph-node
+CL:0009110,lymphatic endothelial cell of medulla ceiling,lymph-node
+CL:0009111,centrocyte,lymph-node
+CL:0009112,centroblast,lymph-node
+CL:0009113,T follicular regulatory cell,spleen|lymph-node
+CL:0009114,monocytoid B cell,lymph-node
+CL:0009115,lymph node lymphatic vessel endothelial cell,prostate
+CL:0010008,cardiac endothelial cell,blood-vasculature|heart
+CL:0010012,cerebral cortex neuron,allen-brain
+CL:0011004,lens fiber cell,eye
+CL:0011005,GABAergic interneuron,allen-brain
+CL:0012000,astrocyte of the forebrain,allen-brain
+CL:0012001,neuron of the forebrain,allen-brain
+CL:0017000,pulmonary ionocyte,main-bronchus|lung
+CL:0017002,prostate neuroendocrine cell,prostate
+CL:0017011,hillock cell of prostatic urethral epithelium,prostate
+CL:0019002,tracheobronchial chondrocyte,trachea|main-bronchus|lung
+CL:0019003,tracheobronchial goblet cell,lung
+CL:0019015,lung parenchyma resident eosinophil,lung
+CL:0019017,lymphatic vessel smooth muscle cell,lymph-node
+CL:0019018,blood vessel smooth muscle cell,trachea|main-bronchus|lung|liver|kidney
+CL:0019019,tracheobronchial smooth muscle cell,trachea|lung
+CL:0019026,periportal region hepatocyte,liver
+CL:0019028,midzonal region hepatocyte,liver
+CL:0019029,centrilobular region hepatocyte,liver
+CL:0019032,intestinal tuft cell,large-intestine
+CL:1000223,pulmonary neuroendocrine cell,trachea|lung
+CL:1000271,lung multiciliated epithelial cell,lung
+CL:1000279,smooth muscle cell of large intestine,large-intestine
+CL:1000287,myocyte of anterior internodal tract,heart
+CL:1000290,myocyte of middle internodal tract,heart
+CL:1000291,myocyte of posterior internodal tract,heart
+CL:1000299,fibroblast of connective tissue of prostate,prostate
+CL:1000301,fibroblast of subepithelial connective tissue of prostatic gland,prostate
+CL:1000308,fibrocyte of adventitia of ureter,ureter
+CL:1000309,epicardial adipocyte,heart
+CL:1000317,intestinal villus goblet cell,small-intestine
+CL:1000321,large intestine crypt goblet cell,large-intestine
+CL:1000322,pancreatic goblet cell,pancreas
+CL:1000324,duodenal goblet cell,small-intestine
+CL:1000325,jejunal goblet cell,small-intestine
+CL:1000326,ileal goblet cell,small-intestine
+CL:1000329,tracheal goblet cell,trachea
+CL:1000330,serous cell of epithelium of trachea,trachea
+CL:1000331,serous cell of epithelium of bronchus,main-bronchus
+CL:1000344,paneth cell of epithelium proper of small intestine,small-intestine
+CL:1000348,basal cell of epithelium of trachea,trachea
+CL:1000349,basal cell of epithelium of bronchus,main-bronchus
+CL:1000350,basal cell of epithelium of terminal bronchiole,lung
+CL:1000351,basal cell of epithelium of respiratory bronchiole,lung
+CL:1000352,basal cell of epithelium of lobular bronchiole,lung
+CL:1000398,endothelial cell of hepatic sinusoid,liver
+CL:1000412,endothelial cell of arteriole,large-intestine|blood-vasculature
+CL:1000413,endothelial cell of artery,spleen|trachea|main-bronchus|blood-vasculature|prostate|lung|liver|heart
+CL:1000414,endothelial cell of venule,large-intestine|blood-vasculature
+CL:1000452,parietal epithelial cell,kidney
+CL:1000457,mesothelial cell of visceral peritoneum,large-intestine
+CL:1000477,cardiac pacemaker cell of sinoatrial node,heart
+CL:1000486,basal cell of urothelium,prostate
+CL:1000487,smooth muscle cell of prostate,prostate
+CL:1000489,reticular cell of splenic cord,spleen
+CL:1000493,mesothelial cell of visceral pleura,lung
+CL:1000597,papillary tips cell,kidney
+CL:1000691,kidney interstitial myofibroblast,kidney
+CL:1000692,kidney interstitial fibroblast,kidney
+CL:1000695,kidney interstitial alternatively activated macrophage,kidney
+CL:1000708,ureter adventitial cell,ureter
+CL:1000714,kidney cortex collecting duct principal cell,kidney
+CL:1000715,kidney cortex collecting duct intercalated cell,kidney
+CL:1000716,kidney outer medulla collecting duct principal cell,kidney
+CL:1000717,kidney outer medulla collecting duct intercalated cell,kidney
+CL:1000718,kidney inner medulla collecting duct principal cell,kidney
+CL:1000742,glomerular mesangial cell,kidney
+CL:1000768,kidney connecting tubule epithelial cell,kidney
+CL:1001005,glomerular capillary endothelial cell,kidney
+CL:1001033,peritubular capillary endothelial cell,kidney
+CL:1001096,kidney afferent arteriole endothelial cell,kidney
+CL:1001108,kidney loop of Henle medullary thick ascending limb epithelial cell,kidney
+CL:1001109,kidney loop of Henle cortical thick ascending limb epithelial cell,kidney
+CL:1001111,kidney loop of Henle thin descending limb epithelial cell,kidney
+CL:1001131,vasa recta ascending limb cell,kidney
+CL:1001285,vasa recta descending limb cell,kidney
+CL:1001318,renal interstitial pericyte,kidney
+CL:1001319,bladder cell,urinary-bladder
+CL:1001428,bladder urothelial cell,urinary-bladder|ureter
+CL:1001432,kidney collecting duct intercalated cell,kidney
+CL:1001433,epithelial cell of exocrine pancreas,pancreas
+CL:1001474,medium spiny neuron,allen-brain
+CL:1001568,pulmonary artery endothelial cell,lung
+CL:1001577,tonsil squamous cell,palatine-tonsil
+CL:1001607,articular chondrocyte,knee
+CL:2000032,peripheral nervous system neuron,peripheral-nervous-system
+CL:2000040,bladder microvascular endothelial cell,urinary-bladder
+CL:2000054,hepatic pit cell,liver
+CL:2000061,placental amniotic mesenchymal stromal cell,placenta
+CL:2000062,placental villus capillary endothelial cell,placenta
+CL:2000066,cardiac ventricle fibroblast,heart
+CL:2000067,cardiac atrium fibroblast,heart
+CL:2000091,endometrial microvascular endothelial cell,placenta
+CL:2000097,midbrain dopaminergic neuron,allen-brain
+CL:3000001,Hofbauer cell,placenta
+CL:3000002,sympathetic noradrenergic neuron,thymus
+CL:4023008,intratelencephalic-projecting glutamatergic cortical neuron,allen-brain
+CL:4023009,extratelencephalic-projecting glutamatergic cortical neuron,allen-brain
+CL:4023011,lamp5 GABAergic cortical interneuron,allen-brain
+CL:4023011,lamp5 GABAergic interneuron,allen-brain
+CL:4023012,near-projecting glutamatergic cortical neuron,allen-brain
+CL:4023013,corticothalamic-projecting glutamatergic cortical neuron,allen-brain
+CL:4023016,VIP GABAergic cortical interneuron,allen-brain
+CL:4023016,VIP GABAergic interneuron,allen-brain
+CL:4023017,sst GABAergic cortical interneuron,allen-brain
+CL:4023017,sst GABAergic interneuron,allen-brain
+CL:4023035,lateral ganglionic eminence derived neuron,allen-brain
+CL:4023038,L6b glutamatergic cortical neuron,allen-brain
+CL:4023039,amygdala excitatory neuron,allen-brain
+CL:4023057,cerebellar inhibitory GABAergic interneuron,allen-brain
+CL:4023059,committed oligodendrocyte precursor,allen-brain
+CL:4023060,hippocampal CA1-3 neuron,allen-brain
+CL:4023061,hippocampal CA4 neuron,allen-brain
+CL:4023062,dentate gyrus neuron,allen-brain
+CL:4023063,medial ganglionic eminence derived interneuron,allen-brain
+CL:4023064,caudal ganglionic eminence derived cortical interneuron,allen-brain
+CL:4023064,caudal ganglionic eminence derived interneuron,allen-brain
+CL:4023068,thalamic excitatory neuron,allen-brain
+CL:4023072,brain vascular cell,allen-brain
+CL:4023074,mammillary body neuron,allen-brain
+CL:4023079,midbrain-derived inhibitory neuron,allen-brain
+CL:4023121,sst chodl GABAergic cortical interneuron,allen-brain
+CL:4023121,sst chodl GABAergic interneuron,allen-brain
+CL:4023188,midget ganglion cell of retina,eye
+CL:4023189,parasol ganglion cell of retina,eye
+CL:4028002,alveolar capillary type 1 endothelial cell,lung
+CL:4028003,alveolar capillary type 2 endothelial cell,lung
+CL:4028004,alveolar type 1 fibroblast cell,lung
+CL:4028006,alveolar adventitial fibroblast,lung
+CL:4030006,fallopian tube secretory epithelial cell,fallopian-tube
+CL:4030007,fallopian tube multiciliated epithelial cell,fallopian-tube
+CL:4030009,epithelial cell of proximal tubule segment 1,kidney
+CL:4030010,epithelial cell of proximal tubule segment 2,kidney
+CL:4030011,epithelial cell of proximal tubule segment 3,kidney
+CL:4030013,kidney loop of Henle long descending thin limb outer medulla epithelial cell,kidney
+CL:4030014,kidney loop of Henle long descending thin limb inner medulla epithelial cell,kidney
+CL:4030015,kidney collecting duct alpha-intercalated cell,kidney
+CL:4030016,epithelial cell of early distal convoluted tubule,kidney
+CL:4030017,epithelial cell of late distal convoluted tubule,kidney
+CL:4030018,kidney connecting tubule principal cell,kidney
+CL:4030019,kidney connecting tubule intercalated cell,kidney
+CL:4030020,kidney connecting tubule alpha-intercalated cell,kidney
+CL:4030021,kidney connecting tubule beta-intercalated cell,kidney
+CL:4030022,renal medullary fibroblast,kidney
+CL:4030032,valve interstitial cell,heart
+CL:4030043,matrix D1 medium spiny neuron,allen-brain
+CL:4030047,matrix D2 medium spiny neuron,allen-brain
+CL:4030048,striosomal D1 medium spiny neuron,allen-brain
+CL:4030049,striosomal D2 medium spiny neuron,allen-brain
+CL:4030050,D1/D2-hybrid medium spiny neuron,allen-brain
+CL:4030051,nucleus accumbens shell and olfactory tubercle D1 medium spiny neuron,allen-brain
+CL:4030052,nucleus accumbens shell and olfactory tubercle D2 medium spiny neuron,allen-brain
+CL:4030053,Island of Calleja granule cell,allen-brain
+CL:4030053,Islands of Calleja granule cell,allen-brain
+CL:4030054,D1-NUDAP medium spiny neuron,allen-brain
+CL:4030054,RXFP1-positive interface island D1-medium spiny neuron,allen-brain
+CL:4032000,club-like cell of the urethral epithelium,prostate
+CL:4033003,myoepithelial cell of bronchus submucosal gland,main-bronchus|lung
+CL:4033005,serous secreting cell of bronchus submucosal gland,lung
+CL:4033007,brush cell of epithelium of lobar bronchus,main-bronchus|lung
+CL:4033008,vein endothelial cell of respiratory system,trachea|main-bronchus|lung
+CL:4033009,goblet cell of epithelium of lobar bronchus,main-bronchus|lung
+CL:4033010,neuroendocrine cell of epithelium of lobar bronchus,main-bronchus|lung
+CL:4033014,peg cell,fallopian-tube
+CL:4033016,secondary crest myofibroblast,lung
+CL:4033017,bronchiolar smooth muscle cell,lung
+CL:4033018,lung megakaryocyte,lung
+CL:4033020,mucus secreting cell of trachea gland,trachea
+CL:4033021,myoepithelial cell of trachea gland,trachea
+CL:4033022,mucus secreting cell of bronchus submucosal gland,main-bronchus|lung
+CL:4033023,airway submucosal gland collecting duct epithelial cell,trachea|main-bronchus|lung
+CL:4033024,airway submucosal gland duct basal cell,trachea|main-bronchus|lung
+CL:4033025,perichondrial fibroblast,trachea
+CL:4033026,lung perichondrial fibroblast,lung
+CL:4033038,"lung resident memory CD4-positive, alpha-beta T cell",lung
+CL:4033041,CCL3-positive alveolar macrophage,lung
+CL:4033042,metallothionein-positive alveolar macrophage,lung
+CL:4033043,lung interstitial macrophage,lung
+CL:4033044,deuterosomal cell,main-bronchus|lung
+CL:4033045,lung migratory dendritic cell,lung
+CL:4033048,respiratory tract suprabasal cell,main-bronchus|lung
+CL:4033050,catecholaminergic neuron,spleen
+CL:4033055,airway submucosal gland duct multiciliated cell,main-bronchus|lung
+CL:4033062,interstitial extravillous trophoblast cell,placenta
+CL:4033063,endovascular extravillous trophoblast cell,placenta
+CL:4033064,uterine resident macrophage,placenta
+CL:4042001,TAC3-positive striatal interneuron,allen-brain
+CL:4042013,Lamp5 Lhx6 neuron,allen-brain
+CL:4042023,striatal pthlh-expressing interneuron,allen-brain
+CL:4042025,substantia nigra dopaminergic neuron,allen-brain
+CL:4042040,glutamatergic neuron of the basal ganglia,allen-brain
+CL:4052048,intercalated cell of salivary gland,mouth
+CL:4052049,striated cell of salivary gland,mouth
+http://purl.obolibrary.org/obo/LMHA_00142,ciliated cell,trachea
+http://purl.obolibrary.org/obo/PCL_0015001,Inh L1 LAMP5 PVRL2 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015002,Inh L1 LAMP5 RAB11FIP1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015003,Inh L1-6 LAMP5 AARD primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015004,Inh L1-6 LAMP5 NES primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015005,Inh L1-6 LAMP5 CA1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015006,Inh L5-6 LAMP5 CRABP1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015007,Inh L3-6 PAX6 LINC01497 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015008,Inh L1 PAX6 MIR101-1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015009,Inh L1 PAX6 CHRFAM7A primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015010,Inh L1-6 VIP SLC7A6OS primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015011,Inh L2 PAX6 FREM2 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015012,Inh L1-2 VIP HTR3A primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015013,Inh L1-2 VIP WNT4 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015014,Inh L1 LAMP5 BMP2 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015015,Inh L1 LAMP5 NMBR primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015016,Inh L1 PVALB-like SST ASIC4 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015017,Inh L1 SST P4HA3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015018,Inh L1 SST DEFB108B primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015019,Inh L1-3 VIP CBLN1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015020,Inh L1-2 VIP EXPH5 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015021,Inh L1-3 VIP HSPB6 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015022,Inh L1-2 VIP PTGER3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015023,Inh L1-2 VIP SCML4 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015024,Inh L1-3 VIP FNDC1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015025,Inh L1-3 VIP CHRNA2 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015026,Inh L2 VIP SLC6A16 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015027,Inh L1 VIP KLHDC8B primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015028,Inh L3-5 VIP IGDCC3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015029,Inh L1-5 VIP SMOC1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015030,Inh L3-5 VIP HS3ST3A1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015031,Inh L5-6 VIP COL4A3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015032,Inh L1-5 VIP CD27-AS1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015033,Inh L2-5 VIP BSPRY primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015034,Inh L2-5 VIP SOX11 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015035,Inh L3-6 VIP ZIM2-AS1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015036,Inh L1-5 VIP PHLDB3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015037,Inh L1-5 VIP LINC01013 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015038,Inh L3-6 VIP UG0898H09 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015039,Inh L3-5 VIP TAC3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015040,Inh L1-6 SST NPY primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015041,Inh L3-5 SST CDH3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015042,Inh L5 SST RPL35AP11 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015043,Inh L5-6 SST ISX primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015044,Inh L5-6 PVALB SST CRHR2 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015045,Inh L3-5 SST OR5AH1P primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015046,Inh L3-5 SST GGTLC3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015047,Inh L2-3 SST NMU primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015048,Inh L5-6 SST PAWR primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015049,Inh L5-6 SST PIK3CD primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015050,Inh L1-2 SST CCNJL primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015051,Inh L1-3 SST FAM20A primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015052,Inh L1-2 SST PRRT4 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015053,Inh L5-6 SST BEAN1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015054,Inh L5-6 SST DNAJC14 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015055,Inh L5-6 SST C4orf26 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015056,Inh L5-6 SST FBN2 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015057,Inh L5-6 SST KLHL1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015058,Inh L6 SST TH primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015059,Inh L5-6 PVALB KCNIP2 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015060,Inh L5-6 PVALB ZFPM2-AS1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015061,Inh L3-5 PVALB ISG20 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015062,Inh L5 PVALB LRIG3 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015063,Inh L2-5 PVALB HHIPL1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015064,Inh L2-5 PVALB RPH3AL primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015065,Inh L3 PVALB SAMD13 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015066,Inh L1-2 PVALB CDK20 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015067,Inh L2 PVALB FRZB primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015068,Inh L1-2 SST CLIC6 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015069,Inh L5-6 PVALB GAPDHP60 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015070,Inh L5-6 PVALB FAM150B primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015071,Inh L5-6 PVALB MEPE primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015072,Inh L1-6 PVALB COL15A1 primary motor cortex GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015073,Exc L2 LAMP5 KCNG3 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015074,Exc L2 LINC00507 ATP7B primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015075,Exc L2 LINC00507 GLRA3 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015076,Exc L2-3 RORB RTKN2 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015077,Exc L2-3 LINC00507 DSG3 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015078,Exc L3 LAMP5 CARM1P1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015079,Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015080,Exc L2-3 RORB CCDC68 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015081,Exc L2-3 RORB PTPN3 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015082,Exc L3 THEMIS ENPEP primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015083,Exc L3-5 RORB TNNT2 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015084,Exc L3-5 RORB LAMA4 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015085,Exc L5 THEMIS VILL primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015086,Exc L3 RORB OTOGL primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015087,Exc L3-5 RORB LINC01202 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015088,Exc L5 THEMIS SLC22A18 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015089,Exc L5-6 THEMIS TNFAIP6 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015090,Exc L3-5 RORB LNX2 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015091,Exc L3-5 RORB RPRM primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015092,Exc L5 RORB MED8 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015093,Exc L5 THEMIS FGF10 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015094,Exc L6 THEMIS LINC00343 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015095,Exc L6 THEMIS SLN primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015096,Exc L6 THEMIS SNTG2 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015097,Exc L5-6 THEMIS SMYD1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015098,Exc L5-6 FEZF2 OR1L8 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015099,Exc L5 THEMIS LINC01116 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015100,Exc L5 THEMIS RGPD6 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015101,Exc L5-6 FEZF2 C9orf135-AS1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015102,Exc L5-6 FEZF2 FILIP1L primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015103,Exc L5-6 FEZF2 SH2D1B primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015104,Exc L6 FEZF2 PDYN primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015105,Exc L6 FEZF2 FFAR4 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015106,Exc L6 FEZF2 PROKR2 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015107,Exc L5-6 FEZF2 CFTR primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015108,Exc L6 FEZF2 KLK7 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015109,Exc L6 FEZF2 POGK primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015110,Exc L5 FEZF2 CSN1S1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015111,Exc L3-5 FEZF2 ASGR2 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015112,Exc L3-5 FEZF2 LINC01107 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015113,Exc L5 FEZF2 PKD2L1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015114,Exc L5 FEZF2 NREP-AS1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015115,Exc L5 FEZF2 RNF144A-AS1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015116,Exc L5-6 FEZF2 IFNG-AS1 primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015117,Exc L5-6 FEZF2 LPO primary motor cortex glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015118,OPC L1-6 PDGFRA COL20A1 primary motor cortex oligodendrocyte precursor cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015119,Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015120,Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015121,Oligo L5-6 OPALIN LDLRAP1 primary motor cortex oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015122,Astro L1-6 FGFR3 AQP1 primary motor cortex astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015123,Astro L1 FGFR3 SERPINI2 primary motor cortex astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015124,Astro L1-6 FGFR3 PLCG1 primary motor cortex astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015125,Endo L2-5 NOSTRIN SRGN primary motor cortex endothelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015126,VLMC L1-5 PDGFRA COLEC12 primary motor cortex vascular leptomeningeal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0015127,Micro L1-6 TYROBP CD74 primary motor cortex microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051005,Mgl_4 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051006,Mgl_5 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051007,Mgl_6 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051008,Mgl_7 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051009,Mgl_8 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051010,Mgl_9 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051011,Mgl_10 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051012,Mgl_11 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051013,Mgl_12 microglial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051014,VendPLVAP_13 brain vascular cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051015,VendAC_14 brain vascular cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051016,VendC_15 capillary endothelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051017,VendVC_16 capillary endothelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051018,VendV_17 vein endothelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051019,VendA_18 endothelial cell of artery (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051020,Vsmc_19 brain vascular cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051021,Vsmc_20 smooth muscle cell of the brain vasculature (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051022,Per_21 pericyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051023,Per_22 pericyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051024,Per_23 brain vascular cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051025,Fbl_24 fibroblast (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051026,Fbl_25 fibroblast (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051027,Fbl_26 fibroblast (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051028,Fbl_27 fibroblast (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051029,Fbl_28 fibroblast (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051030,Fbl_29 fibroblast (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051031,Fbl_30 fibroblast (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051032,Fbl_31 arachnoid barrier cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051033,OPC_32 oligodendrocyte precursor cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051034,OPC_33 oligodendrocyte precursor cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051035,OPC_34 oligodendrocyte precursor cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051036,OPC_35 oligodendrocyte precursor cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051037,OPC_36 oligodendrocyte precursor cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051038,COP_37 committed oligodendrocyte precursor (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051039,COP_38 committed oligodendrocyte precursor (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051040,COP_39 committed oligodendrocyte precursor (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051041,Oligo_40 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051042,COP_41 committed oligodendrocyte precursor (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051043,COP_42 committed oligodendrocyte precursor (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051044,COP_43 committed oligodendrocyte precursor (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051045,Oligo_44 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051046,Oligo_45 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051047,Oligo_46 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051048,Oligo_47 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051049,Oligo_48 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051050,Oligo_49 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051051,Oligo_50 oligodendrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051052,Bgl_51 Bergmann glial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051053,Astro_52 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051054,Astro_53 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051055,Astro_54 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051056,Astro_55 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051057,Astro_56 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051058,Astro_57 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051059,Astro_58 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051060,Astro_59 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051061,Astro_60 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051062,Astro_61 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051063,Astro_62 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051064,Astro_63 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051065,Astro_64 astrocyte (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051066,Epen_65 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051067,Epen_66 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051068,Epen_67 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051069,Epen_68 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051070,Epen_69 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051071,Epen_70 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051072,Epen_71 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051073,Epen_72 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051074,Epen_73 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051075,Epen_74 ependymal cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051076,COP_75 committed oligodendrocyte precursor (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051077,Chrp_76 choroid plexus epithelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051078,Chrp_77 choroid plexus epithelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051079,Chrp_78 choroid plexus epithelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051080,Chrp_79 choroid plexus epithelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051081,Chrp_80 choroid plexus epithelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051082,Chrp_81 choroid plexus epithelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051083,Chrp_82 choroid plexus epithelial cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051084,DLNP_83 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051085,DLCT6b_84 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051086,DLNP_85 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051087,DLNP_86 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051088,DLNP_87 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051089,DLNP_88 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051090,DLNP_89 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051091,DLNP_90 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051092,DLNP_91 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051093,DLNP_92 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051094,DLNP_93 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051095,DLNP_94 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051096,DLNP_95 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051097,DLNP_96 near-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051098,DLCT6b_97 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051099,DLCT6b_98 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051100,DLCT6b_99 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051101,DLCT6b_100 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051102,DLCT6b_101 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051103,DLCT6b_102 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051104,DLCT6b_103 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051105,DLCT6b_104 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051106,DLCT6b_105 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051107,DLCT6b_106 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051108,DLCT6b_107 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051109,DLCT6b_108 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051110,DLCT6b_109 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051111,DLCT6b_110 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051112,DLCT6b_111 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051113,DLCT6b_112 glutamatergic neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051114,L5ET_113 L5 extratelencephalic projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051115,L5ET_114 L5 extratelencephalic projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051116,L5ET_115 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051117,Misc_116 cerebral cortex neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051118,L5ET_117 von Economo neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051119,L5ET_118 L5 extratelencephalic projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051120,CA13_119 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051121,ULIT_120 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051122,ULIT_121 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051123,ULIT_122 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051124,ULIT_123 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051125,ULIT_124 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051126,ULIT_125 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051127,ULIT_126 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051128,ULIT_127 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051129,ULIT_128 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051130,ULIT_129 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051131,ULIT_130 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051132,ULIT_131 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051133,Misc_132 cerebral cortex neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051134,ULIT_133 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051135,ULIT_134 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051136,ULIT_135 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051137,DLIT_136 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051138,DLIT_137 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051139,ULIT_138 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051140,DLIT_139 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051141,DLIT_140 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051142,DLIT_141 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051143,DLIT_142 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051144,DLIT_143 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051145,DLIT_144 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051146,DLIT_145 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051147,DLIT_146 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051148,DLIT_147 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051149,DLIT_148 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051150,DLIT_149 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051151,DLIT_150 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051152,DLIT_151 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051153,DLIT_152 intratelencephalic-projecting glutamatergic cortical neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051154,Amex_153 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051155,Amex_154 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051156,Amex_155 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051157,Amex_156 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051158,Amex_157 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051159,Amex_158 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051160,Amex_159 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051161,Amex_160 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051162,Amex_161 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051163,Amex_162 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051164,CA13_163 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051165,Misc_164 neuron of the forebrain (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051166,Misc_165 cerebral cortex neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051167,Misc_166 cerebral cortex neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051168,Misc_167 cerebral cortex neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051169,Misc_168 cerebral cortex neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051170,CA13_169 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051171,Misc_170 neuron of the forebrain (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051172,Amex_171 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051173,Amex_172 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051174,Amex_173 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051175,Amex_174 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051176,Amex_175 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051177,Misc_176 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051178,Misc_177 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051179,Misc_178 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051180,CA13_179 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051181,CA13_180 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051182,CA13_181 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051183,CA13_182 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051184,CA13_183 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051185,CA13_184 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051186,CA13_185 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051187,CA13_186 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051188,CA13_187 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051189,CA13_188 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051190,CA13_189 hippocampal CA1-3 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051191,CA4_190 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051192,CA4_191 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051193,CA4_192 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051194,CA4_193 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051195,CA4_194 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051196,CA4_195 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051197,CA4_196 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051198,CA4_197 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051199,CA4_198 hippocampal CA4 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051200,DG_199 dentate gyrus granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051201,DG_200 dentate gyrus granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051202,DG_201 dentate gyrus granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051203,DG_202 dentate gyrus granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051204,DG_203 dentate gyrus granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051205,DG_204 dentate gyrus granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051206,DG_205 dentate gyrus granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051207,MSN_206 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051208,MSN_207 indirect pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051209,MSN_208 indirect pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051210,MSN_209 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051211,MSN_210 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051212,MSN_211 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051213,MSN_212 indirect pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051214,MSN_213 indirect pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051215,MSN_214 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051216,MSN_215 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051217,MSN_216 indirect pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051218,MSN_217 indirect pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051219,MSN_218 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051220,MSN_219 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051221,MSN_220 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051222,MSN_221 indirect pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051223,EMSN_222 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051224,EMSN_223 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051225,EMSN_224 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051226,EMSN_225 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051227,EMSN_226 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051228,EMSN_227 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051229,EMSN_228 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051230,EMSN_229 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051231,EMSN_230 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051232,EMSN_231 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051233,EMSN_232 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051234,EMSN_233 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051235,EMSN_234 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051236,Splat_235 long-range projecting sst GABAergic cortical interneuron (Mmus) (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051237,MGE_236 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051238,Splat_237 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051239,Splat_238 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051240,MGE_239 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051241,MGE_240 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051242,MGE_241 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051243,MGE_242 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051244,MGE_243 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051245,MGE_244 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051246,MGE_245 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051247,MGE_246 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051248,MGE_247 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051249,MGE_248 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051250,MGE_249 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051251,MGE_250 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051252,MGE_251 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051253,MGE_252 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051254,MGE_253 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051255,MGE_254 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051256,MGE_255 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051257,MGE_256 pvalb GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051258,MGE_257 pvalb GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051259,MGE_258 sst GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051260,MGE_259 pvalb GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051261,MGE_260 pvalb GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051262,MGE_261 pvalb GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051263,MGE_262 pvalb GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051264,MGE_263 medial ganglionic eminence derived interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051265,LLC_264 chandelier cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051266,LLC_265 chandelier cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051267,LLC_266 chandelier cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051268,LLC_267 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051269,LLC_268 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051270,LLC_269 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051271,LLC_270 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051272,LLC_271 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051273,LLC_272 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051274,LLC_273 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051275,LLC_274 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051276,LLC_275 interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051277,CGE_276 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051278,CGE_277 caudal ganglionic eminence derived cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051279,CGE_278 caudal ganglionic eminence derived cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051280,CGE_279 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051281,CGE_280 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051282,CGE_281 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051283,CGE_282 caudal ganglionic eminence derived cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051284,CGE_283 caudal ganglionic eminence derived cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051285,CGE_284 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051286,CGE_285 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051287,CGE_286 lamp5 GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051288,CGE_287 lamp5 GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051289,CGE_288 lamp5 GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051290,CGE_289 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051291,CGE_290 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051292,CGE_291 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051293,CGE_292 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051294,CGE_293 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051295,CGE_294 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051296,CGE_295 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051297,CGE_296 VIP GABAergic cortical interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051298,URL_297 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051299,CBI_298 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051300,CBI_299 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051301,CBI_300 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051302,CBI_301 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051303,CBI_302 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051304,CBI_303 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051305,CBI_304 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051306,CBI_305 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051307,CBI_306 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051308,CBI_307 cerebellar inhibitory GABAergic interneuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051309,URL_308 unipolar brush cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051310,URL_309 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051311,URL_310 cerebellar granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051312,URL_311 cerebellar granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051313,URL_312 cerebellar granule cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051314,Splat_313 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051315,Misc_314 Purkinje cell (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051316,LRL_315 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051317,LRL_316 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051318,LRL_317 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051319,LRL_318 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051320,LRL_319 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051321,LRL_320 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051322,LRL_321 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051323,LRL_322 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051324,Mmb_323 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051325,Mmb_324 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051326,Mmb_325 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051327,Mmb_326 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051328,Mmb_327 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051329,Mmb_328 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051330,Mmb_329 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051331,Mmb_330 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051332,Mmb_331 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051333,Mmb_332 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051334,Mmb_333 mammillary body neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051335,Splat_334 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051336,Splat_335 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051337,Splat_336 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051338,Splat_337 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051339,Splat_338 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051340,Splat_339 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051341,Splat_340 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051342,Splat_341 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051343,Splat_342 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051344,Splat_343 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051345,Splat_344 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051346,Splat_345 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051347,Splat_346 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051348,Splat_347 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051349,Splat_348 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051350,Splat_349 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051351,Splat_350 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051352,Splat_351 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051353,Splat_352 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051354,Splat_353 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051355,Splat_354 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051356,Splat_355 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051357,Splat_356 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051358,Splat_357 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051359,Splat_358 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051360,Splat_359 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051361,Splat_360 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051362,Splat_361 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051363,Splat_362 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051364,Splat_363 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051365,Splat_364 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051366,Splat_365 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051367,Splat_366 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051368,Splat_367 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051369,Splat_368 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051370,Splat_369 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051371,Splat_370 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051372,Splat_371 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051373,Thex_372 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051374,Splat_373 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051375,Splat_374 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051376,Splat_375 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051377,Splat_376 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051378,Splat_377 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051379,Splat_378 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051380,Splat_379 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051381,Splat_380 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051382,Splat_381 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051383,Splat_382 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051384,Splat_383 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051385,Splat_384 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051386,Splat_385 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051387,Splat_386 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051388,Splat_387 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051389,Splat_388 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051390,Splat_389 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051391,Splat_390 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051392,Splat_391 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051393,Splat_392 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051394,Splat_393 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051395,Splat_394 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051396,Splat_395 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051397,Splat_396 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051398,Splat_397 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051399,Splat_398 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051400,Splat_399 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051401,Splat_400 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051402,Misc_401 neuron of the forebrain (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051403,Splat_402 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051404,Splat_403 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051405,Misc_404 cerebral cortex neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051406,Amex_405 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051407,Amex_406 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051408,Amex_407 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051409,Amex_408 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051410,Splat_409 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051411,Splat_410 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051412,Splat_411 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051413,Splat_412 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051414,Splat_413 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051415,Splat_414 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051416,Splat_415 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051417,Splat_416 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051418,Splat_417 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051419,Splat_418 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051420,Amex_419 amygdala excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051421,Splat_420 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051422,Splat_421 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051423,Splat_422 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051424,Splat_423 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051425,Splat_424 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051426,Splat_425 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051427,EMSN_426 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051428,MSN_427 direct pathway medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051429,Splat_428 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051430,Splat_429 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051431,MSN_430 medium spiny neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051432,Splat_431 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051433,Splat_432 neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051434,Midi_433 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051435,Midi_434 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051436,Midi_435 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051437,Midi_436 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051438,Midi_437 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051439,Midi_438 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051440,Midi_439 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051441,Midi_440 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051442,Midi_441 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051443,Midi_442 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051444,Midi_443 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051445,Midi_444 midbrain-derived inhibitory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051446,Thex_445 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051447,Thex_446 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051448,Thex_447 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051449,Thex_448 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051450,Thex_449 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051451,Thex_450 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051452,Thex_451 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051453,Thex_452 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051454,Thex_453 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051455,Thex_454 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051456,Thex_455 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051457,Thex_456 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051458,Thex_457 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051459,Thex_458 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051460,Thex_459 thalamic excitatory neuron (Hsap),allen-brain
+http://purl.obolibrary.org/obo/PCL_0051461,Thex_460 thalamic excitatory neuron (Hsap),allen-brain
+https://purl.org/ccf/ASCTB-TEMP_adventitial-stromal-cell,Adventitial Stromal Cell,spleen
+https://purl.org/ccf/ASCTB-TEMP_b-cell,B cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_basal-cell-of-bladder-urothelium,basal cell of bladder urothelium,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_basal-cell-of-prostatic-urethra,basal cell of prostatic urethra,prostate
+https://purl.org/ccf/ASCTB-TEMP_basal-cell-of-ureter-urothelium,basal cell of ureter urothelium,ureter
+https://purl.org/ccf/ASCTB-TEMP_basal-ductal-cell,basal ductal cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_bche-butyrylcholinesterase-cell,BCHE (butyrylcholinesterase) cell,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_capsule-mesenchymal-stromal-cell,capsule mesenchymal stromal cell,kidney
+https://purl.org/ccf/ASCTB-TEMP_cd4-t,CD4+ T,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_cd8-t,CD8+ T,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_celiac-ganglion-cgrp-neuron,celiac ganglion CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_celiac-ganglion-phi-neuron,celiac ganglion PHI neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_celiac-ganglion-som-cgrp-neuron,celiac ganglion SOM/CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_celiac-ganglion-som-neuron,celiac ganglion SOM neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_celiac-ganglion-sp-neuron,celiac ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_celiac-ganglion-vip-neuron,celiac ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_centroblast,Centroblast,palatine-tonsil
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-brn3a-neuron,cervical dorsal root ganglion BRN3A neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-cgrp-neuron,cervical dorsal root ganglion CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-endothelin-1-neuron,cervical dorsal root ganglion Endothelin 1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-nav1-7-neuron,cervical dorsal root ganglion Nav1.7 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-nav1-9-neuron,cervical dorsal root ganglion Nav1.9 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-nf200-neuron,cervical dorsal root ganglion NF200 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-peripherin-neuron,cervical dorsal root ganglion Peripherin neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-piezo2-neuron,cervical dorsal root ganglion Piezo2 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-ret-neuron,cervical dorsal root ganglion RET neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-sp-neuron,cervical dorsal root ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervical-dorsal-root-ganglion-trpv1-neuron,cervical dorsal root ganglion TRPV1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervicothoracic-ganglion-enkephalin-neuron,cervicothoracic ganglion enkephalin neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervicothoracic-ganglion-th-neuron,cervicothoracic ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervicothoracic-ganglion-th-npy-neuron,cervicothoracic ganglion TH/NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervicothoracic-ganglion-vacht-neuron,cervicothoracic ganglion VAChT neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_cervicothoracic-ganglion-vip-neuron,cervicothoracic ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_ciliary-ganglion-th-neuron,ciliary ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_ciliary-ganglion-vip-phi-neuron,ciliary ganglion VIP-PHI neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_ciliated-epithelial-cell,ciliated epithelial cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_columnar-ovarian-surface-epithelial-cell,columnar ovarian surface epithelial cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_corpus-luteum-endothelial-cell,corpus luteum endothelial cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_corpus-luteum-macrophage,corpus luteum macrophage,ovary
+https://purl.org/ccf/ASCTB-TEMP_cuboidal-cell,Cuboidal cell,pancreas
+https://purl.org/ccf/ASCTB-TEMP_cycling-b,Cycling B,palatine-tonsil
+https://purl.org/ccf/ASCTB-TEMP_dec205-dc,DEC205+ DC,spleen
+https://purl.org/ccf/ASCTB-TEMP_demilune-acinar-cell,demilune acinar cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_detrusor-smooth-muscle-cell-of-bladder,detrusor smooth muscle cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_detrusor-smooth-muscle-cell-of-ureter,detrusor smooth muscle cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_dpt-fibroblast-cell-of-bladder,DPT+ fibroblast cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_dpt-fibroblast-cell-of-ureter,DPT+ fibroblast cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_effector-chondrocyte,Effector Chondrocyte,knee
+https://purl.org/ccf/ASCTB-TEMP_endocervical-epithelial-cell,endocervical epithelial cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-bladder,endothelial cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_endothelial-cell-of-ureter,endothelial cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_eomes-low-liver-nk-cell,Eomes low Liver NK cell,liver
+https://purl.org/ccf/ASCTB-TEMP_epithelial-stem-cells,epithelial stem cells,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_excretory-duct-epithelial-cell,excretory duct epithelial cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_fibroblast-mesenchymal-cell,fibroblast-mesenchymal cell,fallopian-tube
+https://purl.org/ccf/ASCTB-TEMP_fibrocartilage-chondrocyte-1,Fibrocartilage Chondrocyte 1,knee
+https://purl.org/ccf/ASCTB-TEMP_fibrocartilage-chondrocyte-2,Fibrocartilage Chondrocyte 2,knee
+https://purl.org/ccf/ASCTB-TEMP_flattened-cuboidal-ovarian-surface-epithelial-cell,flattened cuboidal ovarian surface epithelial cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_ganglion,ganglion,large-intestine
+https://purl.org/ccf/ASCTB-TEMP_geniculate-ganglion-sparcl1-neuron,geniculate ganglion SPARCL1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_geniculate-ganglion-trpv1-neuron,geniculate ganglion TRPV1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_geniculate-ganglion-vglut2-neuron,geniculate ganglion VGLUT2 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_germinal-center-b-cell-cd21,germinal center B cell CD21,palatine-tonsil
+https://purl.org/ccf/ASCTB-TEMP_glandular-epithelial-cell,glandular epithelial cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_helper-t,helper T,mouth
+https://purl.org/ccf/ASCTB-TEMP_homeostatic-chodrocyte,Homeostatic Chodrocyte,knee
+https://purl.org/ccf/ASCTB-TEMP_inferior-mesenteric-ganglion-sp-neuron,inferior mesenteric ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_inferior-mesenteric-ganglion-th-neuron,inferior mesenteric ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_innate-lymphoid-cell,innate lymphoid cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_interdigitating-dendritic-cells,Interdigitating Dendritic Cells,spleen
+https://purl.org/ccf/ASCTB-TEMP_intermediate-cell-of-bladder-urothelium,intermediate cell of bladder urothelium,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_intermediate-cell-of-ureter-urothelium,intermediate cell of ureter urothelium,ureter
+https://purl.org/ccf/ASCTB-TEMP_intrinsic-cardiac-ganglion-th-neuron,intrinsic cardiac ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_ionocyte,ionocyte,mouth
+https://purl.org/ccf/ASCTB-TEMP_ionocyte-epithelia,ionocyte epithelia,prostate
+https://purl.org/ccf/ASCTB-TEMP_jugular-ganglion-cgrp-neuron,jugular ganglion CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_jugular-ganglion-sp-neuron,jugular ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_jugular-ganglion-sparcl1-neuron,jugular ganglion SPARCL1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_jugular-ganglion-trpv1-neuron,jugular ganglion TRPV1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_jugular-ganglion-trpv2-neuron,jugular ganglion TRPV2 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_junctional-epithelium-cell,junctional epithelium cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_limbal-stem-cells,limbal stem cells,eye
+https://purl.org/ccf/ASCTB-TEMP_lipofibroblast-cell-of-bladder,lipofibroblast cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_lipofibroblast-cell-of-ureter,lipofibroblast cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_low-columnar-cell,Low columnar cell,pancreas
+https://purl.org/ccf/ASCTB-TEMP_lower-airway-ganglion-chat-vip-neuron,lower airway ganglion ChAT/VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-brn3a-neuron,lumbar dorsal root ganglion BRN3A neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-cgrp-neuron,lumbar dorsal root ganglion CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-endothelin-1-neuron,lumbar dorsal root ganglion Endothelin 1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-nav1-7-neuron,lumbar dorsal root ganglion Nav1.7 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-nav1-9-neuron,lumbar dorsal root ganglion Nav1.9 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-nf200-neuron,lumbar dorsal root ganglion NF200 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-peripherin-neuron,lumbar dorsal root ganglion Peripherin neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-piezo2-neuron,lumbar dorsal root ganglion Piezo2 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-ret-neuron,lumbar dorsal root ganglion RET neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-sp-neuron,lumbar dorsal root ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-dorsal-root-ganglion-trpv1-neuron,lumbar dorsal root ganglion TRPV1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-ganglion-npy-neuron,lumbar ganglion NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-ganglion-sst-th-neuron,lumbar ganglion SST/TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-ganglion-th-neuron,lumbar ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-ganglion-th-npy-neuron,lumbar ganglion TH/NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_lumbar-ganglion-vip-neuron,lumbar ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_luminal-epithelial-cell,luminal epithelial cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_lymphatic,lymphatic,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_lymphatics,lymphatics,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_lymphocyte,lymphocyte,uterus
+https://purl.org/ccf/ASCTB-TEMP_macrophage,macrophage,uterus
+https://purl.org/ccf/ASCTB-TEMP_mantle-zone-b-cell,Mantle Zone B Cell,spleen
+https://purl.org/ccf/ASCTB-TEMP_mast-cell,mast cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_middle-cervical-ganglion-dbh-neuron,middle cervical ganglion DBH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_middle-cervical-ganglion-npy-neuron,middle cervical ganglion NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_middle-cervical-ganglion-th-neuron,middle cervical ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_middle-cervical-ganglion-th-npy-neuron,middle cervical ganglion TH/NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_middle-cervical-ganglion-vip-neuron,middle cervical ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_monocyte-derived-cell,Monocyte Derived Cell,kidney
+https://purl.org/ccf/ASCTB-TEMP_mucous-acinar-cell,mucous acinar cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_mural-granulosa-cell,mural granulosa cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_muscle,muscle,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-chat-calr-som-sp-neuron,myenteric ganglion ChAT/CALR/SOM/SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-chat-neuron,myenteric ganglion ChAT neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-nf200-neuron,myenteric ganglion NF200 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-nnos-chat-neuron,myenteric ganglion nNOS/ChAT neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-nnos-neuron,myenteric ganglion nNOS neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-nnos-vip-neuron,myenteric ganglion nNOS/VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-vip-gal-neuron,myenteric ganglion VIP/GAL neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myenteric-ganglion-vip-neuron,myenteric ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_myoepithelial-cell,myoepithelial cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_myofibroblast-cell-of-bladder,myofibroblast cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_myofibroblast-cell-of-ureter,myofibroblast cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_nerve,nerve,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_nerves,nerves,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_nodose-ganglion-p2x3-neuron,nodose ganglion P2X3 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_nodose-ganglion-pvalb-neuron,nodose ganglion PVALB neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_nodose-ganglion-trpv1-neuron,nodose ganglion TRPV1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_nodose-ganglion-trpv2-neuron,nodose ganglion TRPV2 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_otic-ganglion-nnos-neuron,otic ganglion nNOS neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_otic-ganglion-vip-neuron,otic ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_ovarian-nerve-plexus-ganglion-th-neuron,ovarian nerve plexus ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pelvic-ganglion-nnos-neuron,pelvic ganglion nNOS neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pelvic-ganglion-nnos-vacht-neuron,pelvic ganglion nNOS/VAChT neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pelvic-ganglion-nnos-vip-neuron,pelvic ganglion nNOS/VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pelvic-ganglion-npy-vacht-neuron,pelvic ganglion NPY/VAChT neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pelvic-ganglion-th-dbh-neuron,pelvic ganglion TH/DBH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pelvic-ganglion-th-neuron,pelvic ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pelvic-ganglion-vacht-neuron,pelvic ganglion VAChT neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_periacinar-fibroblast,periacinar fibroblast,mouth
+https://purl.org/ccf/ASCTB-TEMP_pericryptal-fibroblastic-sheath,pericryptal fibroblastic sheath,large-intestine
+https://purl.org/ccf/ASCTB-TEMP_pericyte-cell-of-bladder,pericyte cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_pericyte-cell-of-ureter,pericyte cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_periductal-fibroblast,periductal fibroblast,mouth
+https://purl.org/ccf/ASCTB-TEMP_perivascular-support-cell,perivascular support cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_pi16-fibroblast-cell-of-bladder,PI16+ fibroblast cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_pi16-fibroblast-cell-of-ureter,PI16+ fibroblast cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_plasma-cell-cd21,plasma cell CD21,palatine-tonsil
+https://purl.org/ccf/ASCTB-TEMP_pre-antral-follicle-granulosa-cell,pre-antral follicle granulosa cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_prefibrocartilage-chondrocyte,Prefibrocartilage Chondrocyte,knee
+https://purl.org/ccf/ASCTB-TEMP_prehypertrophic-chondrocyte,Prehypertrophic Chondrocyte,knee
+https://purl.org/ccf/ASCTB-TEMP_pterygopalatine-ganglion-nnos-neuron,pterygopalatine ganglion nNOS neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pterygopalatine-ganglion-vip-neuron,pterygopalatine ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_pterygopalatine-ganglion-vip-phi-neuron,pterygopalatine ganglion VIP/PHI neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_regulatory-cd4-t,regulatory CD4+ T,small-intestine
+https://purl.org/ccf/ASCTB-TEMP_regulatory-chondrocyte-1,Regulatory Chondrocyte 1,knee
+https://purl.org/ccf/ASCTB-TEMP_regulatory-chondrocyte-2,Regulatory Chondrocyte 2,knee
+https://purl.org/ccf/ASCTB-TEMP_reparative-chondrocyte,Reparative Chondrocyte,knee
+https://purl.org/ccf/ASCTB-TEMP_reticular-cell-of-splenic-sinusoid,Reticular Cell of splenic sinusoid,spleen
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-brn3a-neuron,sacral dorsal root ganglion BRN3A neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-cgrp-neuron,sacral dorsal root ganglion CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-endothelin-1-neuron,sacral dorsal root ganglion Endothelin 1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-nav1-7-neuron,sacral dorsal root ganglion Nav1.7 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-nav1-9-neuron,sacral dorsal root ganglion Nav1.9 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-nf200-neuron,sacral dorsal root ganglion NF200 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-peripherin-neuron,sacral dorsal root ganglion Peripherin neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-piezo2-neuron,sacral dorsal root ganglion Piezo2 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-ret-neuron,sacral dorsal root ganglion RET neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-sp-neuron,sacral dorsal root ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-dorsal-root-ganglion-trpv1-neuron,sacral dorsal root ganglion TRPV1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_sacral-ganglion-th-neuron,sacral ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_seromucosal-acinar-cell,seromucosal acinar cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_serous-acinar-cell,serous acinar cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_sox9-epithelial-cell,SOX9+ epithelial cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_splenic-littoral-cell,Splenic Littoral Cell,spleen
+https://purl.org/ccf/ASCTB-TEMP_splenic-pericyte,Splenic Pericyte,spleen
+https://purl.org/ccf/ASCTB-TEMP_splenic-perifollicular-zone-macrophage,Splenic perifollicular zone macrophage,spleen
+https://purl.org/ccf/ASCTB-TEMP_splenic-red-pulp-stromal-cell,Splenic Red Pulp Stromal Cell,spleen
+https://purl.org/ccf/ASCTB-TEMP_splenic-smooth-muscle-cell,Splenic Smooth Muscle Cell,spleen
+https://purl.org/ccf/ASCTB-TEMP_splenic-stromal-cell-non-frc-non-fdc-,Splenic Stromal Cell (non-FRC/non-FDC),spleen
+https://purl.org/ccf/ASCTB-TEMP_splenic-stromal-sheath-cell,Splenic Stromal Sheath Cell,spleen
+https://purl.org/ccf/ASCTB-TEMP_stroma-type-i-cell,Stroma Type I cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_stroma-type-ii-cell,Stroma Type II cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_stroma-type-iii-cell,Stroma Type III cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_stroma-type-iv-cell,Stroma Type IV cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_stroma-type-v-cell,Stroma Type V cell,ovary
+https://purl.org/ccf/ASCTB-TEMP_stromal-cell,stromal cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_subcapsular-dendritic-cell,Subcapsular Dendritic Cell,spleen
+https://purl.org/ccf/ASCTB-TEMP_subepithelial-membrane,subepithelial membrane,large-intestine
+https://purl.org/ccf/ASCTB-TEMP_submandibular-ganglion-nnos-neuron,submandibular ganglion nNOS neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_submandibular-ganglion-th-cholinergic-neuron,submandibular ganglion TH cholinergic neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_submandibular-ganglion-vip-phi-neuron,submandibular ganglion VIP/PHI neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superficial-cell-of-bladder-urothelium,superficial cell of bladder urothelium,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_superficial-cell-of-ureter-urothelium,superficial cell of ureter urothelium,ureter
+https://purl.org/ccf/ASCTB-TEMP_superior-cervical-ganglion-cgrp-neuron,superior cervical ganglion CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superior-cervical-ganglion-npy-neuron,superior cervical ganglion NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superior-cervical-ganglion-sst-neuron,superior cervical ganglion SST neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superior-cervical-ganglion-th-dbh-neuron,superior cervical ganglion TH/DBH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superior-cervical-ganglion-th-neuron,superior cervical ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superior-cervical-ganglion-th-npy-neuron,superior cervical ganglion TH/NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superior-cervical-ganglion-vip-neuron,superior cervical ganglion VIP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_superior-mesenteric-ganglion-sp-neuron,superior mesenteric ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_t-cell,T cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_tbet-low-liver-nk-cell,TBet low Liver NK cell,liver
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-brn3a-neuron,thoracic dorsal root ganglion BRN3A neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-cgrp-neuron,thoracic dorsal root ganglion CGRP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-endothelin-1-neuron,thoracic dorsal root ganglion Endothelin 1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-nav1-7-neuron,thoracic dorsal root ganglion Nav1.7 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-nav1-9-neuron,thoracic dorsal root ganglion Nav1.9 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-nf200-neuron,thoracic dorsal root ganglion NF200 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-peripherin-neuron,thoracic dorsal root ganglion Peripherin neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-piezo2-neuron,thoracic dorsal root ganglion Piezo2 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-ret-neuron,thoracic dorsal root ganglion RET neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-sp-neuron,thoracic dorsal root ganglion SP neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-dorsal-root-ganglion-trpv1-neuron,thoracic dorsal root ganglion TRPV1 neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-ganglion-enkephalin-neuron,thoracic ganglion enkephalin neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-ganglion-th-neuron,thoracic ganglion TH neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_thoracic-ganglion-th-npy-neuron,thoracic ganglion TH/NPY neuron,peripheral-nervous-system
+https://purl.org/ccf/ASCTB-TEMP_transitional-principal-intercalated-cell,Transitional principal-intercalated cell,kidney
+https://purl.org/ccf/ASCTB-TEMP_tuft-cell,tuft cell,mouth
+https://purl.org/ccf/ASCTB-TEMP_uterine-dendritic-cells,uterine dendritic cells,uterus
+https://purl.org/ccf/ASCTB-TEMP_uterine-natural-killer-cell,uterine natural killer cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_uterine-smooth-muscle-type-i-cell,uterine smooth muscle type I cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_uterine-smooth-muscle-type-ii-cell,uterine smooth muscle type II cell,uterus
+https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-cell-of-bladder,vascular smooth muscle cell of bladder,urinary-bladder
+https://purl.org/ccf/ASCTB-TEMP_vascular-smooth-muscle-cell-of-ureter,vascular smooth muscle cell of ureter,ureter
+https://purl.org/ccf/ASCTB-TEMP_vestibular-ganglion-sp-neuron,vestibular ganglion SP neuron,peripheral-nervous-system
