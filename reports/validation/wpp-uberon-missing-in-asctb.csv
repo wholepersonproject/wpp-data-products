@@ -1,7 +1,7 @@
 id,label,wpp_tables
-UBERON:0000007,pituitary gland,endocrine-system|male-reproductive-system|female-reproductive-system
+UBERON:0000007,pituitary gland,endocrine-system|female-reproductive-system|male-reproductive-system
 UBERON:0000011,parasympathetic nervous system,nervous-system|urinary-system
-UBERON:0000013,sympathetic nervous system,nervous-system|urinary-system
+UBERON:0000013,sympathetic nervous system,urinary-system|nervous-system
 UBERON:0000033,head,nervous-system
 UBERON:0000043,tendon,fascia-system
 UBERON:0000057,urethra,nervous-system|male-reproductive-system
@@ -23,7 +23,7 @@ UBERON:0000460,major vestibular gland,female-reproductive-system
 UBERON:0000473,testis,male-reproductive-system
 UBERON:0000483,epithelium,integumentary-system
 UBERON:0000913,interstitial fluid,fascia-system
-UBERON:0000949,endocrine system,endocrine-system|urinary-system
+UBERON:0000949,endocrine system,urinary-system|endocrine-system
 UBERON:0000974,neck,nervous-system
 UBERON:0000989,penis,male-reproductive-system
 UBERON:0000997,mammalian vulva,female-reproductive-system
@@ -36,7 +36,7 @@ UBERON:0001091,calcareous tooth,dental-and-craniofacial-system
 UBERON:0001103,diaphragm,nervous-system
 UBERON:0001111,intercostal muscle,pulmonary-system
 UBERON:0001132,parathyroid gland,dental-and-craniofacial-system|endocrine-system|skeletal-system
-UBERON:0001134,skeletal muscle tissue,muscular-system|endocrine-system|female-reproductive-system|nervous-system|male-reproductive-system|pulmonary-system
+UBERON:0001134,skeletal muscle tissue,endocrine-system|nervous-system|female-reproductive-system|male-reproductive-system|muscular-system|pulmonary-system
 UBERON:0001135,smooth muscle tissue,muscular-system
 UBERON:0001143,hepatic vein,cardiovascular-system
 UBERON:0001155,colon,digestive-system
@@ -44,9 +44,9 @@ UBERON:0001160,fundus of stomach,endocrine-system
 UBERON:0001166,pylorus,endocrine-system
 UBERON:0001211,Peyer's patch,immune-and-lymphatic-system
 UBERON:0001212,duodenal gland,endocrine-system
-UBERON:0001235,adrenal cortex,endocrine-system|male-reproductive-system|female-reproductive-system
-UBERON:0001236,adrenal medulla,endocrine-system|female-reproductive-system
-UBERON:0001287,proximal convoluted tubule,dental-and-craniofacial-system|urinary-system|skeletal-system
+UBERON:0001235,adrenal cortex,endocrine-system|female-reproductive-system|male-reproductive-system
+UBERON:0001236,adrenal medulla,female-reproductive-system|endocrine-system
+UBERON:0001287,proximal convoluted tubule,dental-and-craniofacial-system|skeletal-system|urinary-system
 UBERON:0001288,loop of Henle,urinary-system
 UBERON:0001301,epididymis,male-reproductive-system
 UBERON:0001333,male urethra,male-reproductive-system
@@ -68,7 +68,7 @@ UBERON:0001709,upper jaw region,dental-and-craniofacial-system|nervous-system
 UBERON:0001710,lower jaw region,dental-and-craniofacial-system|nervous-system
 UBERON:0001712,upper eyelid,dental-and-craniofacial-system|nervous-system
 UBERON:0001727,taste bud,dental-and-craniofacial-system|nervous-system
-UBERON:0001729,oropharynx,nervous-system|dental-and-craniofacial-system
+UBERON:0001729,oropharynx,dental-and-craniofacial-system|nervous-system
 UBERON:0001737,larynx,nervous-system
 UBERON:0001744,lymphoid tissue,immune-and-lymphatic-system
 UBERON:0001756,middle ear,nervous-system
@@ -82,7 +82,7 @@ UBERON:0001854,saccule of membranous labyrinth,dental-and-craniofacial-system|ne
 UBERON:0001866,sebum,integumentary-system
 UBERON:0001875,globus pallidus,nervous-system
 UBERON:0001886,choroid plexus,nervous-system
-UBERON:0001930,paraventricular nucleus of hypothalamus,female-reproductive-system|endocrine-system|male-reproductive-system
+UBERON:0001930,paraventricular nucleus of hypothalamus,female-reproductive-system|male-reproductive-system|endocrine-system
 UBERON:0001935,ventromedial nucleus of hypothalamus,endocrine-system
 UBERON:0001969,blood plasma,female-reproductive-system
 UBERON:0001997,olfactory epithelium,dental-and-craniofacial-system|nervous-system
@@ -100,7 +100,7 @@ UBERON:0002081,cardiac atrium,cardiovascular-system|endocrine-system
 UBERON:0002082,cardiac ventricle,cardiovascular-system|endocrine-system
 UBERON:0002110,gallbladder,digestive-system
 UBERON:0002196,adenohypophysis,endocrine-system|female-reproductive-system|male-reproductive-system
-UBERON:0002198,neurohypophysis,endocrine-system|female-reproductive-system
+UBERON:0002198,neurohypophysis,female-reproductive-system|endocrine-system
 UBERON:0002204,musculoskeletal system,muscular-system
 UBERON:0002224,thoracic cavity,pulmonary-system
 UBERON:0002242,nucleus pulposus,fascia-system
@@ -112,11 +112,11 @@ UBERON:0002354,cardiac Purkinje fiber,cardiovascular-system
 UBERON:0002362,arachnoid mater,nervous-system
 UBERON:0002363,dura mater,immune-and-lymphatic-system
 UBERON:0002366,bulbo-urethral gland,male-reproductive-system
-UBERON:0002410,autonomic nervous system,muscular-system|nervous-system
+UBERON:0002410,autonomic nervous system,nervous-system|muscular-system
 UBERON:0002411,clitoris,female-reproductive-system
 UBERON:0002418,cartilage tissue,fascia-system
 UBERON:0002450,decidua,immune-and-lymphatic-system
-UBERON:0002481,bone tissue,dental-and-craniofacial-system|endocrine-system|skeletal-system|male-reproductive-system
+UBERON:0002481,bone tissue,skeletal-system|dental-and-craniofacial-system|endocrine-system|male-reproductive-system
 UBERON:0002521,elastic tissue,fascia-system
 UBERON:0002524,mediastinal lymph node,immune-and-lymphatic-system
 UBERON:0002550,anterior hypothalamic region,nervous-system
@@ -234,7 +234,7 @@ UBERON:0013776,skin of palmar/plantar part of autopod,integumentary-system
 UBERON:0014388,kidney collecting duct epithelium,urinary-system
 UBERON:0014931,periungual skin,integumentary-system
 UBERON:0015233,nucleus of dorsal thalamus,nervous-system
-UBERON:0015704,sagittal sinus,cardiovascular-system|nervous-system
+UBERON:0015704,sagittal sinus,nervous-system|cardiovascular-system
 UBERON:0015717,smooth muscle tissue layer of ejaculatory duct,male-reproductive-system
 UBERON:0016403,thoracic wall,pulmonary-system
 UBERON:0016475,skin of forehead,dental-and-craniofacial-system|nervous-system
@@ -245,7 +245,7 @@ UBERON:0018112,rectum smooth muscle tissue,nervous-system
 UBERON:0018391,chemoreceptor,nervous-system
 UBERON:0018649,cardiac muscle tissue of ventricle,cardiovascular-system
 UBERON:0034971,aortic body,pulmonary-system
-UBERON:0035017,nociceptor nerve ending,nervous-system|dental-and-craniofacial-system
+UBERON:0035017,nociceptor nerve ending,dental-and-craniofacial-system|nervous-system
 UBERON:0035018,thermoreceptor,nervous-system
 UBERON:0035198,superficial lymphatic vessel,integumentary-system
 UBERON:0035428,postcapillary venule,integumentary-system

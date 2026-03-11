@@ -75,7 +75,7 @@ UBERON:0001044,saliva-secreting gland,mouth|anatomical-systems
 UBERON:0001062,anatomical entity,
 UBERON:0001064,ventral pancreatic duct,pancreas
 UBERON:0001069,head of pancreas,pancreas
-UBERON:0001070,external carotid artery,palatine-tonsil|blood-vasculature
+UBERON:0001070,external carotid artery,blood-vasculature|palatine-tonsil
 UBERON:0001071,superficial cervical artery,blood-vasculature
 UBERON:0001092,vertebral bone 1,skeleton
 UBERON:0001093,vertebral bone 2,skeleton
@@ -142,7 +142,7 @@ UBERON:0001267,femoral nerve,peripheral-nervous-system
 UBERON:0001270,bony pelvis,
 UBERON:0001272,innominate bone,skeleton
 UBERON:0001279,portal triad,liver
-UBERON:0001281,hepatic sinusoid,liver|blood-vasculature
+UBERON:0001281,hepatic sinusoid,blood-vasculature|liver
 UBERON:0001282,intralobular bile duct,liver
 UBERON:0001284,renal column,kidney
 UBERON:0001285,nephron,kidney
@@ -155,7 +155,7 @@ UBERON:0001303,left fallopian tube,
 UBERON:0001306,cumulus oophorus,ovary
 UBERON:0001308,external iliac artery,blood-vasculature
 UBERON:0001309,internal iliac artery,blood-vasculature
-UBERON:0001310,umbilical artery,placenta|blood-vasculature
+UBERON:0001310,umbilical artery,blood-vasculature|placenta
 UBERON:0001311,inferior vesical artery,blood-vasculature
 UBERON:0001312,superior vesical artery,blood-vasculature
 UBERON:0001313,iliolumbar artery,blood-vasculature
@@ -273,7 +273,7 @@ UBERON:0001588,vertebral vein,blood-vasculature
 UBERON:0001589,internal thoracic vein,blood-vasculature
 UBERON:0001590,pericardiacophrenic vein,blood-vasculature
 UBERON:0001591,thymic vein,thymus|blood-vasculature
-UBERON:0001592,bronchial vein,trachea|blood-vasculature|main-bronchus|lung
+UBERON:0001592,bronchial vein,trachea|main-bronchus|lung|blood-vasculature
 UBERON:0001594,azygos vein,blood-vasculature
 UBERON:0001601,extra-ocular muscle,muscular-system
 UBERON:0001605,ciliary muscle,muscular-system|eye
@@ -393,7 +393,7 @@ UBERON:0001945,superior colliculus,allen-brain
 UBERON:0001946,inferior colliculus,allen-brain
 UBERON:0001947,red nucleus,allen-brain
 UBERON:0001955,epithelium of respiratory bronchiole,lung
-UBERON:0001956,cartilage of bronchus,lung|main-bronchus
+UBERON:0001956,cartilage of bronchus,main-bronchus|lung
 UBERON:0001958,terminal bronchiole epithelium,lung
 UBERON:0001959,white pulp of spleen,spleen
 UBERON:0001960,periarterial lymphatic sheath,spleen
@@ -762,7 +762,7 @@ UBERON:0004515,smooth muscle tissue of bronchiole,lung
 UBERON:0004516,smooth muscle tissue of terminal bronchiole,lung
 UBERON:0004517,smooth muscle tissue of respiratory bronchiole,lung
 UBERON:0004527,alveolar process of maxilla,skeleton
-UBERON:0004536,lymph vasculature,prostate|lymph-vasculature|anatomical-systems
+UBERON:0004536,lymph vasculature,lymph-vasculature|anatomical-systems|prostate
 UBERON:0004537,blood vasculature,blood-vasculature|anatomical-systems|prostate
 UBERON:0004538,left kidney,
 UBERON:0004539,right kidney,
@@ -821,8 +821,8 @@ UBERON:0004760,gland of anal canal,large-intestine
 UBERON:0004766,cranial bone,skeleton
 UBERON:0004791,thymus trabecula,thymus
 UBERON:0004801,cervix epithelium,uterus
-UBERON:0004848,respiratory system arterial endothelium,trachea|lung|main-bronchus
-UBERON:0004849,respiratory system venous endothelium,trachea|lung|main-bronchus
+UBERON:0004848,respiratory system arterial endothelium,trachea|main-bronchus|lung
+UBERON:0004849,respiratory system venous endothelium,trachea|main-bronchus|lung
 UBERON:0004883,lung mesenchyme,lung
 UBERON:0004884,lobar bronchus mesenchyme,lung
 UBERON:0004911,epithelium of female gonad,ovary
@@ -1073,7 +1073,7 @@ UBERON:0009041,superficial circumflex iliac artery,blood-vasculature
 UBERON:0009042,prostatic venous plexus,blood-vasculature
 UBERON:0009048,deep external pudendal vein,blood-vasculature
 UBERON:0009049,superficial external pudendal vein,blood-vasculature
-UBERON:0009091,ascending vasa recta,blood-vasculature|kidney
+UBERON:0009091,ascending vasa recta,kidney|blood-vasculature
 UBERON:0009095,tip of renal papilla,kidney
 UBERON:0009127,epibranchial ganglion,peripheral-nervous-system
 UBERON:0009202,descending vasa recta,kidney|blood-vasculature
@@ -1117,7 +1117,7 @@ UBERON:0010379,superior tarsal muscle,muscular-system
 UBERON:0010395,lymph node primary follicle,lymph-node
 UBERON:0010396,afferent lymphatic vessel,lymph-node
 UBERON:0010399,spleen trabecular artery,spleen|blood-vasculature
-UBERON:0010400,spleen trabecular vein,spleen|blood-vasculature
+UBERON:0010400,spleen trabecular vein,blood-vasculature|spleen
 UBERON:0010401,spleen central arteriole,spleen|blood-vasculature
 UBERON:0010408,ocular angle artery,blood-vasculature
 UBERON:0010420,lymph node germinal center mantle zone,lymph-node
@@ -1210,7 +1210,7 @@ UBERON:0012378,muscle layer of urinary bladder,urinary-bladder
 UBERON:0012398,large intestine smooth muscle circular layer,large-intestine
 UBERON:0012399,large intestine smooth muscle longitudinal layer,large-intestine
 UBERON:0012401,small intestine smooth muscle circular layer,small-intestine
-UBERON:0012416,respiratory system arterial smooth muscle,trachea|lung|main-bronchus
+UBERON:0012416,respiratory system arterial smooth muscle,trachea|main-bronchus|lung
 UBERON:0012418,respiratory system venous smooth muscle,trachea|main-bronchus|lung
 UBERON:0012419,taenia coli,large-intestine
 UBERON:0012441,endothelium of peritubular capillary,kidney
@@ -1447,7 +1447,7 @@ UBERON:8410036,medullary venule of lymph node,lymph-node
 UBERON:8410038,high endothelial venule of lymph node,lymph-node
 UBERON:8410041,venule of lymph node,lymph-node
 UBERON:8410042,arteriole of lymph node,lymph-node
-UBERON:8410043,bronchus submucosal gland,lung|main-bronchus
+UBERON:8410043,bronchus submucosal gland,main-bronchus|lung
 UBERON:8410052,lymph node germinal center light zone,lymph-node
 UBERON:8410053,lymph node germinal center dark zone,lymph-node
 UBERON:8410058,myenteric nerve plexus of colon,peripheral-nervous-system
@@ -1467,8 +1467,8 @@ UBERON:8600000,lobular bronchiole,lung
 UBERON:8600009,subsegmental bronchus,lung
 UBERON:8600010,bronchial submucosal gland ciliated duct,main-bronchus|lung
 UBERON:8600011,tracheal submucosal gland ciliated duct,trachea
-UBERON:8600012,submucosal gland acinus,trachea|lung|main-bronchus
-UBERON:8600013,submucosal gland collecting duct,trachea|lung|main-bronchus
+UBERON:8600012,submucosal gland acinus,lung|trachea|main-bronchus
+UBERON:8600013,submucosal gland collecting duct,trachea|main-bronchus|lung
 UBERON:8600017,bronchopulmonary segment,lung
 UBERON:8600019,placental basal plate,placenta
 UBERON:8600020,placental septum,placenta
@@ -2224,7 +2224,7 @@ http://purl.org/sig/ont/fma/fma38515,Abductor pollicis longus,muscular-system
 http://purl.org/sig/ont/fma/fma38524,Extensor indicis,muscular-system
 http://purl.org/sig/ont/fma/fma38558,Humeral head of pronator teres,muscular-system
 http://purl.org/sig/ont/fma/fma38559,Ulnar head of pronator teres,muscular-system
-http://purl.org/sig/ont/fma/fma3860,Diagonal branch of anterior descending branch of left coronary artery,blood-vasculature|heart
+http://purl.org/sig/ont/fma/fma3860,Diagonal branch of anterior descending branch of left coronary artery,heart|blood-vasculature
 http://purl.org/sig/ont/fma/fma38615,Humeral head of flexor carpi ulnaris,muscular-system
 http://purl.org/sig/ont/fma/fma38616,Ulnar head of flexor carpi ulnaris,muscular-system
 http://purl.org/sig/ont/fma/fma38636,Humero-ulnar head of flexor digitorum superficialis,muscular-system
@@ -2568,10 +2568,10 @@ http://purl.org/sig/ont/fma/fma49809,Posterior septal branch of sphenopalatine a
 http://purl.org/sig/ont/fma/fma49817,Cavernous branch of internal carotid artery,blood-vasculature
 http://purl.org/sig/ont/fma/fma4983,Left seventh posterior intercostal vein,blood-vasculature
 http://purl.org/sig/ont/fma/fma4990,Left sixth posterior intercostal vein,blood-vasculature
-http://purl.org/sig/ont/fma/fma49911,Right inferior pulmonary vein,blood-vasculature|heart
-http://purl.org/sig/ont/fma/fma49913,Left inferior pulmonary vein,blood-vasculature|heart
-http://purl.org/sig/ont/fma/fma49914,Right superior pulmonary vein,blood-vasculature|heart
-http://purl.org/sig/ont/fma/fma49916,Left superior pulmonary vein,blood-vasculature|heart
+http://purl.org/sig/ont/fma/fma49911,Right inferior pulmonary vein,heart|blood-vasculature
+http://purl.org/sig/ont/fma/fma49913,Left inferior pulmonary vein,heart|blood-vasculature
+http://purl.org/sig/ont/fma/fma49914,Right superior pulmonary vein,heart|blood-vasculature
+http://purl.org/sig/ont/fma/fma49916,Left superior pulmonary vein,heart|blood-vasculature
 http://purl.org/sig/ont/fma/fma49962,Anterior ciliary artery,blood-vasculature
 http://purl.org/sig/ont/fma/fma4997,Left fifth posterior intercostal vein,blood-vasculature
 http://purl.org/sig/ont/fma/fma5004,Left fourth posterior intercostal vein,blood-vasculature
@@ -2963,6 +2963,7 @@ http://purl.org/sig/ont/fma/fma65653,Meningeal branch of sixth cervical nerve,pe
 http://purl.org/sig/ont/fma/fma65656,Meningeal branch of seventh cervical nerve,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma65659,Meningeal branch of eighth cervical nerve,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma6567,Coccygeal ganglion,peripheral-nervous-system
+http://purl.org/sig/ont/fma/fma6591,,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma65910,Gray communicating ramus of first lumbar nerve,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma65911,Gray communicating ramus of second lumbar nerve,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma65913,Gray communicating ramus of fourth lumbar nerve,peripheral-nervous-system
@@ -3187,6 +3188,7 @@ http://purl.org/sig/ont/fma/fma7840,Articular facet of tubercle of seventh rib,s
 http://purl.org/sig/ont/fma/fma7842,Angle of seventh rib,skeleton
 http://purl.org/sig/ont/fma/fma7845,Costal groove of seventh rib,skeleton
 http://purl.org/sig/ont/fma/fma78582,Gastric branch of vagus nerve,peripheral-nervous-system
+http://purl.org/sig/ont/fma/fma78594,,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma78648,Medial supraclavicular nerve,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma78651,Intermediate supraclavicular nerve,peripheral-nervous-system
 http://purl.org/sig/ont/fma/fma78654,Lateral supraclavicular nerve,peripheral-nervous-system
@@ -3620,7 +3622,7 @@ https://purl.org/ccf/ASCTB-TEMP_collecting-lymph-trunk-of-lymphatics-of-soft-par
 https://purl.org/ccf/ASCTB-TEMP_columnar-cell-of-endocervix,columnar cell of endocervix,uterus
 https://purl.org/ccf/ASCTB-TEMP_common-facial-vein,common facial vein,blood-vasculature
 https://purl.org/ccf/ASCTB-TEMP_concomitant-wharton-doct-vein,concomitant Wharton doct vein,blood-vasculature
-https://purl.org/ccf/ASCTB-TEMP_connective-tissue,connective tissue,spleen|small-intestine
+https://purl.org/ccf/ASCTB-TEMP_connective-tissue,Connective tissue,small-intestine|spleen
 https://purl.org/ccf/ASCTB-TEMP_connective-tissue-of-the-uterine-serosa,connective tissue of the uterine serosa,uterus
 https://purl.org/ccf/ASCTB-TEMP_connective-tissue-sheath,connective tissue sheath,skin
 https://purl.org/ccf/ASCTB-TEMP_corona-radiata,corona radiata,ovary

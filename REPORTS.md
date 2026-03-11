@@ -86,10 +86,10 @@ SELECT (?s as ?label) (?p as ?count) WHERE { ?s ?p ?o . } LIMIT 0
 | label | count |
 | :--- | :--- |
 | # AS only in WPP | 274 |
-| # AS only in HRA | 4537 |
+| # AS only in HRA | 4539 |
 | # AS in WPP & HRA | 271 |
-| # CT only in HRA | 1210 |
 | # CT only in WPP | 220 |
+| # CT only in HRA | 1211 |
 | # CT in WPP & HRA | 123 |
 
 ## validation
@@ -156,7 +156,7 @@ ORDER BY ?id
 | CL:0000023 | oocyte | female-reproductive-system |
 | CL:0000043 | mature basophil | immune-and-lymphatic-system |
 | CL:0000060 | odontoblast | dental-and-craniofacial-system |
-| CL:0000062 | osteoblast | dental-and-craniofacial-system|endocrine-system|male-reproductive-system|skeletal-system|integumentary-system |
+| CL:0000062 | osteoblast | dental-and-craniofacial-system|endocrine-system|integumentary-system|male-reproductive-system|skeletal-system |
 | ... | ... | ... |
 
 
@@ -200,7 +200,7 @@ WHERE {
       FILTER(STR(?asctb_type) = 'CT')
     }
     
-    ?iri rdfs:label ?label .
+    OPTIONAL { ?iri rdfs:label ?label . }
     BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
     BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?table)
 
@@ -299,7 +299,7 @@ ORDER BY ?id
 | CL:0000034 | stem cell | digestive-system|integumentary-system |
 | CL:0000037 | hematopoietic stem cell | immune-and-lymphatic-system |
 | CL:0000057 | fibroblast | fascia-system |
-| CL:0000066 | epithelial cell | immune-and-lymphatic-system|digestive-system |
+| CL:0000066 | epithelial cell | digestive-system|immune-and-lymphatic-system |
 | CL:0000084 | T cell | integumentary-system|immune-and-lymphatic-system |
 | ... | ... | ... |
 
@@ -845,9 +845,9 @@ ORDER BY ?id
 
 | id | label | wpp_tables |
 | :--- | :--- | :--- |
-| UBERON:0000007 | pituitary gland | endocrine-system|male-reproductive-system|female-reproductive-system |
+| UBERON:0000007 | pituitary gland | endocrine-system|female-reproductive-system|male-reproductive-system |
 | UBERON:0000011 | parasympathetic nervous system | nervous-system|urinary-system |
-| UBERON:0000013 | sympathetic nervous system | nervous-system|urinary-system |
+| UBERON:0000013 | sympathetic nervous system | urinary-system|nervous-system |
 | UBERON:0000033 | head | nervous-system |
 | UBERON:0000043 | tendon | fascia-system |
 | ... | ... | ... |
@@ -893,7 +893,7 @@ WHERE {
       FILTER(STR(?asctb_type) = 'AS')
     }
     
-    ?iri rdfs:label ?label .
+    OPTIONAL { ?iri rdfs:label ?label . }
     BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
     BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?table)
 

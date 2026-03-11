@@ -3,36 +3,36 @@ CL:0000019,sperm,male-reproductive-system
 CL:0000023,oocyte,female-reproductive-system
 CL:0000043,mature basophil,immune-and-lymphatic-system
 CL:0000060,odontoblast,dental-and-craniofacial-system
-CL:0000062,osteoblast,dental-and-craniofacial-system|endocrine-system|male-reproductive-system|skeletal-system|integumentary-system
+CL:0000062,osteoblast,dental-and-craniofacial-system|endocrine-system|integumentary-system|male-reproductive-system|skeletal-system
 CL:0000067,ciliated epithelial cell,immune-and-lymphatic-system
 CL:0000081,blood cell,immune-and-lymphatic-system
 CL:0000083,epithelial cell of pancreas,digestive-system
-CL:0000092,osteoclast,dental-and-craniofacial-system|endocrine-system|skeletal-system|male-reproductive-system
+CL:0000092,osteoclast,dental-and-craniofacial-system|endocrine-system|male-reproductive-system|skeletal-system
 CL:0000098,sensory epithelial cell,integumentary-system
-CL:0000107,autonomic neuron,nervous-system|immune-and-lymphatic-system|integumentary-system|muscular-system
+CL:0000107,autonomic neuron,muscular-system|nervous-system|immune-and-lymphatic-system|integumentary-system
 CL:0000117,CNS neuron (sensu Vertebrata),immune-and-lymphatic-system
 CL:0000118,basket cell,immune-and-lymphatic-system
 CL:0000131,gut endothelial cell,immune-and-lymphatic-system
-CL:0000134,mesenchymal stem cell,integumentary-system|immune-and-lymphatic-system
+CL:0000134,mesenchymal stem cell,immune-and-lymphatic-system|integumentary-system
 CL:0000137,osteocyte,dental-and-craniofacial-system|endocrine-system|skeletal-system
 CL:0000145,professional antigen presenting cell,immune-and-lymphatic-system
 CL:0000151,secretory cell,digestive-system|integumentary-system
 CL:0000155,peptic cell,digestive-system
 CL:0000160,goblet cell,digestive-system
-CL:0000162,parietal cell,digestive-system|endocrine-system
+CL:0000162,parietal cell,endocrine-system|digestive-system
 CL:0000166,chromaffin cell,endocrine-system
 CL:0000178,Leydig cell,immune-and-lymphatic-system|male-reproductive-system
 CL:0000198,pain receptor cell,fascia-system
 CL:0000202,auditory hair cell,dental-and-craniofacial-system|nervous-system
-CL:0000207,olfactory receptor cell,nervous-system|dental-and-craniofacial-system
-CL:0000210,photoreceptor cell,nervous-system|dental-and-craniofacial-system
+CL:0000207,olfactory receptor cell,dental-and-craniofacial-system|nervous-system
+CL:0000210,photoreceptor cell,dental-and-craniofacial-system|nervous-system
 CL:0000216,Sertoli cell,immune-and-lymphatic-system|male-reproductive-system
 CL:0000237,keratinizing barrier epithelial cell,immune-and-lymphatic-system
 CL:0000338,neuroblast (sensu Nematoda and Protostomia),immune-and-lymphatic-system
 CL:0000346,hair follicle dermal papilla cell,integumentary-system
 CL:0000388,tendon cell,fascia-system
 CL:0000446,chief cell of parathyroid gland,dental-and-craniofacial-system|endocrine-system|skeletal-system
-CL:0000448,white adipocyte,endocrine-system|male-reproductive-system|female-reproductive-system
+CL:0000448,white adipocyte,endocrine-system|female-reproductive-system|male-reproductive-system
 CL:0000470,digestive enzyme secreting cell,digestive-system
 CL:0000501,granulosa cell,female-reproductive-system
 CL:0000504,enterochromaffin-like cell,digestive-system
@@ -133,7 +133,7 @@ CL:0002466,small intestine serosal dendritic cell,immune-and-lymphatic-system
 CL:0002496,intraepithelial lymphocyte,immune-and-lymphatic-system
 CL:0002502,type M enteroendocrine cell,endocrine-system
 CL:0002518,kidney epithelial cell,urinary-system
-CL:0002551,fibroblast of dermis,endocrine-system|male-reproductive-system|female-reproductive-system
+CL:0002551,fibroblast of dermis,endocrine-system|female-reproductive-system|male-reproductive-system
 CL:0002559,hair follicle cell,integumentary-system
 CL:0002560,inner root sheath cell,integumentary-system
 CL:0002561,outer root sheath cell,integumentary-system
@@ -141,7 +141,7 @@ CL:0002563,intestinal epithelial cell,immune-and-lymphatic-system
 CL:0002600,smooth muscle cell of trachea,pulmonary-system
 CL:0005018,ghrelin secreting cell,endocrine-system
 CL:0007011,enteric neuron,immune-and-lymphatic-system
-CL:0008002,skeletal muscle fiber,endocrine-system|nervous-system|male-reproductive-system|muscular-system|female-reproductive-system
+CL:0008002,skeletal muscle fiber,muscular-system|endocrine-system|nervous-system|female-reproductive-system|male-reproductive-system
 CL:0008038,alpha motor neuron,nervous-system
 CL:0008039,lower motor neuron,nervous-system|muscular-system
 CL:0009005,salivary gland cell,digestive-system
@@ -152,7 +152,7 @@ CL:0009101,fibroblastic reticular cell,immune-and-lymphatic-system
 CL:0009102,lymph node fibroblastic reticular cell,immune-and-lymphatic-system
 CL:0011003,magnocellular neurosecretory cell,endocrine-system
 CL:0011012,neural crest cell,integumentary-system
-CL:0011017,vagal neural crest cell,pulmonary-system|digestive-system
+CL:0011017,vagal neural crest cell,digestive-system|pulmonary-system
 CL:0011018,lymphoid tissue–inducer cell,immune-and-lymphatic-system
 CL:0011024,double negative T regulatory cell,immune-and-lymphatic-system
 CL:0011026,progenitor cell,integumentary-system
@@ -176,7 +176,7 @@ CL:1000891,kidney arterial blood vessel cell,urinary-system
 CL:1000909,kidney loop of Henle epithelial cell,urinary-system
 CL:1001006,kidney afferent arteriole cell,cardiovascular-system|endocrine-system
 CL:1001451,sensory neuron of dorsal root ganglion,nervous-system
-CL:1001505,parvocellular neurosecretory cell,female-reproductive-system|endocrine-system|male-reproductive-system
+CL:1001505,parvocellular neurosecretory cell,endocrine-system|female-reproductive-system|male-reproductive-system
 CL:1001517,stomach enteroendocrine cell,immune-and-lymphatic-system
 CL:1001567,lung endothelial cell,pulmonary-system
 CL:1001572,colon endothelial cell,immune-and-lymphatic-system
@@ -189,7 +189,7 @@ CL:1001602,cerebral cortex endothelial cell,integumentary-system
 CL:1001610,bone marrow hematopoietic cell,immune-and-lymphatic-system
 CL:2000002,decidual cell,female-reproductive-system
 CL:2000010,dermis blood vessel endothelial cell,integumentary-system
-CL:2000011,dermis lymphatic vessel endothelial cell,integumentary-system|immune-and-lymphatic-system
+CL:2000011,dermis lymphatic vessel endothelial cell,immune-and-lymphatic-system|integumentary-system
 CL:2000021,sebaceous gland cell,integumentary-system
 CL:2000030,hypothalamus cell,immune-and-lymphatic-system
 CL:2000055,liver dendritic cell,immune-and-lymphatic-system|digestive-system

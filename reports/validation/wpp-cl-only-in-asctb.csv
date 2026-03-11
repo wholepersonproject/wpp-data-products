@@ -7,7 +7,7 @@ CL:0000049,common myeloid progenitor,bone-marrow
 CL:0000050,megakaryocyte-erythroid progenitor cell,bone-marrow
 CL:0000051,common lymphoid progenitor,bone-marrow
 CL:0000065,ependymal cell,spinal-cord|allen-brain
-CL:0000071,blood vessel endothelial cell,heart|blood-vasculature|placenta|prostate|thymus|lymph-node|palatine-tonsil
+CL:0000071,blood vessel endothelial cell,blood-vasculature|heart|lymph-node|palatine-tonsil|placenta|prostate|thymus
 CL:0000075,columnar/cuboidal epithelial cell,pancreas|liver
 CL:0000077,mesothelial cell,small-intestine|heart
 CL:0000091,Kupffer cell,liver
@@ -26,11 +26,11 @@ CL:0000188,cell of skeletal muscle,muscular-system|large-intestine
 CL:0000212,obsolete absorptive cell,small-intestine
 CL:0000240,stratified squamous epithelial cell,large-intestine
 CL:0000241,stratified cuboidal epithelial cell,liver
-CL:0000242,Merkel cell,skin|large-intestine|mouth
+CL:0000242,Merkel cell,skin|mouth|large-intestine
 CL:0000244,transitional epithelial cell,large-intestine
 CL:0000287,eye photoreceptor cell,eye
 CL:0000317,sebocyte,skin|large-intestine
-CL:0000359,vascular associated smooth muscle cell,blood-vasculature|heart|skin|large-intestine|prostate|placenta
+CL:0000359,vascular associated smooth muscle cell,skin|blood-vasculature|prostate|placenta|heart|large-intestine
 CL:0000402,obsolete CNS interneuron,allen-brain
 CL:0000432,reticular cell,palatine-tonsil
 CL:0000434,eccrine cell,large-intestine
@@ -48,8 +48,8 @@ CL:0000576,monocyte,thymus|kidney|fallopian-tube|bone-marrow|blood-pelvis|allen-
 CL:0000577,type EC enteroendocrine cell,pancreas
 CL:0000604,retinal rod cell,eye
 CL:0000617,GABAergic neuron,allen-brain
-CL:0000623,natural killer cell,spleen|small-intestine|skin|lymph-node|lung|liver|kidney|thymus|mouth|heart|fallopian-tube|allen-brain
-CL:0000624,"CD4-positive, alpha-beta T cell",palatine-tonsil|liver|fallopian-tube
+CL:0000623,natural killer cell,small-intestine|skin|spleen|thymus|kidney|heart|fallopian-tube|mouth|lung|liver|lymph-node|allen-brain
+CL:0000624,"CD4-positive, alpha-beta T cell",fallopian-tube|liver|palatine-tonsil
 CL:0000636,Mueller cell,eye
 CL:0000644,Bergmann glial cell,allen-brain
 CL:0000654,primary oocyte,ovary
@@ -65,9 +65,9 @@ CL:0000750,OFF-bipolar cell,eye
 CL:0000767,basophil,lung|bone-marrow|blood-pelvis
 CL:0000793,"CD4-positive, alpha-beta intraepithelial T cell",large-intestine
 CL:0000796,"CD8-alpha-beta-positive, alpha-beta intraepithelial T cell",large-intestine
-CL:0000798,gamma-delta T cell,spleen|lymph-node|liver|thymus
+CL:0000798,gamma-delta T cell,spleen|thymus|liver|lymph-node
 CL:0000802,"CD8-alpha alpha positive, gamma-delta intraepithelial T cell",large-intestine
-CL:0000815,regulatory T cell,spleen|skin|placenta|large-intestine|palatine-tonsil|lymph-node|lung|kidney|mouth|bone-marrow|blood-pelvis
+CL:0000815,regulatory T cell,skin|spleen|placenta|kidney|mouth|lung|palatine-tonsil|lymph-node|large-intestine|bone-marrow|blood-pelvis
 CL:0000818,transitional stage B cell,spleen|bone-marrow|blood-pelvis
 CL:0000824,mature natural killer cell,bone-marrow|blood-pelvis
 CL:0000836,promyelocyte,bone-marrow
@@ -77,15 +77,15 @@ CL:0000840,immature conventional dendritic cell,bone-marrow|blood-pelvis
 CL:0000860,classical monocyte,lung
 CL:0000872,splenic marginal zone macrophage,spleen
 CL:0000874,splenic red pulp macrophage,spleen
-CL:0000875,non-classical monocyte,lung|kidney
+CL:0000875,non-classical monocyte,kidney|lung
 CL:0000876,splenic white pulp macrophage,spleen
 CL:0000877,splenic tingible body macrophage,spleen
 CL:0000882,thymic medullary macrophage,thymus
 CL:0000883,thymic cortical macrophage,thymus
 CL:0000888,lymph node tingible body macrophage,lymph-node
-CL:0000897,"CD4-positive, alpha-beta memory T cell",spleen|lymph-node|thymus|bone-marrow|blood-pelvis
-CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",spleen|lymph-node|lung|bone-marrow|blood-pelvis
-CL:0000910,cytotoxic T cell,skin|placenta|large-intestine|lymph-node|kidney
+CL:0000897,"CD4-positive, alpha-beta memory T cell",spleen|thymus|lymph-node|bone-marrow|blood-pelvis
+CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",spleen|lung|lymph-node|bone-marrow|blood-pelvis
+CL:0000910,cytotoxic T cell,skin|placenta|kidney|lymph-node|large-intestine
 CL:0000913,"effector memory CD8-positive, alpha-beta T cell",lung|bone-marrow
 CL:0000915,"CD8-alpha-alpha-positive, alpha-beta intraepithelial T cell",large-intestine
 CL:0000921,type I NK T cell,liver
@@ -93,19 +93,19 @@ CL:0000934,"CD4-positive, alpha-beta cytotoxic T cell",thymus
 CL:0000935,"CD4-negative, CD8-negative, alpha-beta intraepithelial T cell",large-intestine
 CL:0000936,early lymphoid progenitor,bone-marrow
 CL:0000938,"CD16-negative, CD56-bright natural killer cell, human",lung|bone-marrow|blood-pelvis
-CL:0000940,mucosal-associated invariant T cell,lung|thymus
+CL:0000940,mucosal-associated invariant T cell,thymus|lung
 CL:0000942,thymic plasmacytoid dendritic cell,thymus
 CL:0000970,unswitched memory B cell,thymus
-CL:0000972,class switched memory B cell,thymus|spleen
+CL:0000972,class switched memory B cell,spleen|thymus
 CL:0001035,bone cell,skeleton
 CL:0001054,CD14-positive monocyte,bone-marrow|blood-pelvis
 CL:0001055,"CD14-positive, CD16-low monocyte",spleen
-CL:0001056,"dendritic cell, human",spleen|liver|kidney|bone-marrow|heart|blood-pelvis
-CL:0001058,"plasmacytoid dendritic cell, human",spleen|lymph-node|kidney|bone-marrow|blood-pelvis
+CL:0001056,"dendritic cell, human",spleen|kidney|liver|heart|bone-marrow|blood-pelvis
+CL:0001058,"plasmacytoid dendritic cell, human",spleen|kidney|lymph-node|bone-marrow|blood-pelvis
 CL:0001062,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",bone-marrow|blood-pelvis
 CL:0001067,group 1 innate lymphoid cell,skin
 CL:0001070,beige adipocyte,thymus
-CL:0001078,"group 3 innate lymphoid cell, human",spleen|thymus
+CL:0001078,"group 3 innate lymphoid cell, human",thymus|spleen
 CL:0001087,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",bone-marrow|blood-pelvis
 CL:0001203,"CD8-positive, alpha-beta memory T cell, CD45RO-positive",liver
 CL:0002042,"immature NK T cell stage IV, mouse",large-intestine
@@ -115,8 +115,8 @@ CL:0002068,Purkinje myocyte,heart
 CL:0002079,pancreatic ductal cell,pancreas
 CL:0002080,pancreatic centro-acinar cell,pancreas
 CL:0002095,hilus cell of ovary,ovary
-CL:0002138,endothelial cell of lymphatic vessel,placenta|large-intestine|lymph-vasculature|lymph-node|liver|kidney|thymus|prostate|heart|spleen|skin
-CL:0002144,capillary endothelial cell,large-intestine|prostate|blood-vasculature|heart
+CL:0002138,endothelial cell of lymphatic vessel,skin|spleen|thymus|lymph-vasculature|large-intestine|kidney|heart|liver|lymph-node|placenta|prostate
+CL:0002144,capillary endothelial cell,prostate|large-intestine|blood-vasculature|heart
 CL:0002145,multiciliated columnar cell of tracheobronchial tree,trachea
 CL:0002153,corneocyte,skin
 CL:0002193,myelocyte,bone-marrow
@@ -132,15 +132,15 @@ CL:0002275,pancreatic PP cell,pancreas
 CL:0002303,pigmented ciliary epithelial cell,eye
 CL:0002304,non-pigmented ciliary epithelial cell,eye
 CL:0002329,basal epithelial cell of tracheobronchial tree,lung
-CL:0002332,multiciliated epithelial cell of the bronchus,main-bronchus|lung
+CL:0002332,multiciliated epithelial cell of the bronchus,lung|main-bronchus
 CL:0002341,basal cell of prostate epithelium,prostate
 CL:0002343,"decidual natural killer cell, human",placenta
 CL:0002350,endocardial cell,heart
 CL:0002363,keratocyte,eye
 CL:0002364,cortical thymic epithelial cell,thymus
-CL:0002394,CD141-positive myeloid dendritic cell,spleen|lymph-node|lung|blood-pelvis
+CL:0002394,CD141-positive myeloid dendritic cell,spleen|lung|lymph-node|blood-pelvis
 CL:0002396,"CD14-low, CD16-positive monocyte",bone-marrow|blood-pelvis
-CL:0002399,CD1c-positive myeloid dendritic cell,spleen|lymph-node|liver|lung|blood-pelvis
+CL:0002399,CD1c-positive myeloid dendritic cell,spleen|lung|liver|lymph-node|blood-pelvis
 CL:0002410,pancreatic stellate cell,pancreas
 CL:0002453,oligodendrocyte precursor cell,spinal-cord|allen-brain
 CL:0002457,epidermal Langerhans cell,skin
@@ -148,7 +148,7 @@ CL:0002460,CD8-alpha-negative thymic conventional dendritic cell,thymus
 CL:0002483,hair follicle melanocyte,skin
 CL:0002521,subcutaneous adipocyte,skin
 CL:0002536,epithelial cell of amnion,placenta
-CL:0002543,vein endothelial cell,blood-vasculature|spleen|large-intestine|liver|prostate
+CL:0002543,vein endothelial cell,spleen|prostate|blood-vasculature|liver|large-intestine
 CL:0002557,fibroblast of pulmonary artery,lung
 CL:0002558,fibroblast of villous mesenchyme,placenta
 CL:0002568,mesenchymal stem cell of Wharton's jelly,placenta
@@ -158,7 +158,7 @@ CL:0002586,retinal pigment epithelial cell,eye
 CL:0002591,smooth muscle cell of the pulmonary artery,lung
 CL:0002592,smooth muscle cell of the coronary artery,heart
 CL:0002597,smooth muscle cell of bladder,urinary-bladder
-CL:0002598,bronchial smooth muscle cell,main-bronchus|lung
+CL:0002598,bronchial smooth muscle cell,lung|main-bronchus
 CL:0002604,hippocampal astrocyte,allen-brain
 CL:0002605,astrocyte of the cerebral cortex,allen-brain
 CL:0002619,adult endothelial progenitor cell,lung
@@ -169,6 +169,7 @@ CL:0005019,pancreatic epsilon cell,pancreas
 CL:0008019,mesenchymal cell,fallopian-tube
 CL:0008024,pancreatic endocrine cell,pancreas
 CL:0008034,mural cell,eye
+CL:0008034A,,spleen
 CL:0008036,extravillous trophoblast,placenta
 CL:0009009,paneth cell of colon,large-intestine
 CL:0009011,transit amplifying cell of colon,large-intestine
@@ -205,7 +206,7 @@ CL:0009112,centroblast,lymph-node
 CL:0009113,T follicular regulatory cell,spleen|lymph-node
 CL:0009114,monocytoid B cell,lymph-node
 CL:0009115,lymph node lymphatic vessel endothelial cell,prostate
-CL:0010008,cardiac endothelial cell,heart|blood-vasculature
+CL:0010008,cardiac endothelial cell,blood-vasculature|heart
 CL:0010012,cerebral cortex neuron,allen-brain
 CL:0011004,lens fiber cell,eye
 CL:0011005,GABAergic interneuron,allen-brain
@@ -214,11 +215,11 @@ CL:0012001,neuron of the forebrain,allen-brain
 CL:0017000,pulmonary ionocyte,lung|main-bronchus
 CL:0017002,prostate neuroendocrine cell,prostate
 CL:0017011,hillock cell of prostatic urethral epithelium,prostate
-CL:0019002,tracheobronchial chondrocyte,trachea|main-bronchus|lung
+CL:0019002,tracheobronchial chondrocyte,trachea|lung|main-bronchus
 CL:0019003,tracheobronchial goblet cell,lung
 CL:0019015,lung parenchyma resident eosinophil,lung
 CL:0019017,lymphatic vessel smooth muscle cell,lymph-node
-CL:0019018,blood vessel smooth muscle cell,lung|liver|kidney|trachea|main-bronchus
+CL:0019018,blood vessel smooth muscle cell,trachea|kidney|main-bronchus|lung|liver
 CL:0019019,tracheobronchial smooth muscle cell,trachea|lung
 CL:0019026,periportal region hepatocyte,liver
 CL:0019028,midzonal region hepatocyte,liver
@@ -250,8 +251,8 @@ CL:1000350,basal cell of epithelium of terminal bronchiole,lung
 CL:1000351,basal cell of epithelium of respiratory bronchiole,lung
 CL:1000352,basal cell of epithelium of lobular bronchiole,lung
 CL:1000398,endothelial cell of hepatic sinusoid,liver
-CL:1000412,endothelial cell of arteriole,large-intestine|blood-vasculature
-CL:1000413,endothelial cell of artery,blood-vasculature|heart|spleen|lung|liver|prostate|trachea|main-bronchus
+CL:1000412,endothelial cell of arteriole,blood-vasculature|large-intestine
+CL:1000413,endothelial cell of artery,blood-vasculature|heart|spleen|trachea|prostate|main-bronchus|lung|liver
 CL:1000414,endothelial cell of venule,large-intestine|blood-vasculature
 CL:1000452,parietal epithelial cell,kidney
 CL:1000457,mesothelial cell of visceral peritoneum,large-intestine
@@ -306,7 +307,7 @@ CL:4023011,lamp5 GABAergic cortical interneuron,allen-brain
 CL:4023012,near-projecting glutamatergic cortical neuron,allen-brain
 CL:4023013,corticothalamic-projecting glutamatergic cortical neuron,allen-brain
 CL:4023016,VIP GABAergic cortical interneuron,allen-brain
-CL:4023017,sst GABAergic cortical interneuron,allen-brain
+CL:4023017,sst GABAergic interneuron,allen-brain
 CL:4023035,lateral ganglionic eminence derived neuron,allen-brain
 CL:4023038,L6b glutamatergic cortical neuron,allen-brain
 CL:4023039,amygdala excitatory neuron,allen-brain
@@ -316,7 +317,7 @@ CL:4023060,hippocampal CA1-3 neuron,allen-brain
 CL:4023061,hippocampal CA4 neuron,allen-brain
 CL:4023062,dentate gyrus neuron,allen-brain
 CL:4023063,medial ganglionic eminence derived interneuron,allen-brain
-CL:4023064,caudal ganglionic eminence derived cortical interneuron,allen-brain
+CL:4023064,caudal ganglionic eminence derived interneuron,allen-brain
 CL:4023068,thalamic excitatory neuron,allen-brain
 CL:4023072,brain vascular cell,allen-brain
 CL:4023074,mammillary body neuron,allen-brain
@@ -354,21 +355,21 @@ CL:4030052,nucleus accumbens shell and olfactory tubercle D2 medium spiny neuron
 CL:4030053,Island of Calleja granule cell,allen-brain
 CL:4030054,D1-NUDAP medium spiny neuron,allen-brain
 CL:4032000,club-like cell of the urethral epithelium,prostate
-CL:4033003,myoepithelial cell of bronchus submucosal gland,main-bronchus|lung
+CL:4033003,myoepithelial cell of bronchus submucosal gland,lung|main-bronchus
 CL:4033005,serous secreting cell of bronchus submucosal gland,lung
-CL:4033007,brush cell of epithelium of lobar bronchus,main-bronchus|lung
-CL:4033008,vein endothelial cell of respiratory system,lung|trachea|main-bronchus
-CL:4033009,goblet cell of epithelium of lobar bronchus,main-bronchus|lung
-CL:4033010,neuroendocrine cell of epithelium of lobar bronchus,main-bronchus|lung
+CL:4033007,brush cell of epithelium of lobar bronchus,lung|main-bronchus
+CL:4033008,vein endothelial cell of respiratory system,trachea|lung|main-bronchus
+CL:4033009,goblet cell of epithelium of lobar bronchus,lung|main-bronchus
+CL:4033010,neuroendocrine cell of epithelium of lobar bronchus,lung|main-bronchus
 CL:4033014,peg cell,fallopian-tube
 CL:4033016,secondary crest myofibroblast,lung
 CL:4033017,bronchiolar smooth muscle cell,lung
 CL:4033018,lung megakaryocyte,lung
 CL:4033020,mucus secreting cell of trachea gland,trachea
 CL:4033021,myoepithelial cell of trachea gland,trachea
-CL:4033022,mucus secreting cell of bronchus submucosal gland,main-bronchus|lung
-CL:4033023,airway submucosal gland collecting duct epithelial cell,trachea|main-bronchus|lung
-CL:4033024,airway submucosal gland duct basal cell,lung|trachea|main-bronchus
+CL:4033022,mucus secreting cell of bronchus submucosal gland,lung|main-bronchus
+CL:4033023,airway submucosal gland collecting duct epithelial cell,trachea|lung|main-bronchus
+CL:4033024,airway submucosal gland duct basal cell,main-bronchus|trachea|lung
 CL:4033025,perichondrial fibroblast,trachea
 CL:4033026,lung perichondrial fibroblast,lung
 CL:4033038,"lung resident memory CD4-positive, alpha-beta T cell",lung
@@ -379,7 +380,7 @@ CL:4033044,deuterosomal cell,lung|main-bronchus
 CL:4033045,lung migratory dendritic cell,lung
 CL:4033048,respiratory tract suprabasal cell,lung|main-bronchus
 CL:4033050,catecholaminergic neuron,spleen
-CL:4033055,airway submucosal gland duct multiciliated cell,main-bronchus|lung
+CL:4033055,airway submucosal gland duct multiciliated cell,lung|main-bronchus
 CL:4033062,interstitial extravillous trophoblast cell,placenta
 CL:4033063,endovascular extravillous trophoblast cell,placenta
 CL:4033064,uterine resident macrophage,placenta
