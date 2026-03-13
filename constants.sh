@@ -1,7 +1,7 @@
 export DEFAULT_PURL_IRI="https://purl.wholepersonphysiome.org/"
-export DEFAULT_LOD_IRI="https://wholepersonproject.github.io/wpp-kg/"
-export DEFAULT_CDN_IRI="https://wholepersonproject.github.io/wpp-kg/"
-export CDN_S3_BUCKET=""
+export DEFAULT_LOD_IRI="https://kg.wholepersonphysiome.org/"
+export DEFAULT_CDN_IRI="https://cdn.wholepersonphysiome.org/digital-objects/"
+export CDN_S3_BUCKET="s3://cdn-whole-person-physiome/data-products/"
 
 export BLAZEGRAPH_DB="blazegraph.jnl"
 export OUTPUT_DIR="docs"

@@ -2,13 +2,13 @@
 
 ## WPP KG
 
-[Click Here](https://wholepersonproject.github.io/wpp-kg/) to browse the current WPP KG.
+Go to <https://kg.wholepersonphysiome.org> to browse the current WPP KG.
 
 ## WPP KG in RDF Glance
 
-![WPP metagraph in RDF Glance](metagraph.png)
+<img src="metagraph.png" alt="WPP metagraph in RDF Glance" style="width: 100%;">
 
-[Click Here](https://xdobry.github.io/rdfglance/?url=https://wholepersonproject.github.io/wpp-kg/collection/wpp/draft/graph.ttl) to browse the [latest WPP draft](https://wholepersonproject.github.io/wpp-kg/collection/wpp/draft/) in RDF Glance. 
+[Click Here](https://xdobry.github.io/rdfglance/?url=https://cdn.wholepersonphysiome.org/digital-objects/collection/wpp/draft/graph.ttl) to browse the [latest WPP draft](https://purl.wholepersonphysiome.org/collection/wpp/draft) in RDF Glance. 
 
 ## Visualizations
 
@@ -17,4 +17,4 @@
 
 ## Reports
 
-[REPORTS.md](https://github.com/wholepersonproject/wpp-data-products/blob/gh-pages/REPORTS.md) includes a report of all the reports generated as part of the HRAlit generation process. It shows the SPARQL queries used, output, and associated documentation.
+The [reports page](reports.html) includes a report of all the reports generated as part of the WPP data products generation process. It shows the SPARQL queries used, output, and associated documentation.
