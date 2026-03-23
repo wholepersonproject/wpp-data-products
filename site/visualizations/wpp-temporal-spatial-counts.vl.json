@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://wholepersonproject.github.io/wpp-data-products/reports/validation/wpp-temporal-spatial-counts.csv"
+    "url": "https://cdn.wholepersonphysiome.org/data-products/reports/validation/wpp-temporal-spatial-counts.csv"
   },
   "width": "container",
   "height": "container",
