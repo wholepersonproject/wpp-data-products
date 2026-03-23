@@ -1,0 +1,20 @@
+id,label,fields,wpp_tables
+UBERON:0000006,islet of Langerhans,effector_location,endocrine-system
+UBERON:0000412,dermal papilla,effector_location|effector,integumentary-system
+UBERON:0000941,cranial nerve II,effector,dental-and-craniofacial-system|nervous-system
+UBERON:0000966,retina,effector_location,dental-and-craniofacial-system|nervous-system
+UBERON:0001263,pancreatic acinus,effector_location,endocrine-system
+UBERON:0001291,thick ascending limb of loop of Henle,effector_location,urinary-system
+UBERON:0001292,distal convoluted tubule,effector_location,dental-and-craniofacial-system|endocrine-system|skeletal-system|urinary-system
+UBERON:0001736,submandibular gland,effector,dental-and-craniofacial-system|nervous-system
+UBERON:0001769,iris,effector_location,dental-and-craniofacial-system|nervous-system
+UBERON:0001831,parotid gland,effector,dental-and-craniofacial-system|nervous-system
+UBERON:0001832,sublingual gland,effector,dental-and-craniofacial-system|nervous-system
+UBERON:0001992,papillary layer of dermis,effector|effector_location,integumentary-system
+UBERON:0002073,hair follicle,effector|effector_location,integumentary-system
+UBERON:0002299,alveolus of lung,effector,female-reproductive-system|nervous-system|pulmonary-system
+UBERON:0002303,juxtaglomerular apparatus,effector_location,cardiovascular-system|endocrine-system|urinary-system
+UBERON:0004134,proximal tubule,effector_location,skeletal-system|cardiovascular-system|dental-and-craniofacial-system|endocrine-system
+UBERON:0004179,prostate glandular acinus,effector_location,male-reproductive-system
+UBERON:0004647,liver lobule,effector_location,endocrine-system
+UBERON:0010753,lymph node secondary follicle,effector_location,immune-and-lymphatic-system
