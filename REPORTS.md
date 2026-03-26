@@ -6,6 +6,8 @@
   * [named graphs and number of tuples (named-graphs)](#named-graphs)
 * validation
   * [WPP and HRA ASCT+B shared terminology summary table (wpp-asctb-terminology-summary)](#wpp-asctb-terminology-summary)
+  * [CL IDs in WPP that are not in ASCT+B but have a less specific term there (wpp-cl-missing-but-less-specific-in-asctb)](#wpp-cl-missing-but-less-specific-in-asctb)
+  * [CL IDs in WPP that are not in ASCT+B but have a more specific term there (wpp-cl-missing-but-more-specific-in-asctb)](#wpp-cl-missing-but-more-specific-in-asctb)
   * [CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)](#wpp-cl-missing-in-asctb)
   * [CL IDs in ASCT+B that are not in WPP tables (wpp-cl-only-in-asctb)](#wpp-cl-only-in-asctb)
   * [CL IDs in WPP that are in ASCT+B (wpp-cl-present-in-asctb)](#wpp-cl-present-in-asctb)
@@ -16,6 +18,8 @@
   * [WPP time scales in tables with imperfect cleaning (wpp-temporal-spatial-counts-cleaned)](#wpp-temporal-spatial-counts-cleaned)
   * [WPP time scales in tables (wpp-temporal-spatial-counts)](#wpp-temporal-spatial-counts)
   * [WPP time scales in tables (wpp-time-scales-in-multiple-tables)](#wpp-time-scales-in-multiple-tables)
+  * [UBERON IDs in WPP that are not in ASCT+B but have a less specific term there (wpp-uberon-missing-but-less-specific-in-asctb)](#wpp-uberon-missing-but-less-specific-in-asctb)
+  * [UBERON IDs in WPP that are not in ASCT+B but have a more specific term there (wpp-uberon-missing-but-more-specific-in-asctb)](#wpp-uberon-missing-but-more-specific-in-asctb)
   * [Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)](#wpp-uberon-missing-in-asctb)
   * [UBERON IDs in ASCT+B that are not in WPP tables (wpp-uberon-only-in-asctb)](#wpp-uberon-only-in-asctb)
   * [Uberon IDs in WPP that are in ASCT+B (wpp-uberon-present-in-asctb)](#wpp-uberon-present-in-asctb)
@@ -94,6 +98,196 @@ SELECT (?s as ?label) (?p as ?count) WHERE { ?s ?p ?o . } LIMIT 0
 
 ## validation
 
+### <a id="wpp-cl-missing-but-less-specific-in-asctb"></a>CL IDs in WPP that are not in ASCT+B but have a less specific term there (wpp-cl-missing-but-less-specific-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: CL IDs in WPP that are not in ASCT+B but have a less specific term there
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id (SAMPLE(?label) as ?label) ?related_id (SAMPLE(?related_label) as ?related_label)
+  (GROUP_CONCAT(DISTINCT ?wpp_table;SEPARATOR='|') as ?wpp_tables) (GROUP_CONCAT(DISTINCT ?asctb_table;SEPARATOR='|') as ?asctb_tables)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH WPP: {
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
+      ?field [
+        wpp:source_concept ?iri ;
+      ] ;
+    ] .
+    ?iri rdfs:label ?label .
+
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?wpp_table)
+    FILTER(STRSTARTS(STR(?iri), STR(CL:)))
+    BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
+
+    FILTER NOT EXISTS {
+      GRAPH HRA: {
+        ?iri ccf:ccf_asctb_type ?asctb_type .
+        FILTER(STR(?asctb_type) = 'CT')
+      }
+    }
+    hint:SubQuery hint:runOnce true .
+  }
+
+  GRAPH HRA: {
+    {
+      ?record a ccf:AsctbRecord ;
+        ccf:cell_type [
+          ccf:source_concept ?related_iri 
+        ] .
+    }
+    UNION
+    {
+      ?related_iri ccf:ccf_asctb_type ?asctb_type .
+      FILTER(STR(?asctb_type) = 'CT')
+    }
+    
+    OPTIONAL { ?related_iri rdfs:label ?related_label . }
+    BIND(REPLACE(STR(?related_iri), STR(CL:), 'CL:') as ?related_id)
+    BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?asctb_table)
+    hint:SubQuery hint:runOnce true .
+  }
+
+  GRAPH <https://purl.humanatlas.io/vocab/cl> {
+    ?iri rdfs:subClassOf* ?related_iri .
+    FILTER(?related_iri != CL:0000000)
+  }
+}
+GROUP BY ?id ?relation ?related_id
+ORDER BY ?id ?related_id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-cl-missing-but-less-specific-in-asctb.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-cl-missing-but-less-specific-in-asctb.csv))
+
+| id | label | related_id | related_label | wpp_tables | asctb_tables |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| CL:0000043 | mature basophil | CL:0000094 | granulocyte | immune-and-lymphatic-system | blood-pelvis|bone-marrow|pancreas |
+| CL:0000043 | mature basophil | CL:0000738 | leukocyte | immune-and-lymphatic-system | spleen|kidney|liver |
+| CL:0000043 | mature basophil | CL:0000767 | basophil | immune-and-lymphatic-system | blood-pelvis|bone-marrow|lung |
+| CL:0000060 | odontoblast | CL:0000066 | epithelial cell | dental-and-craniofacial-system | eye|fallopian-tube |
+| CL:0000060 | odontoblast | CL:0000075 | columnar/cuboidal epithelial cell | dental-and-craniofacial-system | liver|pancreas |
+| ... | ... | ... | ... | ... | ... |
+
+
+### <a id="wpp-cl-missing-but-more-specific-in-asctb"></a>CL IDs in WPP that are not in ASCT+B but have a more specific term there (wpp-cl-missing-but-more-specific-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: CL IDs in WPP that are not in ASCT+B but have a more specific term there
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id (SAMPLE(?label) as ?label) ?related_id (SAMPLE(?related_label) as ?related_label)
+  (GROUP_CONCAT(DISTINCT ?wpp_table;SEPARATOR='|') as ?wpp_tables) (GROUP_CONCAT(DISTINCT ?asctb_table;SEPARATOR='|') as ?asctb_tables)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH WPP: {
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
+      ?field [
+        wpp:source_concept ?iri ;
+      ] ;
+    ] .
+    ?iri rdfs:label ?label .
+
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?wpp_table)
+    FILTER(STRSTARTS(STR(?iri), STR(CL:)))
+    BIND(REPLACE(STR(?iri), STR(CL:), 'CL:') as ?id)
+
+    FILTER NOT EXISTS {
+      GRAPH HRA: {
+        ?iri ccf:ccf_asctb_type ?asctb_type .
+        FILTER(STR(?asctb_type) = 'CT')
+      }
+    }
+    hint:SubQuery hint:runOnce true .
+  }
+
+  GRAPH HRA: {
+    {
+      ?record a ccf:AsctbRecord ;
+        ccf:cell_type [
+          ccf:source_concept ?related_iri 
+        ] .
+    }
+    UNION
+    {
+      ?related_iri ccf:ccf_asctb_type ?asctb_type .
+      FILTER(STR(?asctb_type) = 'CT')
+    }
+    
+    OPTIONAL { ?related_iri rdfs:label ?related_label . }
+    BIND(REPLACE(STR(?related_iri), STR(CL:), 'CL:') as ?related_id)
+    BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?asctb_table)
+    hint:SubQuery hint:runOnce true .
+  }
+
+  GRAPH <https://purl.humanatlas.io/vocab/cl> {
+    ?related_iri rdfs:subClassOf* ?iri .
+    FILTER(?related_iri != CL:0000000)
+  }
+}
+GROUP BY ?id ?relation ?related_id
+ORDER BY ?id ?related_id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-cl-missing-but-more-specific-in-asctb.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-cl-missing-but-more-specific-in-asctb.csv))
+
+| id | label | related_id | related_label | wpp_tables | asctb_tables |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| CL:0000023 | oocyte | CL:0000654 | primary oocyte | female-reproductive-system | ovary |
+| CL:0000067 | ciliated epithelial cell | CL:0000065 | ependymal cell | immune-and-lymphatic-system | allen-brain|spinal-cord |
+| CL:0000067 | ciliated epithelial cell | CL:0000706 | choroid plexus epithelial cell | immune-and-lymphatic-system | allen-brain |
+| CL:0000067 | ciliated epithelial cell | CL:0002145 | multiciliated columnar cell of tracheobronchial tree | immune-and-lymphatic-system | trachea |
+| CL:0000067 | ciliated epithelial cell | CL:0002332 | multiciliated epithelial cell of the bronchus | immune-and-lymphatic-system | lung|main-bronchus |
+| ... | ... | ... | ... | ... | ... |
+
+
 ### <a id="wpp-cl-missing-in-asctb"></a>CL IDs in WPP that are not in ASCT+B (wpp-cl-missing-in-asctb)
 
 
@@ -148,17 +342,10 @@ ORDER BY ?id
 ([View Source](../wpp-data-products/queries/reports/validation/wpp-cl-missing-in-asctb.rq))
 </details>
 
-#### Results ([View CSV File](reports/validation/wpp-cl-missing-in-asctb.csv))
-
+#### Columns
 | id | label | wpp_tables |
 | :--- | :--- | :--- |
-| CL:0000019 | sperm | male-reproductive-system |
-| CL:0000023 | oocyte | female-reproductive-system |
-| CL:0000043 | mature basophil | immune-and-lymphatic-system |
-| CL:0000060 | odontoblast | dental-and-craniofacial-system |
-| CL:0000062 | osteoblast | skeletal-system|integumentary-system|dental-and-craniofacial-system|male-reproductive-system|endocrine-system |
 | ... | ... | ... |
-
 
 ### <a id="wpp-cl-only-in-asctb"></a>CL IDs in ASCT+B that are not in WPP tables (wpp-cl-only-in-asctb)
 
@@ -785,6 +972,200 @@ ORDER BY DESC(?table_count) ?scale
 | minutes-hours | dental-and-craniofacial-system|male-reproductive-system|immune-and-lymphatic-system|muscular-system|pulmonary-system|skeletal-system|urinary-system|endocrine-system|female-reproductive-system|integumentary-system | 10 |
 | hours | dental-and-craniofacial-system|male-reproductive-system|immune-and-lymphatic-system|skeletal-system|urinary-system|endocrine-system|fascia-system|female-reproductive-system|integumentary-system | 9 |
 | ... | ... | ... |
+
+
+### <a id="wpp-uberon-missing-but-less-specific-in-asctb"></a>UBERON IDs in WPP that are not in ASCT+B but have a less specific term there (wpp-uberon-missing-but-less-specific-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: UBERON IDs in WPP that are not in ASCT+B but have a less specific term there
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id (SAMPLE(?label) as ?label) ?related_id (SAMPLE(?related_label) as ?related_label)
+  (GROUP_CONCAT(DISTINCT ?wpp_table;SEPARATOR='|') as ?wpp_tables) (GROUP_CONCAT(DISTINCT ?asctb_table;SEPARATOR='|') as ?asctb_tables)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH WPP: {
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
+      ?field [
+        wpp:source_concept ?iri ;
+      ] ;
+    ] .
+    ?iri rdfs:label ?label .
+
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?wpp_table)
+    FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+    BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
+
+    FILTER NOT EXISTS {
+      GRAPH HRA: {
+        ?iri ccf:ccf_asctb_type ?asctb_type .
+        FILTER(STR(?asctb_type) = 'AS')
+      }
+    }
+    hint:SubQuery hint:runOnce true .
+  }
+
+  GRAPH HRA: {
+    {
+      ?record a ccf:AsctbRecord ;
+        ccf:anatomical_structure|ccf:ftu_types [
+          ccf:source_concept ?related_iri 
+        ] .
+    }
+    UNION
+    {
+      ?related_iri ccf:ccf_asctb_type ?asctb_type .
+      FILTER(STR(?asctb_type) = 'AS')
+    }
+    
+    OPTIONAL { ?related_iri rdfs:label ?related_label . }
+    BIND(REPLACE(STR(?related_iri), STR(UBERON:), 'UBERON:') as ?related_id)
+    BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?asctb_table)
+    hint:SubQuery hint:runOnce true .
+  }
+
+  {
+    # ?iri ^ccf:ccf_part_of|part_of:* ?related_iri .
+    ?iri rdfs:subClassOf* ?related_iri .
+    FILTER(?related_iri NOT IN (UBERON:0013702, UBERON:0000061, UBERON:0001062))
+  }
+}
+GROUP BY ?id ?relation ?related_id
+ORDER BY ?id ?related_id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-uberon-missing-but-less-specific-in-asctb.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-uberon-missing-but-less-specific-in-asctb.csv))
+
+| id | label | related_id | related_label | wpp_tables | asctb_tables |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| UBERON:0000011 | parasympathetic nervous system | UBERON:0011216 | organ system subdivision | urinary-system|nervous-system | anatomical-systems |
+| UBERON:0000013 | sympathetic nervous system | UBERON:0011216 | organ system subdivision | urinary-system|nervous-system | anatomical-systems |
+| UBERON:0000043 | tendon | UBERON:0002384 | connective tissue | fascia-system | large-intestine|liver|pancreas|thymus |
+| UBERON:0000102 | lung vasculature | UBERON:0002049 | vasculature | pulmonary-system | heart |
+| UBERON:0000160 | intestine | UBERON:0004921 | subdivision of digestive tract | digestive-system|immune-and-lymphatic-system | anatomical-systems |
+| ... | ... | ... | ... | ... | ... |
+
+
+### <a id="wpp-uberon-missing-but-more-specific-in-asctb"></a>UBERON IDs in WPP that are not in ASCT+B but have a more specific term there (wpp-uberon-missing-but-more-specific-in-asctb)
+
+
+
+<details>
+  <summary>View Sparql Query</summary>
+
+```sparql
+#+ summary: UBERON IDs in WPP that are not in ASCT+B but have a more specific term there
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?id (SAMPLE(?label) as ?label) ?related_id (SAMPLE(?related_label) as ?related_label)
+  (GROUP_CONCAT(DISTINCT ?wpp_table;SEPARATOR='|') as ?wpp_tables) (GROUP_CONCAT(DISTINCT ?asctb_table;SEPARATOR='|') as ?asctb_tables)
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  GRAPH WPP: {
+    [
+      a wpp:Record ;
+      wpp:record_source ?source ;
+      ?field [
+        wpp:source_concept ?iri ;
+      ] ;
+    ] .
+    ?iri rdfs:label ?label .
+
+    BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?wpp_table)
+    FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+    BIND(REPLACE(STR(?iri), STR(UBERON:), 'UBERON:') as ?id)
+
+    FILTER NOT EXISTS {
+      GRAPH HRA: {
+        ?iri ccf:ccf_asctb_type ?asctb_type .
+        FILTER(STR(?asctb_type) = 'AS')
+      }
+    }
+    hint:SubQuery hint:runOnce true .
+  }
+
+  GRAPH HRA: {
+    {
+      ?record a ccf:AsctbRecord ;
+        ccf:anatomical_structure|ccf:ftu_types [
+          ccf:source_concept ?related_iri 
+        ] .
+    }
+    UNION
+    {
+      ?related_iri ccf:ccf_asctb_type ?asctb_type .
+      FILTER(STR(?asctb_type) = 'AS')
+    }
+    
+    OPTIONAL { ?related_iri rdfs:label ?related_label . }
+    BIND(REPLACE(STR(?related_iri), STR(UBERON:), 'UBERON:') as ?related_id)
+    BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?asctb_table)
+    hint:SubQuery hint:runOnce true .
+  }
+
+  {
+    # ?iri ^ccf:ccf_part_of|part_of:* ?related_iri .
+    ?iri ^rdfs:subClassOf* ?related_iri .
+    FILTER(?related_iri NOT IN (UBERON:0013702, UBERON:0000061, UBERON:0001062))
+  }
+}
+GROUP BY ?id ?relation ?related_id
+ORDER BY ?id ?related_id
+
+```
+
+([View Source](../wpp-data-products/queries/reports/validation/wpp-uberon-missing-but-more-specific-in-asctb.rq))
+</details>
+
+#### Results ([View CSV File](reports/validation/wpp-uberon-missing-but-more-specific-in-asctb.csv))
+
+| id | label | related_id | related_label | wpp_tables | asctb_tables |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| UBERON:0000062 | organ | UBERON:0000017 | exocrine pancreas | fascia-system | anatomical-systems|pancreas |
+| UBERON:0000062 | organ | UBERON:0000029 | lymph node | fascia-system | anatomical-systems|lymph-node |
+| UBERON:0000062 | organ | UBERON:0000056 | ureter | fascia-system | anatomical-systems|ureter |
+| UBERON:0000062 | organ | UBERON:0000059 | large intestine | fascia-system | anatomical-systems|large-intestine |
+| UBERON:0000062 | organ | UBERON:0000065 | respiratory tract | fascia-system | anatomical-systems|lung |
+| ... | ... | ... | ... | ... | ... |
 
 
 ### <a id="wpp-uberon-missing-in-asctb"></a>Uberon IDs in WPP that are not in ASCT+B (wpp-uberon-missing-in-asctb)

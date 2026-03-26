@@ -1,0 +1,712 @@
+id,label,related_id,related_label,wpp_tables,asctb_tables
+CL:0000023,oocyte,CL:0000654,primary oocyte,female-reproductive-system,ovary
+CL:0000067,ciliated epithelial cell,CL:0000065,ependymal cell,immune-and-lymphatic-system,allen-brain|spinal-cord
+CL:0000067,ciliated epithelial cell,CL:0000706,choroid plexus epithelial cell,immune-and-lymphatic-system,allen-brain
+CL:0000067,ciliated epithelial cell,CL:0002145,multiciliated columnar cell of tracheobronchial tree,immune-and-lymphatic-system,trachea
+CL:0000067,ciliated epithelial cell,CL:0002332,multiciliated epithelial cell of the bronchus,immune-and-lymphatic-system,lung|main-bronchus
+CL:0000067,ciliated epithelial cell,CL:1000271,lung multiciliated epithelial cell,immune-and-lymphatic-system,lung
+CL:0000067,ciliated epithelial cell,CL:1000850,macula densa epithelial cell,immune-and-lymphatic-system,kidney
+CL:0000067,ciliated epithelial cell,CL:4030007,fallopian tube multiciliated epithelial cell,immune-and-lymphatic-system,fallopian-tube
+CL:0000067,ciliated epithelial cell,CL:4033055,airway submucosal gland duct multiciliated cell,immune-and-lymphatic-system,lung|main-bronchus
+CL:0000081,blood cell,CL:0000041,mature eosinophil,immune-and-lymphatic-system,large-intestine
+CL:0000081,blood cell,CL:0000094,granulocyte,immune-and-lymphatic-system,blood-pelvis|bone-marrow|pancreas
+CL:0000081,blood cell,CL:0000096,mature neutrophil,immune-and-lymphatic-system,large-intestine
+CL:0000081,blood cell,CL:0000232,erythrocyte,immune-and-lymphatic-system,spleen
+CL:0000081,blood cell,CL:0000233,platelet,immune-and-lymphatic-system,spleen
+CL:0000081,blood cell,CL:0000767,basophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|lung
+CL:0000081,blood cell,CL:0000771,eosinophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|skin|small-intestine|thymus
+CL:0000081,blood cell,CL:0000775,neutrophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|fallopian-tube|kidney|lung|mouth|pancreas|skin|small-intestine|spleen
+CL:0000081,blood cell,CL:0019015,lung parenchyma resident eosinophil,immune-and-lymphatic-system,lung
+CL:0000083,epithelial cell of pancreas,CL:0000169,type B pancreatic cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0000171,pancreatic A cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0000173,pancreatic D cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0002064,pancreatic acinar cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0002079,pancreatic ductal cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0002080,pancreatic centro-acinar cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0002275,pancreatic PP cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0005019,pancreatic epsilon cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:0008024,pancreatic endocrine cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:1000322,pancreatic goblet cell,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:1001433,epithelial cell of exocrine pancreas,digestive-system,pancreas
+CL:0000083,epithelial cell of pancreas,CL:1001599,pancreas exocrine glandular cell,digestive-system,pancreas
+CL:0000098,sensory epithelial cell,CL:1000223,pulmonary neuroendocrine cell,integumentary-system,lung|trachea
+CL:0000098,sensory epithelial cell,CL:4033010,neuroendocrine cell of epithelium of lobar bronchus,integumentary-system,lung|main-bronchus
+CL:0000107,autonomic neuron,CL:0011103,sympathetic neuron,integumentary-system|nervous-system|muscular-system|immune-and-lymphatic-system,lung|lymph-node|peripheral-nervous-system
+CL:0000107,autonomic neuron,CL:3000002,sympathetic noradrenergic neuron,immune-and-lymphatic-system|integumentary-system|nervous-system|muscular-system,thymus
+CL:0000134,mesenchymal stem cell,CL:0002568,mesenchymal stem cell of Wharton's jelly,immune-and-lymphatic-system|integumentary-system,placenta
+CL:0000134,mesenchymal stem cell,CL:0002619,adult endothelial progenitor cell,immune-and-lymphatic-system|integumentary-system,lung
+CL:0000134,mesenchymal stem cell,CL:2000061,placental amniotic mesenchymal stromal cell,immune-and-lymphatic-system|integumentary-system,placenta
+CL:0000145,professional antigen presenting cell,CL:0000041,mature eosinophil,immune-and-lymphatic-system,large-intestine
+CL:0000145,professional antigen presenting cell,CL:0000091,Kupffer cell,immune-and-lymphatic-system,liver
+CL:0000145,professional antigen presenting cell,CL:0000129,microglial cell,immune-and-lymphatic-system,spinal-cord|allen-brain|eye
+CL:0000145,professional antigen presenting cell,CL:0000235,macrophage,immune-and-lymphatic-system,fallopian-tube|heart|large-intestine|lymph-node|palatine-tonsil|pancreas|skin|small-intestine|mouth
+CL:0000145,professional antigen presenting cell,CL:0000442,follicular dendritic cell,immune-and-lymphatic-system,lymph-node|spleen
+CL:0000145,professional antigen presenting cell,CL:0000451,dendritic cell,immune-and-lymphatic-system,mouth|palatine-tonsil|pancreas|small-intestine|large-intestine|lymph-node|fallopian-tube
+CL:0000145,professional antigen presenting cell,CL:0000453,Langerhans cell,immune-and-lymphatic-system,fallopian-tube|large-intestine|mouth
+CL:0000145,professional antigen presenting cell,CL:0000583,alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000145,professional antigen presenting cell,CL:0000784,plasmacytoid dendritic cell,immune-and-lymphatic-system,liver|lung
+CL:0000145,professional antigen presenting cell,CL:0000787,memory B cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow|lymph-node|spleen
+CL:0000145,professional antigen presenting cell,CL:0000788,naive B cell,immune-and-lymphatic-system,bone-marrow|lymph-node|spleen|thymus|blood-pelvis
+CL:0000145,professional antigen presenting cell,CL:0000840,immature conventional dendritic cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0000145,professional antigen presenting cell,CL:0000844,germinal center B cell,immune-and-lymphatic-system,palatine-tonsil|spleen
+CL:0000145,professional antigen presenting cell,CL:0000845,marginal zone B cell of spleen,immune-and-lymphatic-system,spleen
+CL:0000145,professional antigen presenting cell,CL:0000866,thymic macrophage,immune-and-lymphatic-system,thymus
+CL:0000145,professional antigen presenting cell,CL:0000872,splenic marginal zone macrophage,immune-and-lymphatic-system,spleen
+CL:0000145,professional antigen presenting cell,CL:0000874,splenic red pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000145,professional antigen presenting cell,CL:0000876,splenic white pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000145,professional antigen presenting cell,CL:0000877,splenic tingible body macrophage,immune-and-lymphatic-system,spleen
+CL:0000145,professional antigen presenting cell,CL:0000882,thymic medullary macrophage,immune-and-lymphatic-system,thymus
+CL:0000145,professional antigen presenting cell,CL:0000883,thymic cortical macrophage,immune-and-lymphatic-system,thymus
+CL:0000145,professional antigen presenting cell,CL:0000887,lymph node subcapsular sinus macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000145,professional antigen presenting cell,CL:0000888,lymph node tingible body macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000145,professional antigen presenting cell,CL:0000942,thymic plasmacytoid dendritic cell,immune-and-lymphatic-system,thymus
+CL:0000145,professional antigen presenting cell,CL:0000970,unswitched memory B cell,immune-and-lymphatic-system,thymus
+CL:0000145,professional antigen presenting cell,CL:0000972,class switched memory B cell,immune-and-lymphatic-system,spleen|thymus
+CL:0000145,professional antigen presenting cell,CL:0000980,plasmablast,immune-and-lymphatic-system,lymph-node|spleen|thymus
+CL:0000145,professional antigen presenting cell,CL:0000990,conventional dendritic cell,immune-and-lymphatic-system,bone-marrow|kidney|liver|spleen
+CL:0000145,professional antigen presenting cell,CL:0001006,dermal dendritic cell,immune-and-lymphatic-system,skin
+CL:0000145,professional antigen presenting cell,CL:0001056,"dendritic cell, human",immune-and-lymphatic-system,blood-pelvis|bone-marrow|heart|kidney|liver|spleen
+CL:0000145,professional antigen presenting cell,CL:0001058,"plasmacytoid dendritic cell, human",immune-and-lymphatic-system,spleen|blood-pelvis|bone-marrow|kidney|lymph-node
+CL:0000145,professional antigen presenting cell,CL:0002059,CD8-alpha-positive thymic conventional dendritic cell,immune-and-lymphatic-system,thymus
+CL:0000145,professional antigen presenting cell,CL:0002394,CD141-positive myeloid dendritic cell,immune-and-lymphatic-system,blood-pelvis|lung|lymph-node|spleen
+CL:0000145,professional antigen presenting cell,CL:0002399,CD1c-positive myeloid dendritic cell,immune-and-lymphatic-system,spleen|blood-pelvis|liver|lung|lymph-node
+CL:0000145,professional antigen presenting cell,CL:0002457,epidermal Langerhans cell,immune-and-lymphatic-system,skin
+CL:0000145,professional antigen presenting cell,CL:0002460,CD8-alpha-negative thymic conventional dendritic cell,immune-and-lymphatic-system,thymus
+CL:0000145,professional antigen presenting cell,CL:0009111,centrocyte,immune-and-lymphatic-system,lymph-node
+CL:0000145,professional antigen presenting cell,CL:0009112,centroblast,immune-and-lymphatic-system,lymph-node
+CL:0000145,professional antigen presenting cell,CL:0011031,monocyte-derived dendritic cell,immune-and-lymphatic-system,spleen
+CL:0000145,professional antigen presenting cell,CL:1000695,kidney interstitial alternatively activated macrophage,immune-and-lymphatic-system,kidney
+CL:0000145,professional antigen presenting cell,CL:3000001,Hofbauer cell,immune-and-lymphatic-system,placenta
+CL:0000145,professional antigen presenting cell,CL:4033041,CCL3-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000145,professional antigen presenting cell,CL:4033042,metallothionein-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000145,professional antigen presenting cell,CL:4033043,lung interstitial macrophage,immune-and-lymphatic-system,lung
+CL:0000145,professional antigen presenting cell,CL:4033045,lung migratory dendritic cell,immune-and-lymphatic-system,lung
+CL:0000145,professional antigen presenting cell,CL:4033064,uterine resident macrophage,immune-and-lymphatic-system,placenta
+CL:0000151,secretory cell,CL:0000033,apocrine cell,digestive-system|integumentary-system,large-intestine
+CL:0000151,secretory cell,CL:0000097,mast cell,digestive-system|integumentary-system,bone-marrow|fallopian-tube|large-intestine|lymph-node|heart|kidney|mouth|skin|small-intestine|thymus
+CL:0000151,secretory cell,CL:0000108,cholinergic neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:0000158,club cell,digestive-system|integumentary-system,lung
+CL:0000151,secretory cell,CL:0000163,endocrine cell,digestive-system|integumentary-system,small-intestine
+CL:0000151,secretory cell,CL:0000165,neuroendocrine cell,digestive-system|integumentary-system,large-intestine
+CL:0000151,secretory cell,CL:0000169,type B pancreatic cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0000171,pancreatic A cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0000173,pancreatic D cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0000175,luteal cell,digestive-system|integumentary-system,ovary
+CL:0000151,secretory cell,CL:0000233,platelet,digestive-system|integumentary-system,spleen
+CL:0000151,secretory cell,CL:0000242,Merkel cell,digestive-system|integumentary-system,large-intestine|mouth|skin
+CL:0000151,secretory cell,CL:0000317,sebocyte,digestive-system|integumentary-system,large-intestine|skin
+CL:0000151,secretory cell,CL:0000434,eccrine cell,digestive-system|integumentary-system,large-intestine
+CL:0000151,secretory cell,CL:0000484,connective tissue type mast cell,digestive-system|integumentary-system,lung
+CL:0000151,secretory cell,CL:0000485,mucosal type mast cell,digestive-system|integumentary-system,lung
+CL:0000151,secretory cell,CL:0000509,gastrin secreting cell,integumentary-system|digestive-system,pancreas
+CL:0000151,secretory cell,CL:0000577,type EC enteroendocrine cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0000617,GABAergic neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:0000648,kidney granular cell,digestive-system|integumentary-system,kidney
+CL:0000151,secretory cell,CL:0000679,glutamatergic neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:0000700,dopaminergic neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:0000711,cumulus granulosa cell,digestive-system|integumentary-system,ovary
+CL:0000151,secretory cell,CL:0000743,hypertrophic chondrocyte,integumentary-system|digestive-system,knee
+CL:0000151,secretory cell,CL:0000748,retinal bipolar neuron,digestive-system|integumentary-system,eye
+CL:0000151,secretory cell,CL:0000749,ON-bipolar cell,digestive-system|integumentary-system,eye
+CL:0000151,secretory cell,CL:0000750,OFF-bipolar cell,digestive-system|integumentary-system,eye
+CL:0000151,secretory cell,CL:0002063,pulmonary alveolar type 2 cell,digestive-system|integumentary-system,lung
+CL:0000151,secretory cell,CL:0002064,pancreatic acinar cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0002095,hilus cell of ovary,digestive-system|integumentary-system,ovary
+CL:0000151,secretory cell,CL:0002275,pancreatic PP cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0005019,pancreatic epsilon cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0008024,pancreatic endocrine cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:0009009,paneth cell of colon,digestive-system|integumentary-system,large-intestine
+CL:0000151,secretory cell,CL:0011005,GABAergic interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:0017002,prostate neuroendocrine cell,digestive-system|integumentary-system,prostate
+CL:0000151,secretory cell,CL:0019002,tracheobronchial chondrocyte,integumentary-system|digestive-system,lung|main-bronchus|trachea
+CL:0000151,secretory cell,CL:0019003,tracheobronchial goblet cell,digestive-system|integumentary-system,lung
+CL:0000151,secretory cell,CL:1000223,pulmonary neuroendocrine cell,digestive-system|integumentary-system,lung|trachea
+CL:0000151,secretory cell,CL:1000317,intestinal villus goblet cell,digestive-system|integumentary-system,small-intestine
+CL:0000151,secretory cell,CL:1000321,large intestine crypt goblet cell,digestive-system|integumentary-system,large-intestine
+CL:0000151,secretory cell,CL:1000322,pancreatic goblet cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:1000324,duodenal goblet cell,integumentary-system|digestive-system,small-intestine
+CL:0000151,secretory cell,CL:1000325,jejunal goblet cell,digestive-system|integumentary-system,small-intestine
+CL:0000151,secretory cell,CL:1000326,ileal goblet cell,digestive-system|integumentary-system,small-intestine
+CL:0000151,secretory cell,CL:1000329,tracheal goblet cell,digestive-system|integumentary-system,trachea
+CL:0000151,secretory cell,CL:1000330,serous cell of epithelium of trachea,digestive-system|integumentary-system,trachea
+CL:0000151,secretory cell,CL:1000331,serous cell of epithelium of bronchus,digestive-system|integumentary-system,main-bronchus
+CL:0000151,secretory cell,CL:1000344,paneth cell of epithelium proper of small intestine,digestive-system|integumentary-system,small-intestine
+CL:0000151,secretory cell,CL:1001474,medium spiny neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:1001599,pancreas exocrine glandular cell,digestive-system|integumentary-system,pancreas
+CL:0000151,secretory cell,CL:1001607,articular chondrocyte,integumentary-system|digestive-system,knee
+CL:0000151,secretory cell,CL:2000097,midbrain dopaminergic neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:3000002,sympathetic noradrenergic neuron,digestive-system|integumentary-system,thymus
+CL:0000151,secretory cell,CL:4023008,intratelencephalic-projecting glutamatergic cortical neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023009,extratelencephalic-projecting glutamatergic cortical neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023011,lamp5 GABAergic cortical interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023012,near-projecting glutamatergic cortical neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023013,corticothalamic-projecting glutamatergic cortical neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023016,VIP GABAergic cortical interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023017,sst GABAergic cortical interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023038,L6b glutamatergic cortical neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023039,amygdala excitatory neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023057,cerebellar inhibitory GABAergic interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023064,caudal ganglionic eminence derived cortical interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023068,thalamic excitatory neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4023121,sst chodl GABAergic cortical interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4030006,fallopian tube secretory epithelial cell,digestive-system|integumentary-system,fallopian-tube
+CL:0000151,secretory cell,CL:4030032,valve interstitial cell,digestive-system|integumentary-system,heart
+CL:0000151,secretory cell,CL:4030043,matrix D1 medium spiny neuron,integumentary-system|digestive-system,allen-brain
+CL:0000151,secretory cell,CL:4030047,matrix D2 medium spiny neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4030048,striosomal D1 medium spiny neuron,integumentary-system|digestive-system,allen-brain
+CL:0000151,secretory cell,CL:4030049,striosomal D2 medium spiny neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4030050,D1/D2-hybrid medium spiny neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4030051,nucleus accumbens shell and olfactory tubercle D1 medium spiny neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4030052,nucleus accumbens shell and olfactory tubercle D2 medium spiny neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4030053,Island of Calleja granule cell,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4030054,D1-NUDAP medium spiny neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4033005,serous secreting cell of bronchus submucosal gland,digestive-system|integumentary-system,lung
+CL:0000151,secretory cell,CL:4033009,goblet cell of epithelium of lobar bronchus,digestive-system|integumentary-system,lung|main-bronchus
+CL:0000151,secretory cell,CL:4033010,neuroendocrine cell of epithelium of lobar bronchus,digestive-system|integumentary-system,lung|main-bronchus
+CL:0000151,secretory cell,CL:4033020,mucus secreting cell of trachea gland,integumentary-system|digestive-system,trachea
+CL:0000151,secretory cell,CL:4033022,mucus secreting cell of bronchus submucosal gland,integumentary-system|digestive-system,lung|main-bronchus
+CL:0000151,secretory cell,CL:4033050,catecholaminergic neuron,digestive-system|integumentary-system,spleen
+CL:0000151,secretory cell,CL:4042001,TAC3-positive striatal interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4042013,Lamp5 Lhx6 neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4042023,striatal pthlh-expressing interneuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4042025,substantia nigra dopaminergic neuron,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4042040,glutamatergic neuron of the basal ganglia,digestive-system|integumentary-system,allen-brain
+CL:0000151,secretory cell,CL:4052048,intercalated cell of salivary gland,digestive-system|integumentary-system,mouth
+CL:0000151,secretory cell,CL:4052049,striated cell of salivary gland,digestive-system|integumentary-system,mouth
+CL:0000160,goblet cell,CL:0019003,tracheobronchial goblet cell,digestive-system,lung
+CL:0000160,goblet cell,CL:1000317,intestinal villus goblet cell,digestive-system,small-intestine
+CL:0000160,goblet cell,CL:1000321,large intestine crypt goblet cell,digestive-system,large-intestine
+CL:0000160,goblet cell,CL:1000322,pancreatic goblet cell,digestive-system,pancreas
+CL:0000160,goblet cell,CL:1000324,duodenal goblet cell,digestive-system,small-intestine
+CL:0000160,goblet cell,CL:1000325,jejunal goblet cell,digestive-system,small-intestine
+CL:0000160,goblet cell,CL:1000326,ileal goblet cell,digestive-system,small-intestine
+CL:0000160,goblet cell,CL:1000329,tracheal goblet cell,digestive-system,trachea
+CL:0000160,goblet cell,CL:4033009,goblet cell of epithelium of lobar bronchus,digestive-system,lung|main-bronchus
+CL:0000166,chromaffin cell,CL:0000577,type EC enteroendocrine cell,endocrine-system,pancreas
+CL:0000210,photoreceptor cell,CL:0000287,eye photoreceptor cell,dental-and-craniofacial-system|nervous-system,eye
+CL:0000210,photoreceptor cell,CL:0000573,retinal cone cell,dental-and-craniofacial-system|nervous-system,eye
+CL:0000210,photoreceptor cell,CL:0000604,retinal rod cell,dental-and-craniofacial-system|nervous-system,eye
+CL:0000237,keratinizing barrier epithelial cell,CL:0000312,keratinocyte,immune-and-lymphatic-system,large-intestine|mouth|skin
+CL:0000237,keratinizing barrier epithelial cell,CL:0000649,spinous cell of epidermis,immune-and-lymphatic-system,skin
+CL:0000237,keratinizing barrier epithelial cell,CL:0002337,keratinocyte stem cell,immune-and-lymphatic-system,skin
+CL:0000237,keratinizing barrier epithelial cell,CL:4033056,onychocyte,immune-and-lymphatic-system,skin
+CL:0000501,granulosa cell,CL:0000711,cumulus granulosa cell,female-reproductive-system,ovary
+CL:0000510,paneth cell,CL:0009009,paneth cell of colon,immune-and-lymphatic-system,large-intestine
+CL:0000510,paneth cell,CL:1000344,paneth cell of epithelium proper of small intestine,immune-and-lymphatic-system,small-intestine
+CL:0000622,acinar cell,CL:0002064,pancreatic acinar cell,digestive-system,pancreas
+CL:0000667,collagen secreting cell,CL:0000743,hypertrophic chondrocyte,fascia-system,knee
+CL:0000667,collagen secreting cell,CL:0019002,tracheobronchial chondrocyte,fascia-system,lung|main-bronchus|trachea
+CL:0000667,collagen secreting cell,CL:1001607,articular chondrocyte,fascia-system,knee
+CL:0000696,PP cell,CL:0002275,pancreatic PP cell,endocrine-system,pancreas
+CL:0000723,somatic stem cell,CL:0000036,epithelial fate stem cell,integumentary-system,eye|small-intestine
+CL:0000723,somatic stem cell,CL:0000037,hematopoietic stem cell,integumentary-system,bone-marrow|spleen
+CL:0000723,somatic stem cell,CL:0000646,basal cell,integumentary-system,skin
+CL:0000723,somatic stem cell,CL:1000348,basal cell of epithelium of trachea,integumentary-system,trachea
+CL:0000723,somatic stem cell,CL:1000349,basal cell of epithelium of bronchus,integumentary-system,main-bronchus
+CL:0000723,somatic stem cell,CL:1000350,basal cell of epithelium of terminal bronchiole,integumentary-system,lung
+CL:0000723,somatic stem cell,CL:1000351,basal cell of epithelium of respiratory bronchiole,integumentary-system,lung
+CL:0000723,somatic stem cell,CL:1000352,basal cell of epithelium of lobular bronchiole,integumentary-system,lung
+CL:0000723,somatic stem cell,CL:1000486,basal cell of urothelium,integumentary-system,prostate
+CL:0000723,somatic stem cell,CL:4033024,airway submucosal gland duct basal cell,integumentary-system,lung|main-bronchus|trachea
+CL:0000731,urothelial cell,CL:1000486,basal cell of urothelium,immune-and-lymphatic-system,prostate
+CL:0000731,urothelial cell,CL:1001428,bladder urothelial cell,immune-and-lymphatic-system,ureter|urinary-bladder
+CL:0000737,striated muscle cell,CL:0000746,cardiac muscle cell,endocrine-system,heart
+CL:0000737,striated muscle cell,CL:0002068,Purkinje myocyte,endocrine-system,heart
+CL:0000737,striated muscle cell,CL:0002072,nodal myocyte,endocrine-system,heart
+CL:0000737,striated muscle cell,CL:1000287,myocyte of anterior internodal tract,endocrine-system,heart
+CL:0000737,striated muscle cell,CL:1000290,myocyte of middle internodal tract,endocrine-system,heart
+CL:0000737,striated muscle cell,CL:1000291,myocyte of posterior internodal tract,endocrine-system,heart
+CL:0000737,striated muscle cell,CL:1000477,cardiac pacemaker cell of sinoatrial node,endocrine-system,heart
+CL:0000763,myeloid cell,CL:0000041,mature eosinophil,immune-and-lymphatic-system,large-intestine
+CL:0000763,myeloid cell,CL:0000050,megakaryocyte-erythroid progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0000763,myeloid cell,CL:0000091,Kupffer cell,immune-and-lymphatic-system,liver
+CL:0000763,myeloid cell,CL:0000094,granulocyte,immune-and-lymphatic-system,blood-pelvis|bone-marrow|pancreas
+CL:0000763,myeloid cell,CL:0000096,mature neutrophil,immune-and-lymphatic-system,large-intestine
+CL:0000763,myeloid cell,CL:0000097,mast cell,immune-and-lymphatic-system,bone-marrow|fallopian-tube|heart|kidney|large-intestine|lymph-node|mouth|small-intestine|thymus|skin
+CL:0000763,myeloid cell,CL:0000129,microglial cell,immune-and-lymphatic-system,allen-brain|eye|spinal-cord
+CL:0000763,myeloid cell,CL:0000232,erythrocyte,immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0000233,platelet,immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0000235,macrophage,immune-and-lymphatic-system,fallopian-tube|heart|large-intestine|lymph-node|mouth|palatine-tonsil|pancreas|skin|small-intestine
+CL:0000763,myeloid cell,CL:0000453,Langerhans cell,immune-and-lymphatic-system,fallopian-tube|large-intestine|mouth
+CL:0000763,myeloid cell,CL:0000484,connective tissue type mast cell,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:0000485,mucosal type mast cell,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:0000553,megakaryocyte progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0000763,myeloid cell,CL:0000556,megakaryocyte,immune-and-lymphatic-system,bone-marrow
+CL:0000763,myeloid cell,CL:0000557,granulocyte monocyte progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0000763,myeloid cell,CL:0000559,promonocyte,immune-and-lymphatic-system,bone-marrow
+CL:0000763,myeloid cell,CL:0000576,monocyte,immune-and-lymphatic-system,allen-brain|blood-pelvis|bone-marrow|fallopian-tube|kidney|thymus
+CL:0000763,myeloid cell,CL:0000583,alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:0000764,erythroid lineage cell,immune-and-lymphatic-system,bone-marrow|thymus
+CL:0000763,myeloid cell,CL:0000767,basophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|lung
+CL:0000763,myeloid cell,CL:0000771,eosinophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|skin|small-intestine|thymus
+CL:0000763,myeloid cell,CL:0000775,neutrophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|fallopian-tube|kidney|lung|mouth|pancreas|skin|small-intestine|spleen
+CL:0000763,myeloid cell,CL:0000836,promyelocyte,immune-and-lymphatic-system,bone-marrow
+CL:0000763,myeloid cell,CL:0000840,immature conventional dendritic cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0000763,myeloid cell,CL:0000860,classical monocyte,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:0000866,thymic macrophage,immune-and-lymphatic-system,thymus
+CL:0000763,myeloid cell,CL:0000872,splenic marginal zone macrophage,immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0000874,splenic red pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0000875,non-classical monocyte,immune-and-lymphatic-system,kidney|lung
+CL:0000763,myeloid cell,CL:0000876,splenic white pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0000877,splenic tingible body macrophage,immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0000882,thymic medullary macrophage,immune-and-lymphatic-system,thymus
+CL:0000763,myeloid cell,CL:0000883,thymic cortical macrophage,immune-and-lymphatic-system,thymus
+CL:0000763,myeloid cell,CL:0000887,lymph node subcapsular sinus macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000763,myeloid cell,CL:0000888,lymph node tingible body macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000763,myeloid cell,CL:0001054,CD14-positive monocyte,immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0000763,myeloid cell,CL:0001055,"CD14-positive, CD16-low monocyte",immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0002193,myelocyte,immune-and-lymphatic-system,bone-marrow
+CL:0000763,myeloid cell,CL:0002394,CD141-positive myeloid dendritic cell,immune-and-lymphatic-system,blood-pelvis|lung|lymph-node|spleen
+CL:0000763,myeloid cell,CL:0002396,"CD14-low, CD16-positive monocyte",immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0000763,myeloid cell,CL:0002399,CD1c-positive myeloid dendritic cell,immune-and-lymphatic-system,blood-pelvis|liver|lung|lymph-node|spleen
+CL:0000763,myeloid cell,CL:0002457,epidermal Langerhans cell,immune-and-lymphatic-system,skin
+CL:0000763,myeloid cell,CL:0011031,monocyte-derived dendritic cell,immune-and-lymphatic-system,spleen
+CL:0000763,myeloid cell,CL:0019015,lung parenchyma resident eosinophil,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:1000695,kidney interstitial alternatively activated macrophage,immune-and-lymphatic-system,kidney
+CL:0000763,myeloid cell,CL:3000001,Hofbauer cell,immune-and-lymphatic-system,placenta
+CL:0000763,myeloid cell,CL:4033018,lung megakaryocyte,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:4033041,CCL3-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:4033042,metallothionein-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:4033043,lung interstitial macrophage,immune-and-lymphatic-system,lung
+CL:0000763,myeloid cell,CL:4033064,uterine resident macrophage,immune-and-lymphatic-system,placenta
+CL:0000766,myeloid leukocyte,CL:0000041,mature eosinophil,immune-and-lymphatic-system,large-intestine
+CL:0000766,myeloid leukocyte,CL:0000091,Kupffer cell,immune-and-lymphatic-system,liver
+CL:0000766,myeloid leukocyte,CL:0000094,granulocyte,immune-and-lymphatic-system,blood-pelvis|bone-marrow|pancreas
+CL:0000766,myeloid leukocyte,CL:0000096,mature neutrophil,immune-and-lymphatic-system,large-intestine
+CL:0000766,myeloid leukocyte,CL:0000097,mast cell,immune-and-lymphatic-system,bone-marrow|fallopian-tube|heart|kidney|large-intestine|lymph-node|mouth|skin|small-intestine|thymus
+CL:0000766,myeloid leukocyte,CL:0000129,microglial cell,immune-and-lymphatic-system,allen-brain|eye|spinal-cord
+CL:0000766,myeloid leukocyte,CL:0000235,macrophage,immune-and-lymphatic-system,fallopian-tube|large-intestine|lymph-node|mouth|heart|palatine-tonsil|pancreas|skin|small-intestine
+CL:0000766,myeloid leukocyte,CL:0000453,Langerhans cell,immune-and-lymphatic-system,fallopian-tube|large-intestine|mouth
+CL:0000766,myeloid leukocyte,CL:0000484,connective tissue type mast cell,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:0000485,mucosal type mast cell,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:0000576,monocyte,immune-and-lymphatic-system,thymus|allen-brain|blood-pelvis|bone-marrow|fallopian-tube|kidney
+CL:0000766,myeloid leukocyte,CL:0000583,alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:0000767,basophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|lung
+CL:0000766,myeloid leukocyte,CL:0000771,eosinophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|skin|small-intestine|thymus
+CL:0000766,myeloid leukocyte,CL:0000775,neutrophil,immune-and-lymphatic-system,blood-pelvis|bone-marrow|fallopian-tube|kidney|lung|mouth|pancreas|skin|small-intestine|spleen
+CL:0000766,myeloid leukocyte,CL:0000840,immature conventional dendritic cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0000766,myeloid leukocyte,CL:0000860,classical monocyte,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:0000866,thymic macrophage,immune-and-lymphatic-system,thymus
+CL:0000766,myeloid leukocyte,CL:0000872,splenic marginal zone macrophage,immune-and-lymphatic-system,spleen
+CL:0000766,myeloid leukocyte,CL:0000874,splenic red pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000766,myeloid leukocyte,CL:0000875,non-classical monocyte,immune-and-lymphatic-system,kidney|lung
+CL:0000766,myeloid leukocyte,CL:0000876,splenic white pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000766,myeloid leukocyte,CL:0000877,splenic tingible body macrophage,immune-and-lymphatic-system,spleen
+CL:0000766,myeloid leukocyte,CL:0000882,thymic medullary macrophage,immune-and-lymphatic-system,thymus
+CL:0000766,myeloid leukocyte,CL:0000883,thymic cortical macrophage,immune-and-lymphatic-system,thymus
+CL:0000766,myeloid leukocyte,CL:0000887,lymph node subcapsular sinus macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000766,myeloid leukocyte,CL:0000888,lymph node tingible body macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000766,myeloid leukocyte,CL:0001054,CD14-positive monocyte,immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0000766,myeloid leukocyte,CL:0001055,"CD14-positive, CD16-low monocyte",immune-and-lymphatic-system,spleen
+CL:0000766,myeloid leukocyte,CL:0002394,CD141-positive myeloid dendritic cell,immune-and-lymphatic-system,blood-pelvis|lung|lymph-node|spleen
+CL:0000766,myeloid leukocyte,CL:0002396,"CD14-low, CD16-positive monocyte",immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0000766,myeloid leukocyte,CL:0002399,CD1c-positive myeloid dendritic cell,immune-and-lymphatic-system,blood-pelvis|liver|lung|lymph-node|spleen
+CL:0000766,myeloid leukocyte,CL:0002457,epidermal Langerhans cell,immune-and-lymphatic-system,skin
+CL:0000766,myeloid leukocyte,CL:0011031,monocyte-derived dendritic cell,immune-and-lymphatic-system,spleen
+CL:0000766,myeloid leukocyte,CL:0019015,lung parenchyma resident eosinophil,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:1000695,kidney interstitial alternatively activated macrophage,immune-and-lymphatic-system,kidney
+CL:0000766,myeloid leukocyte,CL:3000001,Hofbauer cell,immune-and-lymphatic-system,placenta
+CL:0000766,myeloid leukocyte,CL:4033041,CCL3-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:4033042,metallothionein-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:4033043,lung interstitial macrophage,immune-and-lymphatic-system,lung
+CL:0000766,myeloid leukocyte,CL:4033064,uterine resident macrophage,immune-and-lymphatic-system,placenta
+CL:0000785,mature B cell,CL:0000787,memory B cell,immune-and-lymphatic-system,lymph-node|spleen|blood-pelvis|bone-marrow
+CL:0000785,mature B cell,CL:0000788,naive B cell,immune-and-lymphatic-system,thymus|lymph-node|spleen|blood-pelvis|bone-marrow
+CL:0000785,mature B cell,CL:0000844,germinal center B cell,immune-and-lymphatic-system,palatine-tonsil|spleen
+CL:0000785,mature B cell,CL:0000845,marginal zone B cell of spleen,immune-and-lymphatic-system,spleen
+CL:0000785,mature B cell,CL:0000970,unswitched memory B cell,immune-and-lymphatic-system,thymus
+CL:0000785,mature B cell,CL:0000972,class switched memory B cell,immune-and-lymphatic-system,spleen|thymus
+CL:0000785,mature B cell,CL:0000980,plasmablast,immune-and-lymphatic-system,lymph-node|spleen|thymus
+CL:0000785,mature B cell,CL:0009111,centrocyte,immune-and-lymphatic-system,lymph-node
+CL:0000785,mature B cell,CL:0009112,centroblast,immune-and-lymphatic-system,lymph-node
+CL:0000813,memory T cell,CL:0000897,"CD4-positive, alpha-beta memory T cell",immune-and-lymphatic-system|integumentary-system,blood-pelvis|bone-marrow|lymph-node|spleen|thymus
+CL:0000813,memory T cell,CL:0000905,"effector memory CD4-positive, alpha-beta T cell",immune-and-lymphatic-system|integumentary-system,lung
+CL:0000813,memory T cell,CL:0000909,"CD8-positive, alpha-beta memory T cell",immune-and-lymphatic-system|integumentary-system,bone-marrow|liver|lymph-node|spleen|thymus
+CL:0000813,memory T cell,CL:0000913,"effector memory CD8-positive, alpha-beta T cell",immune-and-lymphatic-system|integumentary-system,bone-marrow|lung
+CL:0000813,memory T cell,CL:0001062,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",immune-and-lymphatic-system|integumentary-system,blood-pelvis|bone-marrow
+CL:0000813,memory T cell,CL:0001087,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",immune-and-lymphatic-system|integumentary-system,blood-pelvis|bone-marrow
+CL:0000813,memory T cell,CL:0001203,"CD8-positive, alpha-beta memory T cell, CD45RO-positive",immune-and-lymphatic-system|integumentary-system,liver
+CL:0000813,memory T cell,CL:4033038,"lung resident memory CD4-positive, alpha-beta T cell",immune-and-lymphatic-system|integumentary-system,lung
+CL:0000813,memory T cell,CL:4033039,"lung resident memory CD8-positive, alpha-beta T cell",immune-and-lymphatic-system|integumentary-system,lung
+CL:0000864,tissue-resident macrophage,CL:0000091,Kupffer cell,immune-and-lymphatic-system,liver
+CL:0000864,tissue-resident macrophage,CL:0000129,microglial cell,immune-and-lymphatic-system,allen-brain|eye|spinal-cord
+CL:0000864,tissue-resident macrophage,CL:0000583,alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000864,tissue-resident macrophage,CL:0000866,thymic macrophage,immune-and-lymphatic-system,thymus
+CL:0000864,tissue-resident macrophage,CL:0000872,splenic marginal zone macrophage,immune-and-lymphatic-system,spleen
+CL:0000864,tissue-resident macrophage,CL:0000874,splenic red pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000864,tissue-resident macrophage,CL:0000876,splenic white pulp macrophage,immune-and-lymphatic-system,spleen
+CL:0000864,tissue-resident macrophage,CL:0000877,splenic tingible body macrophage,immune-and-lymphatic-system,spleen
+CL:0000864,tissue-resident macrophage,CL:0000882,thymic medullary macrophage,immune-and-lymphatic-system,thymus
+CL:0000864,tissue-resident macrophage,CL:0000883,thymic cortical macrophage,immune-and-lymphatic-system,thymus
+CL:0000864,tissue-resident macrophage,CL:0000887,lymph node subcapsular sinus macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000864,tissue-resident macrophage,CL:0000888,lymph node tingible body macrophage,immune-and-lymphatic-system,lymph-node
+CL:0000864,tissue-resident macrophage,CL:3000001,Hofbauer cell,immune-and-lymphatic-system,placenta
+CL:0000864,tissue-resident macrophage,CL:4033041,CCL3-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000864,tissue-resident macrophage,CL:4033042,metallothionein-positive alveolar macrophage,immune-and-lymphatic-system,lung
+CL:0000864,tissue-resident macrophage,CL:4033043,lung interstitial macrophage,immune-and-lymphatic-system,lung
+CL:0000864,tissue-resident macrophage,CL:4033064,uterine resident macrophage,immune-and-lymphatic-system,placenta
+CL:0000890,alternatively activated macrophage,CL:1000695,kidney interstitial alternatively activated macrophage,immune-and-lymphatic-system,kidney
+CL:0000893,thymocyte,CL:0000809,"double-positive, alpha-beta thymocyte",immune-and-lymphatic-system,thymus
+CL:0000893,thymocyte,CL:0009068,CD8aa(I) thymocyte,immune-and-lymphatic-system,thymus
+CL:0000893,thymocyte,CL:0009069,CD8aa(II) thymocyte,immune-and-lymphatic-system,thymus
+CL:0000893,thymocyte,CL:0009081,specified double negative thymocyte (Homo sapiens),immune-and-lymphatic-system,thymus
+CL:0000893,thymocyte,CL:0009082,committed double negative thymocyte (Homo sapiens),immune-and-lymphatic-system,thymus
+CL:0000893,thymocyte,CL:0009083,rearranging double negative thymocyte (Homo sapiens),immune-and-lymphatic-system,thymus
+CL:0000898,naive T cell,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",immune-and-lymphatic-system,bone-marrow|lung|lymph-node|spleen|blood-pelvis
+CL:0000898,naive T cell,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",immune-and-lymphatic-system,lung|lymph-node|spleen|blood-pelvis|bone-marrow
+CL:0000898,naive T cell,CL:0002677,naive regulatory T cell,immune-and-lymphatic-system,thymus
+CL:0000911,effector T cell,CL:0000910,cytotoxic T cell,immune-and-lymphatic-system,large-intestine|lymph-node|placenta|skin|kidney
+CL:0000911,effector T cell,CL:0001050,"effector CD8-positive, alpha-beta T cell",immune-and-lymphatic-system,blood-pelvis|spleen
+CL:0000946,antibody secreting cell,CL:0000786,plasma cell,immune-and-lymphatic-system,bone-marrow|fallopian-tube|kidney|large-intestine|lung|lymph-node|mouth|palatine-tonsil|skin|small-intestine|spleen|thymus
+CL:0000946,antibody secreting cell,CL:0000980,plasmablast,immune-and-lymphatic-system,lymph-node|spleen|thymus
+CL:0000946,antibody secreting cell,CL:0000987,IgA plasma cell,immune-and-lymphatic-system,mouth
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000787,memory B cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow|lymph-node|spleen
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000788,naive B cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow|lymph-node|spleen|thymus
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000816,immature B cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000817,precursor B cell,immune-and-lymphatic-system,bone-marrow
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000818,transitional stage B cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow|spleen
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000844,germinal center B cell,immune-and-lymphatic-system,palatine-tonsil|spleen
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000845,marginal zone B cell of spleen,immune-and-lymphatic-system,spleen
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000970,unswitched memory B cell,immune-and-lymphatic-system,thymus
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000972,class switched memory B cell,immune-and-lymphatic-system,spleen|thymus
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0000980,plasmablast,immune-and-lymphatic-system,lymph-node|spleen|thymus
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0009111,centrocyte,immune-and-lymphatic-system,lymph-node
+CL:0001200,"lymphocyte of B lineage, CD19-positive",CL:0009112,centroblast,immune-and-lymphatic-system,lymph-node
+CL:0002092,bone marrow cell,CL:0000557,granulocyte monocyte progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0002139,endothelial cell of vascular tree,CL:0000071,blood vessel endothelial cell,integumentary-system,blood-vasculature|heart|lymph-node|prostate|thymus|palatine-tonsil|placenta
+CL:0002139,endothelial cell of vascular tree,CL:0002138,endothelial cell of lymphatic vessel,integumentary-system,heart|kidney|large-intestine|lymph-vasculature|spleen|thymus|liver|lymph-node|placenta|prostate|skin
+CL:0002139,endothelial cell of vascular tree,CL:0002144,capillary endothelial cell,integumentary-system,blood-vasculature|heart|large-intestine|prostate
+CL:0002139,endothelial cell of vascular tree,CL:0002262,endothelial cell of sinusoid,integumentary-system,blood-vasculature
+CL:0002139,endothelial cell of vascular tree,CL:0002543,vein endothelial cell,integumentary-system,blood-vasculature|large-intestine|liver|prostate|spleen
+CL:0002139,endothelial cell of vascular tree,CL:0002585,retinal blood vessel endothelial cell,integumentary-system,eye
+CL:0002139,endothelial cell of vascular tree,CL:0002652,endothelial cell of high endothelial venule,integumentary-system,large-intestine
+CL:0002139,endothelial cell of vascular tree,CL:0009086,endothelial cell of respiratory system lymphatic vessel,integumentary-system,lung
+CL:0002139,endothelial cell of vascular tree,CL:0009107,lymphatic endothelial cell of subcapsular sinus ceiling,integumentary-system,lymph-node
+CL:0002139,endothelial cell of vascular tree,CL:0009108,lymphatic endothelial cell of subcapsular sinus floor,integumentary-system,lymph-node
+CL:0002139,endothelial cell of vascular tree,CL:0009109,lymphatic endothelial cell of trabecula,integumentary-system,lymph-node
+CL:0002139,endothelial cell of vascular tree,CL:0009110,lymphatic endothelial cell of medulla ceiling,integumentary-system,lymph-node
+CL:0002139,endothelial cell of vascular tree,CL:0009115,lymph node lymphatic vessel endothelial cell,integumentary-system,prostate
+CL:0002139,endothelial cell of vascular tree,CL:1000398,endothelial cell of hepatic sinusoid,integumentary-system,liver
+CL:0002139,endothelial cell of vascular tree,CL:1000412,endothelial cell of arteriole,integumentary-system,blood-vasculature|large-intestine
+CL:0002139,endothelial cell of vascular tree,CL:1000413,endothelial cell of artery,integumentary-system,blood-vasculature|heart|liver|lung|main-bronchus|prostate|spleen|trachea
+CL:0002139,endothelial cell of vascular tree,CL:1000414,endothelial cell of venule,integumentary-system,large-intestine|blood-vasculature
+CL:0002139,endothelial cell of vascular tree,CL:1001005,glomerular capillary endothelial cell,integumentary-system,kidney
+CL:0002139,endothelial cell of vascular tree,CL:1001033,peritubular capillary endothelial cell,integumentary-system,kidney
+CL:0002139,endothelial cell of vascular tree,CL:1001096,kidney afferent arteriole endothelial cell,integumentary-system,kidney
+CL:0002139,endothelial cell of vascular tree,CL:1001099,kidney efferent arteriole endothelial cell,integumentary-system,kidney
+CL:0002139,endothelial cell of vascular tree,CL:1001131,vasa recta ascending limb cell,integumentary-system,kidney
+CL:0002139,endothelial cell of vascular tree,CL:1001285,vasa recta descending limb cell,integumentary-system,kidney
+CL:0002139,endothelial cell of vascular tree,CL:1001568,pulmonary artery endothelial cell,integumentary-system,lung
+CL:0002139,endothelial cell of vascular tree,CL:2000040,bladder microvascular endothelial cell,integumentary-system,urinary-bladder
+CL:0002139,endothelial cell of vascular tree,CL:2000062,placental villus capillary endothelial cell,integumentary-system,placenta
+CL:0002139,endothelial cell of vascular tree,CL:2000091,endometrial microvascular endothelial cell,integumentary-system,placenta
+CL:0002139,endothelial cell of vascular tree,CL:4028002,alveolar capillary type 1 endothelial cell,integumentary-system,lung
+CL:0002139,endothelial cell of vascular tree,CL:4028003,alveolar capillary type 2 endothelial cell,integumentary-system,lung
+CL:0002139,endothelial cell of vascular tree,CL:4033008,vein endothelial cell of respiratory system,integumentary-system,lung|main-bronchus|trachea
+CL:0002204,tuft cell,CL:0002207,brush cell of trachea,immune-and-lymphatic-system,trachea
+CL:0002204,tuft cell,CL:0002208,brush cell of bronchus,immune-and-lymphatic-system,lung
+CL:0002204,tuft cell,CL:0009080,tuft cell of small intestine,immune-and-lymphatic-system,small-intestine
+CL:0002204,tuft cell,CL:0019032,intestinal tuft cell,immune-and-lymphatic-system,large-intestine
+CL:0002204,tuft cell,CL:4033007,brush cell of epithelium of lobar bronchus,immune-and-lymphatic-system,lung|main-bronchus
+CL:0002293,epithelial cell of thymus,CL:0002364,cortical thymic epithelial cell,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009070,corticomedullary thymic epithelial cell,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009071,medullary thymic epithelial cell type 1,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009072,medullary thymic epithelial cell type 2,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009073,medullary thymic epithelial cell type 3,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009074,medullary thymic epithelial cell type 4,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009075,myo-medullary thymic epithelial cell,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009076,neuro-medullary thymic epithelial cell,immune-and-lymphatic-system,thymus
+CL:0002293,epithelial cell of thymus,CL:0009077,subcapsular thymic epithelial cell,immune-and-lymphatic-system,thymus
+CL:0002305,epithelial cell of distal tubule,CL:1000849,kidney distal convoluted tubule epithelial cell,urinary-system,kidney
+CL:0002305,epithelial cell of distal tubule,CL:1000850,macula densa epithelial cell,urinary-system,kidney
+CL:0002305,epithelial cell of distal tubule,CL:1001106,kidney loop of Henle thick ascending limb epithelial cell,urinary-system,kidney
+CL:0002305,epithelial cell of distal tubule,CL:1001107,kidney loop of Henle thin ascending limb epithelial cell,urinary-system,kidney
+CL:0002305,epithelial cell of distal tubule,CL:1001108,kidney loop of Henle medullary thick ascending limb epithelial cell,urinary-system,kidney
+CL:0002305,epithelial cell of distal tubule,CL:1001109,kidney loop of Henle cortical thick ascending limb epithelial cell,urinary-system,kidney
+CL:0002305,epithelial cell of distal tubule,CL:4030016,epithelial cell of early distal convoluted tubule,urinary-system,kidney
+CL:0002305,epithelial cell of distal tubule,CL:4030017,epithelial cell of late distal convoluted tubule,urinary-system,kidney
+CL:0002308,epithelial cell of skin gland,CL:0000317,sebocyte,integumentary-system,large-intestine|skin
+CL:0002308,epithelial cell of skin gland,CL:1000417,myoepithelial cell of sweat gland,integumentary-system,large-intestine|skin
+CL:0002320,connective tissue cell,CL:0000057,fibroblast,fascia-system|integumentary-system,blood-vasculature|allen-brain|fallopian-tube|heart|large-intestine|mouth|palatine-tonsil|pancreas|small-intestine
+CL:0002320,connective tissue cell,CL:0000136,adipocyte,fascia-system|integumentary-system,heart|large-intestine|mouth|pancreas
+CL:0002320,connective tissue cell,CL:0000186,myofibroblast cell,fascia-system|integumentary-system,small-intestine|spleen|large-intestine|lymph-node
+CL:0002320,connective tissue cell,CL:0000432,reticular cell,fascia-system|integumentary-system,palatine-tonsil
+CL:0002320,connective tissue cell,CL:0000484,connective tissue type mast cell,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:0000499,stromal cell,fascia-system|integumentary-system,kidney|spleen
+CL:0002320,connective tissue cell,CL:0000503,theca cell,integumentary-system|fascia-system,ovary
+CL:0002320,connective tissue cell,CL:0000632,hepatic stellate cell,fascia-system|integumentary-system,liver
+CL:0002320,connective tissue cell,CL:0000669,pericyte,fascia-system|integumentary-system,heart|large-intestine|eye|mouth|placenta|prostate|skin|lymph-node
+CL:0002320,connective tissue cell,CL:0000743,hypertrophic chondrocyte,fascia-system|integumentary-system,knee
+CL:0002320,connective tissue cell,CL:0001070,beige adipocyte,fascia-system|integumentary-system,thymus
+CL:0002320,connective tissue cell,CL:0002095,hilus cell of ovary,integumentary-system|fascia-system,ovary
+CL:0002320,connective tissue cell,CL:0002255,stromal cell of endometrium,fascia-system|integumentary-system,placenta
+CL:0002320,connective tissue cell,CL:0002363,keratocyte,fascia-system|integumentary-system,eye
+CL:0002320,connective tissue cell,CL:0002410,pancreatic stellate cell,fascia-system|integumentary-system,pancreas
+CL:0002320,connective tissue cell,CL:0002521,subcutaneous adipocyte,fascia-system|integumentary-system,skin
+CL:0002320,connective tissue cell,CL:0002557,fibroblast of pulmonary artery,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:0002558,fibroblast of villous mesenchyme,fascia-system|integumentary-system,placenta
+CL:0002320,connective tissue cell,CL:0002568,mesenchymal stem cell of Wharton's jelly,integumentary-system|fascia-system,placenta
+CL:0002320,connective tissue cell,CL:0002574,stromal cell of pancreas,fascia-system|integumentary-system,pancreas
+CL:0002320,connective tissue cell,CL:0002576,perineurial cell,fascia-system|integumentary-system,large-intestine|skin
+CL:0002320,connective tissue cell,CL:0002619,adult endothelial progenitor cell,integumentary-system|fascia-system,lung
+CL:0002320,connective tissue cell,CL:0002620,skin fibroblast,fascia-system|integumentary-system,skin
+CL:0002320,connective tissue cell,CL:0009078,thymic fibroblast type 1,fascia-system|integumentary-system,thymus
+CL:0002320,connective tissue cell,CL:0009079,thymic fibroblast type 2,fascia-system|integumentary-system,thymus
+CL:0002320,connective tissue cell,CL:0009089,lung pericyte,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:0009100,hepatic portal fibroblast,fascia-system|integumentary-system,liver
+CL:0002320,connective tissue cell,CL:0009103,lymph node marginal reticular cell,fascia-system|integumentary-system,lymph-node
+CL:0002320,connective tissue cell,CL:0009104,B cell zone reticular cell,fascia-system|integumentary-system,lymph-node
+CL:0002320,connective tissue cell,CL:0009105,T cell zone reticular cell,fascia-system|integumentary-system,lymph-node
+CL:0002320,connective tissue cell,CL:0009106,medullary reticular cell,fascia-system|integumentary-system,lymph-node
+CL:0002320,connective tissue cell,CL:0017004,telocyte,fascia-system|integumentary-system,heart|eye
+CL:0002320,connective tissue cell,CL:0019002,tracheobronchial chondrocyte,integumentary-system|fascia-system,trachea|lung|main-bronchus
+CL:0002320,connective tissue cell,CL:1000299,fibroblast of connective tissue of prostate,fascia-system|integumentary-system,prostate
+CL:0002320,connective tissue cell,CL:1000301,fibroblast of subepithelial connective tissue of prostatic gland,fascia-system|integumentary-system,prostate
+CL:0002320,connective tissue cell,CL:1000308,fibrocyte of adventitia of ureter,fascia-system|integumentary-system,ureter
+CL:0002320,connective tissue cell,CL:1000309,epicardial adipocyte,fascia-system|integumentary-system,heart
+CL:0002320,connective tissue cell,CL:1000489,reticular cell of splenic cord,fascia-system|integumentary-system,spleen
+CL:0002320,connective tissue cell,CL:1000691,kidney interstitial myofibroblast,fascia-system|integumentary-system,kidney
+CL:0002320,connective tissue cell,CL:1000692,kidney interstitial fibroblast,fascia-system|integumentary-system,kidney
+CL:0002320,connective tissue cell,CL:1000708,ureter adventitial cell,integumentary-system|fascia-system,ureter
+CL:0002320,connective tissue cell,CL:1000742,glomerular mesangial cell,fascia-system|integumentary-system,kidney
+CL:0002320,connective tissue cell,CL:1001318,renal interstitial pericyte,fascia-system|integumentary-system,kidney
+CL:0002320,connective tissue cell,CL:1001607,articular chondrocyte,integumentary-system|fascia-system,knee
+CL:0002320,connective tissue cell,CL:2000061,placental amniotic mesenchymal stromal cell,fascia-system|integumentary-system,placenta
+CL:0002320,connective tissue cell,CL:2000066,cardiac ventricle fibroblast,fascia-system|integumentary-system,heart
+CL:0002320,connective tissue cell,CL:2000067,cardiac atrium fibroblast,fascia-system|integumentary-system,heart
+CL:0002320,connective tissue cell,CL:4028004,alveolar type 1 fibroblast cell,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:4028006,alveolar adventitial fibroblast,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:4030022,renal medullary fibroblast,fascia-system|integumentary-system,kidney
+CL:0002320,connective tissue cell,CL:4033016,secondary crest myofibroblast,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:4033018,lung megakaryocyte,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:4033025,perichondrial fibroblast,fascia-system|integumentary-system,trachea
+CL:0002320,connective tissue cell,CL:4033026,lung perichondrial fibroblast,fascia-system|integumentary-system,lung
+CL:0002320,connective tissue cell,CL:4033043,lung interstitial macrophage,fascia-system|integumentary-system,lung
+CL:0002365,medullary thymic epithelial cell,CL:0009071,medullary thymic epithelial cell type 1,immune-and-lymphatic-system,thymus
+CL:0002365,medullary thymic epithelial cell,CL:0009072,medullary thymic epithelial cell type 2,immune-and-lymphatic-system,thymus
+CL:0002365,medullary thymic epithelial cell,CL:0009073,medullary thymic epithelial cell type 3,immune-and-lymphatic-system,thymus
+CL:0002365,medullary thymic epithelial cell,CL:0009074,medullary thymic epithelial cell type 4,immune-and-lymphatic-system,thymus
+CL:0002365,medullary thymic epithelial cell,CL:0009075,myo-medullary thymic epithelial cell,immune-and-lymphatic-system,thymus
+CL:0002365,medullary thymic epithelial cell,CL:0009076,neuro-medullary thymic epithelial cell,immune-and-lymphatic-system,thymus
+CL:0002370,respiratory tract goblet cell,CL:0019003,tracheobronchial goblet cell,immune-and-lymphatic-system,lung
+CL:0002370,respiratory tract goblet cell,CL:1000329,tracheal goblet cell,immune-and-lymphatic-system,trachea
+CL:0002370,respiratory tract goblet cell,CL:4033009,goblet cell of epithelium of lobar bronchus,immune-and-lymphatic-system,lung|main-bronchus
+CL:0002393,intermediate monocyte,CL:0001055,"CD14-positive, CD16-low monocyte",immune-and-lymphatic-system,spleen
+CL:0002419,mature T cell,CL:0000492,CD4-positive helper T cell,immune-and-lymphatic-system,spleen
+CL:0002419,mature T cell,CL:0000545,T-helper 1 cell,immune-and-lymphatic-system,large-intestine|lymph-node|skin
+CL:0002419,mature T cell,CL:0000546,T-helper 2 cell,immune-and-lymphatic-system,lymph-node
+CL:0002419,mature T cell,CL:0000624,"CD4-positive, alpha-beta T cell",immune-and-lymphatic-system,fallopian-tube|liver|palatine-tonsil
+CL:0002419,mature T cell,CL:0000625,"CD8-positive, alpha-beta T cell",immune-and-lymphatic-system,bone-marrow|fallopian-tube|palatine-tonsil|spleen
+CL:0002419,mature T cell,CL:0000793,"CD4-positive, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002419,mature T cell,CL:0000794,"CD8-positive, alpha-beta cytotoxic T cell",immune-and-lymphatic-system,spleen
+CL:0002419,mature T cell,CL:0000796,"CD8-alpha-beta-positive, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002419,mature T cell,CL:0000802,"CD8-alpha alpha positive, gamma-delta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002419,mature T cell,CL:0000814,mature NK T cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow|kidney|lung
+CL:0002419,mature T cell,CL:0000815,regulatory T cell,immune-and-lymphatic-system,blood-pelvis|bone-marrow|kidney|large-intestine|lung|lymph-node|mouth|palatine-tonsil|placenta|skin|spleen
+CL:0002419,mature T cell,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",immune-and-lymphatic-system,blood-pelvis|bone-marrow|lung|lymph-node|spleen
+CL:0002419,mature T cell,CL:0000897,"CD4-positive, alpha-beta memory T cell",immune-and-lymphatic-system,blood-pelvis|bone-marrow|spleen|thymus|lymph-node
+CL:0002419,mature T cell,CL:0000899,T-helper 17 cell,immune-and-lymphatic-system,lymph-node|thymus
+CL:0002419,mature T cell,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",immune-and-lymphatic-system,blood-pelvis|bone-marrow|lung|lymph-node|spleen
+CL:0002419,mature T cell,CL:0000905,"effector memory CD4-positive, alpha-beta T cell",immune-and-lymphatic-system,lung
+CL:0002419,mature T cell,CL:0000909,"CD8-positive, alpha-beta memory T cell",immune-and-lymphatic-system,bone-marrow|liver|lymph-node|spleen|thymus
+CL:0002419,mature T cell,CL:0000910,cytotoxic T cell,immune-and-lymphatic-system,kidney|large-intestine|lymph-node|placenta|skin
+CL:0002419,mature T cell,CL:0000913,"effector memory CD8-positive, alpha-beta T cell",immune-and-lymphatic-system,bone-marrow|lung
+CL:0002419,mature T cell,CL:0000915,"CD8-alpha-alpha-positive, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002419,mature T cell,CL:0000921,type I NK T cell,immune-and-lymphatic-system,liver
+CL:0002419,mature T cell,CL:0000934,"CD4-positive, alpha-beta cytotoxic T cell",immune-and-lymphatic-system,thymus
+CL:0002419,mature T cell,CL:0000935,"CD4-negative, CD8-negative, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002419,mature T cell,CL:0000940,mucosal-associated invariant T cell,immune-and-lymphatic-system,lung|thymus
+CL:0002419,mature T cell,CL:0001050,"effector CD8-positive, alpha-beta T cell",immune-and-lymphatic-system,blood-pelvis|spleen
+CL:0002419,mature T cell,CL:0001062,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0002419,mature T cell,CL:0001087,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0002419,mature T cell,CL:0001203,"CD8-positive, alpha-beta memory T cell, CD45RO-positive",immune-and-lymphatic-system,liver
+CL:0002419,mature T cell,CL:0002038,T follicular helper cell,immune-and-lymphatic-system,lymph-node|spleen|thymus
+CL:0002419,mature T cell,CL:0002436,mature CD4 single-positive thymocyte,immune-and-lymphatic-system,thymus
+CL:0002419,mature T cell,CL:0002437,mature CD8 single-positive thymocyte,immune-and-lymphatic-system,blood-pelvis|thymus
+CL:0002419,mature T cell,CL:0002677,naive regulatory T cell,immune-and-lymphatic-system,thymus
+CL:0002419,mature T cell,CL:0009113,T follicular regulatory cell,immune-and-lymphatic-system,lymph-node|spleen
+CL:0002419,mature T cell,CL:4033038,"lung resident memory CD4-positive, alpha-beta T cell",immune-and-lymphatic-system,lung
+CL:0002419,mature T cell,CL:4033039,"lung resident memory CD8-positive, alpha-beta T cell",immune-and-lymphatic-system,lung
+CL:0002420,immature T cell,CL:0000809,"double-positive, alpha-beta thymocyte",immune-and-lymphatic-system,thymus
+CL:0002420,immature T cell,CL:0000914,immature NK T cell,immune-and-lymphatic-system,thymus
+CL:0002420,immature T cell,CL:0002042,"immature NK T cell stage IV, mouse",immune-and-lymphatic-system,large-intestine
+CL:0002420,immature T cell,CL:0009068,CD8aa(I) thymocyte,immune-and-lymphatic-system,thymus
+CL:0002420,immature T cell,CL:0009069,CD8aa(II) thymocyte,immune-and-lymphatic-system,thymus
+CL:0002420,immature T cell,CL:0009081,specified double negative thymocyte (Homo sapiens),immune-and-lymphatic-system,thymus
+CL:0002420,immature T cell,CL:0009082,committed double negative thymocyte (Homo sapiens),immune-and-lymphatic-system,thymus
+CL:0002420,immature T cell,CL:0009083,rearranging double negative thymocyte (Homo sapiens),immune-and-lymphatic-system,thymus
+CL:0002496,intraepithelial lymphocyte,CL:0000793,"CD4-positive, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002496,intraepithelial lymphocyte,CL:0000796,"CD8-alpha-beta-positive, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002496,intraepithelial lymphocyte,CL:0000802,"CD8-alpha alpha positive, gamma-delta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002496,intraepithelial lymphocyte,CL:0000915,"CD8-alpha-alpha-positive, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002496,intraepithelial lymphocyte,CL:0000935,"CD4-negative, CD8-negative, alpha-beta intraepithelial T cell",immune-and-lymphatic-system,large-intestine
+CL:0002518,kidney epithelial cell,CL:0000653,podocyte,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:0002201,renal beta-intercalated cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:0002306,epithelial cell of proximal tubule,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000452,parietal epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000454,kidney collecting duct epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000714,kidney cortex collecting duct principal cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000715,kidney cortex collecting duct intercalated cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000716,kidney outer medulla collecting duct principal cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000717,kidney outer medulla collecting duct intercalated cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000718,kidney inner medulla collecting duct principal cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000742,glomerular mesangial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000768,kidney connecting tubule epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000849,kidney distal convoluted tubule epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1000850,macula densa epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1001106,kidney loop of Henle thick ascending limb epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1001107,kidney loop of Henle thin ascending limb epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1001108,kidney loop of Henle medullary thick ascending limb epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1001109,kidney loop of Henle cortical thick ascending limb epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1001111,kidney loop of Henle thin descending limb epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1001431,kidney collecting duct principal cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:1001432,kidney collecting duct intercalated cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030009,epithelial cell of proximal tubule segment 1,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030010,epithelial cell of proximal tubule segment 2,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030011,epithelial cell of proximal tubule segment 3,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030012,kidney loop of Henle short descending thin limb epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030013,kidney loop of Henle long descending thin limb outer medulla epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030014,kidney loop of Henle long descending thin limb inner medulla epithelial cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030015,kidney collecting duct alpha-intercalated cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030016,epithelial cell of early distal convoluted tubule,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030017,epithelial cell of late distal convoluted tubule,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030018,kidney connecting tubule principal cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030019,kidney connecting tubule intercalated cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030020,kidney connecting tubule alpha-intercalated cell,urinary-system,kidney
+CL:0002518,kidney epithelial cell,CL:4030021,kidney connecting tubule beta-intercalated cell,urinary-system,kidney
+CL:0002559,hair follicle cell,CL:0002483,hair follicle melanocyte,integumentary-system,skin
+CL:0002559,hair follicle cell,CL:0002562,hair germinal matrix cell,integumentary-system,skin
+CL:0002563,intestinal epithelial cell,CL:0000584,enterocyte,immune-and-lymphatic-system,small-intestine
+CL:0002563,intestinal epithelial cell,CL:0000682,M cell of gut,immune-and-lymphatic-system,large-intestine|small-intestine
+CL:0002563,intestinal epithelial cell,CL:0002071,enterocyte of epithelium of large intestine,immune-and-lymphatic-system,large-intestine
+CL:0002563,intestinal epithelial cell,CL:0009009,paneth cell of colon,immune-and-lymphatic-system,large-intestine
+CL:0002563,intestinal epithelial cell,CL:0009011,transit amplifying cell of colon,immune-and-lymphatic-system,large-intestine
+CL:0002563,intestinal epithelial cell,CL:0009016,intestinal crypt stem cell of large intestine,immune-and-lymphatic-system,large-intestine
+CL:0002563,intestinal epithelial cell,CL:0009080,tuft cell of small intestine,immune-and-lymphatic-system,small-intestine
+CL:0002563,intestinal epithelial cell,CL:0019032,intestinal tuft cell,immune-and-lymphatic-system,large-intestine
+CL:0002563,intestinal epithelial cell,CL:1000317,intestinal villus goblet cell,immune-and-lymphatic-system,small-intestine
+CL:0002563,intestinal epithelial cell,CL:1000321,large intestine crypt goblet cell,immune-and-lymphatic-system,large-intestine
+CL:0002563,intestinal epithelial cell,CL:1000324,duodenal goblet cell,immune-and-lymphatic-system,small-intestine
+CL:0002563,intestinal epithelial cell,CL:1000325,jejunal goblet cell,immune-and-lymphatic-system,small-intestine
+CL:0002563,intestinal epithelial cell,CL:1000326,ileal goblet cell,immune-and-lymphatic-system,small-intestine
+CL:0002563,intestinal epithelial cell,CL:1000344,paneth cell of epithelium proper of small intestine,immune-and-lymphatic-system,small-intestine
+CL:0005018,ghrelin secreting cell,CL:0005019,pancreatic epsilon cell,endocrine-system,pancreas
+CL:0009005,salivary gland cell,CL:4052048,intercalated cell of salivary gland,digestive-system,mouth
+CL:0009005,salivary gland cell,CL:4052049,striated cell of salivary gland,digestive-system,mouth
+CL:0009010,transit amplifying cell,CL:0009011,transit amplifying cell of colon,integumentary-system,large-intestine
+CL:0009101,fibroblastic reticular cell,CL:0009103,lymph node marginal reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0009101,fibroblastic reticular cell,CL:0009104,B cell zone reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0009101,fibroblastic reticular cell,CL:0009105,T cell zone reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0009101,fibroblastic reticular cell,CL:0009106,medullary reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0009102,lymph node fibroblastic reticular cell,CL:0009103,lymph node marginal reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0009102,lymph node fibroblastic reticular cell,CL:0009104,B cell zone reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0009102,lymph node fibroblastic reticular cell,CL:0009105,T cell zone reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0009102,lymph node fibroblastic reticular cell,CL:0009106,medullary reticular cell,immune-and-lymphatic-system,lymph-node
+CL:0011026,progenitor cell,CL:0000037,hematopoietic stem cell,integumentary-system,bone-marrow|spleen
+CL:0011026,progenitor cell,CL:0000050,megakaryocyte-erythroid progenitor cell,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000051,common lymphoid progenitor,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000158,club cell,integumentary-system,lung
+CL:0011026,progenitor cell,CL:0000553,megakaryocyte progenitor cell,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000557,granulocyte monocyte progenitor cell,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000559,promonocyte,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000576,monocyte,integumentary-system,allen-brain|blood-pelvis|bone-marrow|fallopian-tube|kidney|thymus
+CL:0011026,progenitor cell,CL:0000826,pro-B cell,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000836,promyelocyte,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000839,myeloid lineage restricted progenitor cell,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0000860,classical monocyte,integumentary-system,lung
+CL:0011026,progenitor cell,CL:0000875,non-classical monocyte,integumentary-system,kidney|lung
+CL:0011026,progenitor cell,CL:0000936,early lymphoid progenitor,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0001054,CD14-positive monocyte,integumentary-system,blood-pelvis|bone-marrow
+CL:0011026,progenitor cell,CL:0001055,"CD14-positive, CD16-low monocyte",integumentary-system,spleen
+CL:0011026,progenitor cell,CL:0002193,myelocyte,integumentary-system,bone-marrow
+CL:0011026,progenitor cell,CL:0002196,hepatic oval stem cell,integumentary-system,liver
+CL:0011026,progenitor cell,CL:0002337,keratinocyte stem cell,integumentary-system,skin
+CL:0011026,progenitor cell,CL:0002396,"CD14-low, CD16-positive monocyte",integumentary-system,blood-pelvis|bone-marrow
+CL:0011026,progenitor cell,CL:0002425,early T lineage precursor,integumentary-system,thymus
+CL:0011026,progenitor cell,CL:0002453,oligodendrocyte precursor cell,integumentary-system,allen-brain|spinal-cord
+CL:0011026,progenitor cell,CL:0002619,adult endothelial progenitor cell,integumentary-system,lung
+CL:0011026,progenitor cell,CL:4033048,respiratory tract suprabasal cell,integumentary-system,lung|main-bronchus
+CL:0011108,colon epithelial cell,CL:0009009,paneth cell of colon,immune-and-lymphatic-system,large-intestine
+CL:0011115,precursor cell,CL:0000034,stem cell,immune-and-lymphatic-system,small-intestine
+CL:0011115,precursor cell,CL:0000036,epithelial fate stem cell,immune-and-lymphatic-system,eye|small-intestine
+CL:0011115,precursor cell,CL:0000037,hematopoietic stem cell,immune-and-lymphatic-system,bone-marrow|spleen
+CL:0011115,precursor cell,CL:0000050,megakaryocyte-erythroid progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000051,common lymphoid progenitor,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000158,club cell,immune-and-lymphatic-system,lung
+CL:0011115,precursor cell,CL:0000553,megakaryocyte progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000557,granulocyte monocyte progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000559,promonocyte,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000576,monocyte,immune-and-lymphatic-system,allen-brain|blood-pelvis|bone-marrow|fallopian-tube|kidney|thymus
+CL:0011115,precursor cell,CL:0000646,basal cell,immune-and-lymphatic-system,skin
+CL:0011115,precursor cell,CL:0000826,pro-B cell,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000836,promyelocyte,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000839,myeloid lineage restricted progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0000860,classical monocyte,immune-and-lymphatic-system,lung
+CL:0011115,precursor cell,CL:0000875,non-classical monocyte,immune-and-lymphatic-system,kidney|lung
+CL:0011115,precursor cell,CL:0000936,early lymphoid progenitor,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0001054,CD14-positive monocyte,immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0011115,precursor cell,CL:0001055,"CD14-positive, CD16-low monocyte",immune-and-lymphatic-system,spleen
+CL:0011115,precursor cell,CL:0002193,myelocyte,immune-and-lymphatic-system,bone-marrow
+CL:0011115,precursor cell,CL:0002196,hepatic oval stem cell,immune-and-lymphatic-system,liver
+CL:0011115,precursor cell,CL:0002337,keratinocyte stem cell,immune-and-lymphatic-system,skin
+CL:0011115,precursor cell,CL:0002396,"CD14-low, CD16-positive monocyte",immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:0011115,precursor cell,CL:0002425,early T lineage precursor,immune-and-lymphatic-system,thymus
+CL:0011115,precursor cell,CL:0002453,oligodendrocyte precursor cell,immune-and-lymphatic-system,allen-brain|spinal-cord
+CL:0011115,precursor cell,CL:0002568,mesenchymal stem cell of Wharton's jelly,immune-and-lymphatic-system,placenta
+CL:0011115,precursor cell,CL:0002619,adult endothelial progenitor cell,immune-and-lymphatic-system,lung
+CL:0011115,precursor cell,CL:0009016,intestinal crypt stem cell of large intestine,immune-and-lymphatic-system,large-intestine
+CL:0011115,precursor cell,CL:1000348,basal cell of epithelium of trachea,immune-and-lymphatic-system,trachea
+CL:0011115,precursor cell,CL:1000349,basal cell of epithelium of bronchus,immune-and-lymphatic-system,main-bronchus
+CL:0011115,precursor cell,CL:1000350,basal cell of epithelium of terminal bronchiole,immune-and-lymphatic-system,lung
+CL:0011115,precursor cell,CL:1000351,basal cell of epithelium of respiratory bronchiole,immune-and-lymphatic-system,lung
+CL:0011115,precursor cell,CL:1000352,basal cell of epithelium of lobular bronchiole,immune-and-lymphatic-system,lung
+CL:0011115,precursor cell,CL:1000486,basal cell of urothelium,immune-and-lymphatic-system,prostate
+CL:0011115,precursor cell,CL:2000061,placental amniotic mesenchymal stromal cell,immune-and-lymphatic-system,placenta
+CL:0011115,precursor cell,CL:4033024,airway submucosal gland duct basal cell,immune-and-lymphatic-system,lung|main-bronchus|trachea
+CL:0011115,precursor cell,CL:4033048,respiratory tract suprabasal cell,immune-and-lymphatic-system,lung|main-bronchus
+CL:0019031,intestine goblet cell,CL:1000317,intestinal villus goblet cell,digestive-system,small-intestine
+CL:0019031,intestine goblet cell,CL:1000321,large intestine crypt goblet cell,digestive-system,large-intestine
+CL:0019031,intestine goblet cell,CL:1000324,duodenal goblet cell,digestive-system,small-intestine
+CL:0019031,intestine goblet cell,CL:1000325,jejunal goblet cell,digestive-system,small-intestine
+CL:0019031,intestine goblet cell,CL:1000326,ileal goblet cell,digestive-system,small-intestine
+CL:1000448,epithelial cell of sweat gland,CL:1000417,myoepithelial cell of sweat gland,integumentary-system,large-intestine|skin
+CL:1000510,kidney glomerular epithelial cell,CL:0000653,podocyte,endocrine-system,kidney
+CL:1000510,kidney glomerular epithelial cell,CL:1000452,parietal epithelial cell,endocrine-system,kidney
+CL:1000618,juxtaglomerular complex cell,CL:0000648,kidney granular cell,cardiovascular-system|endocrine-system,kidney
+CL:1000618,juxtaglomerular complex cell,CL:1000850,macula densa epithelial cell,cardiovascular-system|endocrine-system,kidney
+CL:1000838,kidney proximal convoluted tubule epithelial cell,CL:4030009,epithelial cell of proximal tubule segment 1,dental-and-craniofacial-system|cardiovascular-system|endocrine-system|urinary-system|skeletal-system,kidney
+CL:1000838,kidney proximal convoluted tubule epithelial cell,CL:4030010,epithelial cell of proximal tubule segment 2,dental-and-craniofacial-system|cardiovascular-system|endocrine-system|urinary-system|skeletal-system,kidney
+CL:1000839,kidney proximal straight tubule epithelial cell,CL:4030011,epithelial cell of proximal tubule segment 3,urinary-system,kidney
+CL:1000891,kidney arterial blood vessel cell,CL:1001096,kidney afferent arteriole endothelial cell,urinary-system,kidney
+CL:1000891,kidney arterial blood vessel cell,CL:1001099,kidney efferent arteriole endothelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:1001106,kidney loop of Henle thick ascending limb epithelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:1001107,kidney loop of Henle thin ascending limb epithelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:1001108,kidney loop of Henle medullary thick ascending limb epithelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:1001109,kidney loop of Henle cortical thick ascending limb epithelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:1001111,kidney loop of Henle thin descending limb epithelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:4030011,epithelial cell of proximal tubule segment 3,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:4030012,kidney loop of Henle short descending thin limb epithelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:4030013,kidney loop of Henle long descending thin limb outer medulla epithelial cell,urinary-system,kidney
+CL:1000909,kidney loop of Henle epithelial cell,CL:4030014,kidney loop of Henle long descending thin limb inner medulla epithelial cell,urinary-system,kidney
+CL:1001006,kidney afferent arteriole cell,CL:1001096,kidney afferent arteriole endothelial cell,cardiovascular-system|endocrine-system,kidney
+CL:1001567,lung endothelial cell,CL:4028002,alveolar capillary type 1 endothelial cell,pulmonary-system,lung
+CL:1001567,lung endothelial cell,CL:4028003,alveolar capillary type 2 endothelial cell,pulmonary-system,lung
+CL:1001589,duodenum secretory cell,CL:1000324,duodenal goblet cell,endocrine-system,small-intestine
+CL:1001598,small intestine secretory cell,CL:1000317,intestinal villus goblet cell,digestive-system,small-intestine
+CL:1001598,small intestine secretory cell,CL:1000324,duodenal goblet cell,digestive-system,small-intestine
+CL:1001598,small intestine secretory cell,CL:1000325,jejunal goblet cell,digestive-system,small-intestine
+CL:1001598,small intestine secretory cell,CL:1000326,ileal goblet cell,digestive-system,small-intestine
+CL:1001598,small intestine secretory cell,CL:1000344,paneth cell of epithelium proper of small intestine,digestive-system,small-intestine
+CL:1001610,bone marrow hematopoietic cell,CL:0000557,granulocyte monocyte progenitor cell,immune-and-lymphatic-system,bone-marrow
+CL:2000021,sebaceous gland cell,CL:0000317,sebocyte,integumentary-system,large-intestine|skin
+CL:4023026,direct pathway medium spiny neuron,CL:4030043,matrix D1 medium spiny neuron,nervous-system,allen-brain
+CL:4023026,direct pathway medium spiny neuron,CL:4030048,striosomal D1 medium spiny neuron,nervous-system,allen-brain
+CL:4028001,pulmonary capillary endothelial cell,CL:4028002,alveolar capillary type 1 endothelial cell,cardiovascular-system|endocrine-system,lung
+CL:4028001,pulmonary capillary endothelial cell,CL:4028003,alveolar capillary type 2 endothelial cell,cardiovascular-system|endocrine-system,lung
+CL:4030002,"effector memory CD45RA-positive, alpha-beta T cell, terminally differentiated",CL:0001062,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:4030002,"effector memory CD45RA-positive, alpha-beta T cell, terminally differentiated",CL:0001087,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",immune-and-lymphatic-system,blood-pelvis|bone-marrow
+CL:4052002,syncytial cell,CL:0000525,syncytiotrophoblast cell,integumentary-system,placenta
+CL:4052060,spinous cell,CL:0000649,spinous cell of epidermis,integumentary-system,skin
+CL:4052061,epidermal keratinocyte,CL:0000649,spinous cell of epidermis,integumentary-system,skin
+CL:4052061,epidermal keratinocyte,CL:4033056,onychocyte,integumentary-system,skin
+CL:7770004,suprabasal cell,CL:4033048,respiratory tract suprabasal cell,integumentary-system,lung|main-bronchus

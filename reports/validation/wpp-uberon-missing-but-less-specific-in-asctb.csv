@@ -1,0 +1,179 @@
+id,label,related_id,related_label,wpp_tables,asctb_tables
+UBERON:0000011,parasympathetic nervous system,UBERON:0011216,organ system subdivision,urinary-system|nervous-system,anatomical-systems
+UBERON:0000013,sympathetic nervous system,UBERON:0011216,organ system subdivision,urinary-system|nervous-system,anatomical-systems
+UBERON:0000043,tendon,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0000102,lung vasculature,UBERON:0002049,vasculature,pulmonary-system,heart
+UBERON:0000160,intestine,UBERON:0004921,subdivision of digestive tract,digestive-system|immune-and-lymphatic-system,anatomical-systems
+UBERON:0000344,mucosa,UBERON:0004923,organ component layer,immune-and-lymphatic-system,mouth
+UBERON:0000382,apocrine sweat gland,UBERON:0001820,sweat gland,integumentary-system,skin
+UBERON:0000382,apocrine sweat gland,UBERON:0008974,apocrine gland,integumentary-system,large-intestine|skin
+UBERON:0001009,circulatory system,UBERON:0000467,anatomical system,urinary-system,anatomical-systems
+UBERON:0001103,diaphragm,UBERON:0014892,"skeletal muscle organ, vertebrate",nervous-system,anatomical-systems
+UBERON:0001143,hepatic vein,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0001143,hepatic vein,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0001143,hepatic vein,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
+UBERON:0001155,colon,UBERON:0004921,subdivision of digestive tract,digestive-system,anatomical-systems
+UBERON:0001160,fundus of stomach,UBERON:0004921,subdivision of digestive tract,endocrine-system,anatomical-systems
+UBERON:0001166,pylorus,UBERON:0004921,subdivision of digestive tract,endocrine-system,anatomical-systems
+UBERON:0001211,Peyer's patch,UBERON:0001961,mucosa-associated lymphoid tissue,immune-and-lymphatic-system,large-intestine
+UBERON:0001211,Peyer's patch,UBERON:0001962,gut-associated lymphoid tissue,immune-and-lymphatic-system,large-intestine|anatomical-systems
+UBERON:0001287,proximal convoluted tubule,UBERON:0001231,nephron tubule,dental-and-craniofacial-system|skeletal-system|urinary-system,kidney
+UBERON:0001288,loop of Henle,UBERON:0001231,nephron tubule,urinary-system,kidney
+UBERON:0001347,white adipose tissue,UBERON:0001013,adipose tissue,endocrine-system|female-reproductive-system,thymus
+UBERON:0001347,white adipose tissue,UBERON:0002384,connective tissue,endocrine-system|female-reproductive-system,large-intestine|liver|pancreas|thymus
+UBERON:0001570,inferior pharyngeal constrictor,UBERON:0001566,cricothyroid muscle,dental-and-craniofacial-system|nervous-system,muscular-system
+UBERON:0001570,inferior pharyngeal constrictor,UBERON:0001568,muscle of larynx,dental-and-craniofacial-system|nervous-system,muscular-system
+UBERON:0001570,inferior pharyngeal constrictor,UBERON:0002377,muscle of neck,nervous-system|dental-and-craniofacial-system,muscular-system
+UBERON:0001570,inferior pharyngeal constrictor,UBERON:0014892,"skeletal muscle organ, vertebrate",dental-and-craniofacial-system|nervous-system,anatomical-systems
+UBERON:0001573,styloglossus,UBERON:0001575,extrinsic muscle of tongue,dental-and-craniofacial-system|nervous-system,muscular-system
+UBERON:0001573,styloglossus,UBERON:0014892,"skeletal muscle organ, vertebrate",nervous-system|dental-and-craniofacial-system,anatomical-systems
+UBERON:0001604,levator palpebrae superioris,UBERON:0001601,extra-ocular muscle,dental-and-craniofacial-system|nervous-system,muscular-system
+UBERON:0001604,levator palpebrae superioris,UBERON:0014892,"skeletal muscle organ, vertebrate",dental-and-craniofacial-system|nervous-system,anatomical-systems
+UBERON:0001637,artery,UBERON:0000055,vessel,male-reproductive-system,large-intestine
+UBERON:0001637,artery,UBERON:0001981,blood vessel,male-reproductive-system,palatine-tonsil|prostate
+UBERON:0001638,vein,UBERON:0000055,vessel,male-reproductive-system,large-intestine
+UBERON:0001638,vein,UBERON:0001981,blood vessel,male-reproductive-system,palatine-tonsil|prostate
+UBERON:0001638,vein,UBERON:0003920,venous blood vessel,male-reproductive-system,lung
+UBERON:0001697,orbit of skull,UBERON:0011216,organ system subdivision,nervous-system|dental-and-craniofacial-system,anatomical-systems
+UBERON:0001737,larynx,UBERON:0000072,proximo-distal subdivision of respiratory tract,nervous-system,anatomical-systems
+UBERON:0001815,lumbosacral nerve plexus,UBERON:0001810,nerve plexus,female-reproductive-system|male-reproductive-system,peripheral-nervous-system
+UBERON:0001815,lumbosacral nerve plexus,UBERON:0001813,spinal nerve plexus,female-reproductive-system|male-reproductive-system,peripheral-nervous-system
+UBERON:0001816,autonomic nerve plexus,UBERON:0001810,nerve plexus,nervous-system,peripheral-nervous-system
+UBERON:0001886,choroid plexus,UBERON:0002049,vasculature,nervous-system,heart
+UBERON:0002005,enteric nervous system,UBERON:0011216,organ system subdivision,immune-and-lymphatic-system,anatomical-systems
+UBERON:0002017,portal vein,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0002017,portal vein,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0002017,portal vein,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
+UBERON:0002019,accessory XI nerve,UBERON:0001021,nerve,nervous-system,liver|peripheral-nervous-system|thymus
+UBERON:0002060,femoral artery,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0002060,femoral artery,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0002204,musculoskeletal system,UBERON:0000467,anatomical system,muscular-system,anatomical-systems
+UBERON:0002242,nucleus pulposus,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0002366,bulbo-urethral gland,UBERON:0010147,male accessory sex gland,male-reproductive-system,anatomical-systems
+UBERON:0002410,autonomic nervous system,UBERON:0011216,organ system subdivision,muscular-system|nervous-system,anatomical-systems
+UBERON:0002418,cartilage tissue,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0002481,bone tissue,UBERON:0002384,connective tissue,skeletal-system|dental-and-craniofacial-system|endocrine-system|male-reproductive-system,large-intestine|liver|pancreas|thymus
+UBERON:0002521,elastic tissue,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0002524,mediastinal lymph node,UBERON:0000029,lymph node,immune-and-lymphatic-system,lymph-node|anatomical-systems
+UBERON:0003425,renal lymph node,UBERON:0000029,lymph node,urinary-system,lymph-node|anatomical-systems
+UBERON:0003444,pelvis nerve,UBERON:0001021,nerve,male-reproductive-system|female-reproductive-system,peripheral-nervous-system|thymus|liver
+UBERON:0003542,right lung respiratory bronchiole,UBERON:0002188,respiratory bronchiole,pulmonary-system,lung
+UBERON:0003570,respiratory system connective tissue,UBERON:0002384,connective tissue,fascia-system|immune-and-lymphatic-system,pancreas|thymus|large-intestine|liver
+UBERON:0003572,chest connective tissue,UBERON:0002384,connective tissue,immune-and-lymphatic-system,thymus|pancreas|large-intestine|liver
+UBERON:0003580,lower respiratory tract connective tissue,UBERON:0002384,connective tissue,immune-and-lymphatic-system,pancreas|thymus|large-intestine|liver
+UBERON:0003584,mammary gland connective tissue,UBERON:0002384,connective tissue,female-reproductive-system,pancreas|thymus|large-intestine|liver
+UBERON:0003585,dermis connective tissue,UBERON:0002384,connective tissue,immune-and-lymphatic-system,pancreas|thymus|large-intestine|liver
+UBERON:0003592,bronchus connective tissue,UBERON:0002384,connective tissue,immune-and-lymphatic-system,pancreas|thymus|large-intestine|liver
+UBERON:0003615,lung elastic tissue,UBERON:0000114,lung connective tissue,pulmonary-system,lung
+UBERON:0003615,lung elastic tissue,UBERON:0002384,connective tissue,pulmonary-system,large-intestine|liver|pancreas|thymus
+UBERON:0003644,kidney arterial blood vessel,UBERON:0000055,vessel,urinary-system,large-intestine
+UBERON:0003644,kidney arterial blood vessel,UBERON:0001981,blood vessel,urinary-system,palatine-tonsil|prostate
+UBERON:0003644,kidney arterial blood vessel,UBERON:0003517,kidney blood vessel,urinary-system,kidney
+UBERON:0003708,carotid sinus,UBERON:0000055,vessel,nervous-system,large-intestine
+UBERON:0003708,carotid sinus,UBERON:0001530,common carotid artery plus branches,nervous-system,blood-vasculature
+UBERON:0003708,carotid sinus,UBERON:0001981,blood vessel,nervous-system,palatine-tonsil|prostate
+UBERON:0003708,carotid sinus,UBERON:0004573,systemic artery,nervous-system,lung
+UBERON:0003727,intercostal nerve,UBERON:0001021,nerve,female-reproductive-system,peripheral-nervous-system|thymus|liver
+UBERON:0003727,intercostal nerve,UBERON:0001780,spinal nerve,female-reproductive-system,peripheral-nervous-system
+UBERON:0003968,peripheral lymph node,UBERON:0000029,lymph node,immune-and-lymphatic-system,lymph-node|anatomical-systems
+UBERON:0004135,distal tubule,UBERON:0001231,nephron tubule,urinary-system,kidney
+UBERON:0004224,muscular coat of vas deferens,UBERON:0004923,organ component layer,male-reproductive-system,mouth
+UBERON:0004266,upper leg connective tissue,UBERON:0002384,connective tissue,immune-and-lymphatic-system,large-intestine|liver|pancreas|thymus
+UBERON:0004449,cerebral artery,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0004449,cerebral artery,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0004449,cerebral artery,UBERON:0004573,systemic artery,cardiovascular-system,lung
+UBERON:0004572,arterial system,UBERON:0000467,anatomical system,cardiovascular-system|nervous-system,anatomical-systems
+UBERON:0004572,arterial system,UBERON:0007798,vascular system,cardiovascular-system|nervous-system,prostate
+UBERON:0004582,venous system,UBERON:0000467,anatomical system,nervous-system|cardiovascular-system,anatomical-systems
+UBERON:0004582,venous system,UBERON:0007798,vascular system,cardiovascular-system|nervous-system,prostate
+UBERON:0004722,deep cervical lymph node,UBERON:0000029,lymph node,immune-and-lymphatic-system,lymph-node|anatomical-systems
+UBERON:0004799,trachea basal lamina,UBERON:0000482,basal lamina of epithelium,immune-and-lymphatic-system,eye|pancreas
+UBERON:0005281,ventricular system of central nervous system,UBERON:0000467,anatomical system,nervous-system,anatomical-systems
+UBERON:0005609,iliac artery,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0005609,iliac artery,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0005609,iliac artery,UBERON:0004573,systemic artery,cardiovascular-system,lung
+UBERON:0005610,iliac vein,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0005610,iliac vein,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0005610,iliac vein,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
+UBERON:0006135,myelinated nerve fiber,UBERON:0006134,nerve fiber,integumentary-system,large-intestine|peripheral-nervous-system
+UBERON:0006328,laryngeal intrinsic muscle,UBERON:0001568,muscle of larynx,nervous-system,muscular-system
+UBERON:0006328,laryngeal intrinsic muscle,UBERON:0002377,muscle of neck,nervous-system,muscular-system
+UBERON:0006328,laryngeal intrinsic muscle,UBERON:0014892,"skeletal muscle organ, vertebrate",nervous-system,anatomical-systems
+UBERON:0006562,pharynx,UBERON:0004921,subdivision of digestive tract,dental-and-craniofacial-system|nervous-system,anatomical-systems
+UBERON:0006720,pterygoid muscle,UBERON:0002376,cranial muscle,dental-and-craniofacial-system|nervous-system,muscular-system
+UBERON:0006720,pterygoid muscle,UBERON:0003681,masticatory muscle,dental-and-craniofacial-system|nervous-system,muscular-system
+UBERON:0006720,pterygoid muscle,UBERON:0014892,"skeletal muscle organ, vertebrate",nervous-system|dental-and-craniofacial-system,anatomical-systems
+UBERON:0006853,renal cortex tubule,UBERON:0001231,nephron tubule,urinary-system,kidney
+UBERON:0007377,stratum compactum of dermis,UBERON:0004923,organ component layer,integumentary-system,mouth
+UBERON:0008243,upper back muscle,UBERON:0002324,muscle of back,nervous-system,muscular-system
+UBERON:0008243,upper back muscle,UBERON:0014892,"skeletal muscle organ, vertebrate",nervous-system,anatomical-systems
+UBERON:0008982,fascia,UBERON:0002384,connective tissue,fascia-system,pancreas|thymus|large-intestine|liver
+UBERON:0008998,vasculature of brain,UBERON:0002049,vasculature,nervous-system,heart
+UBERON:0010194,hepatic portal system,UBERON:0002049,vasculature,cardiovascular-system,heart
+UBERON:0010211,granulation tissue,UBERON:0002384,connective tissue,integumentary-system|fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0010323,cranial skeletal system,UBERON:0011216,organ system subdivision,dental-and-craniofacial-system,anatomical-systems
+UBERON:0010402,epidermis suprabasal layer,UBERON:0004923,organ component layer,integumentary-system,mouth
+UBERON:0011236,deep fascia,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0011325,pharyngeal nerve plexus,UBERON:0001810,nerve plexus,dental-and-craniofacial-system|nervous-system,peripheral-nervous-system
+UBERON:0011388,male bulbospongiosus muscle,UBERON:0002379,perineal muscle,male-reproductive-system,muscular-system
+UBERON:0011388,male bulbospongiosus muscle,UBERON:0011389,bulbospongiosus muscle,male-reproductive-system,muscular-system
+UBERON:0011388,male bulbospongiosus muscle,UBERON:0014892,"skeletal muscle organ, vertebrate",male-reproductive-system,anatomical-systems
+UBERON:0011825,loose connective tissue,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0011900,perimysium,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0011936,vibrissa hair bulb,UBERON:0005932,bulb of hair follicle,integumentary-system,skin
+UBERON:0012118,infraspinatus tendon,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0012177,skin apocrine gland,UBERON:0008974,apocrine gland,integumentary-system,large-intestine|skin
+UBERON:0013161,left lateral ventricle,UBERON:0002285,telencephalic ventricle,nervous-system,allen-brain
+UBERON:0013161,left lateral ventricle,UBERON:0004086,brain ventricle,nervous-system,allen-brain
+UBERON:0013161,left lateral ventricle,UBERON:0004923,organ component layer,nervous-system,mouth
+UBERON:0013162,right lateral ventricle,UBERON:0002285,telencephalic ventricle,nervous-system,allen-brain
+UBERON:0013162,right lateral ventricle,UBERON:0004086,brain ventricle,nervous-system,allen-brain
+UBERON:0013162,right lateral ventricle,UBERON:0004923,organ component layer,nervous-system,mouth
+UBERON:0013479,lung endothelium,UBERON:0001986,endothelium,pulmonary-system,kidney
+UBERON:0013479,lung endothelium,UBERON:0004638,blood vessel endothelium,pulmonary-system,prostate
+UBERON:0013489,superficial cervical fascia,UBERON:0002384,connective tissue,fascia-system,large-intestine|liver|pancreas|thymus
+UBERON:0015704,sagittal sinus,UBERON:0000055,vessel,cardiovascular-system|nervous-system,large-intestine
+UBERON:0015704,sagittal sinus,UBERON:0001981,blood vessel,cardiovascular-system|nervous-system,palatine-tonsil|prostate
+UBERON:0015704,sagittal sinus,UBERON:0003920,venous blood vessel,cardiovascular-system|nervous-system,lung
+UBERON:0016890,intrahepatic branch of portal vein,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0016890,intrahepatic branch of portal vein,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0016890,intrahepatic branch of portal vein,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
+UBERON:0035198,superficial lymphatic vessel,UBERON:0000055,vessel,integumentary-system,large-intestine
+UBERON:0035198,superficial lymphatic vessel,UBERON:0001473,lymphatic vessel,integumentary-system,liver|lymph-node|prostate|spleen
+UBERON:0035428,postcapillary venule,UBERON:0000055,vessel,integumentary-system,large-intestine
+UBERON:0035428,postcapillary venule,UBERON:0001979,venule,integumentary-system,heart
+UBERON:0035428,postcapillary venule,UBERON:0001981,blood vessel,integumentary-system,palatine-tonsil|prostate
+UBERON:0035428,postcapillary venule,UBERON:0003920,venous blood vessel,integumentary-system,lung
+UBERON:0039228,sigmoid vein,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:0039228,sigmoid vein,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:0039228,sigmoid vein,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
+UBERON:0039422,dorsal vein of penis,UBERON:0000055,vessel,male-reproductive-system,large-intestine
+UBERON:0039422,dorsal vein of penis,UBERON:0001981,blood vessel,male-reproductive-system,palatine-tonsil|prostate
+UBERON:0039422,dorsal vein of penis,UBERON:0003920,venous blood vessel,male-reproductive-system,lung
+UBERON:2000985,ventral rhombencephalic commissure medulla oblongata,UBERON:0019258,white matter of hindbrain,pulmonary-system,allen-brain
+UBERON:8410007,myenteric nerve plexus of anorectum,UBERON:0000429,enteric plexus,nervous-system,peripheral-nervous-system
+UBERON:8410007,myenteric nerve plexus of anorectum,UBERON:0001810,nerve plexus,nervous-system,peripheral-nervous-system
+UBERON:8410007,myenteric nerve plexus of anorectum,UBERON:0002439,myenteric nerve plexus,nervous-system,large-intestine|peripheral-nervous-system
+UBERON:8410037,high endothelial venule,UBERON:0000055,vessel,immune-and-lymphatic-system,large-intestine
+UBERON:8410037,high endothelial venule,UBERON:0001979,venule,immune-and-lymphatic-system,heart
+UBERON:8410037,high endothelial venule,UBERON:0001981,blood vessel,immune-and-lymphatic-system,palatine-tonsil|prostate
+UBERON:8410037,high endothelial venule,UBERON:0003920,venous blood vessel,immune-and-lymphatic-system,lung
+UBERON:8480001,capillary of brain,UBERON:0000055,vessel,nervous-system,large-intestine
+UBERON:8480001,capillary of brain,UBERON:0001981,blood vessel,nervous-system,palatine-tonsil|prostate
+UBERON:8480001,capillary of brain,UBERON:0001982,capillary,nervous-system,heart
+UBERON:8480005,placental artery endothelium,UBERON:0001986,endothelium,immune-and-lymphatic-system,kidney
+UBERON:8480005,placental artery endothelium,UBERON:0004638,blood vessel endothelium,immune-and-lymphatic-system,prostate
+UBERON:8480067,bone marrow microvessel,UBERON:0000055,vessel,immune-and-lymphatic-system,large-intestine
+UBERON:8480067,bone marrow microvessel,UBERON:0001981,blood vessel,immune-and-lymphatic-system,palatine-tonsil|prostate
+UBERON:8600024,pulmonary venule,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:8600024,pulmonary venule,UBERON:0001979,venule,cardiovascular-system,heart
+UBERON:8600024,pulmonary venule,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:8600024,pulmonary venule,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
+UBERON:8920045,right gastric artery,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:8920045,right gastric artery,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:8920047,left gastroepiploic vein,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:8920047,left gastroepiploic vein,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:8920047,left gastroepiploic vein,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
+UBERON:8920048,right gastroepiploic vein,UBERON:0000055,vessel,cardiovascular-system,large-intestine
+UBERON:8920048,right gastroepiploic vein,UBERON:0001981,blood vessel,cardiovascular-system,palatine-tonsil|prostate
+UBERON:8920048,right gastroepiploic vein,UBERON:0003920,venous blood vessel,cardiovascular-system,lung
