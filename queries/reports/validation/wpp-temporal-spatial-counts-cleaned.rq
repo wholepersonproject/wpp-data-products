@@ -31,7 +31,7 @@ WITH {
     }
 
     # TODO: Update these values at the source
-    BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LCASE(?raw_time_scale), '\\(.*\\)\\s*', ''), '^\\s+|\\s+$', ''), ', ', '-'), ' – ', '-'), ' to ', '-') as ?time_scale_clean)
+    BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LCASE(?raw_time_scale), '\\(.*\\)\\s*', ''), '^\\s+|\\s+$', ''), ', ', '-'), '–', '-'), ' to ', '-') as ?time_scale_clean)
     # TODO: Update these values at the source
     BIND(CONCAT(UCASE(SUBSTR(?raw_effector_scale, 1, 1)), LCASE(SUBSTR(?raw_effector_scale, 2))) as ?effector_scale)
     BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)

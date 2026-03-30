@@ -25,7 +25,7 @@ WHERE {
   ] .
 
   # TODO: Update these values at the source
-  BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LCASE(?raw_time_scale), '\\(.*\\)\\s*', ''), '^\\s+|\\s+$', ''), ', ', '-'), ' – ', '-'), ' to ', '-') as ?time_scale)
+  BIND(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LCASE(?raw_time_scale), '\\(.*\\)\\s*', ''), '^\\s+|\\s+$', ''), ', ', '-'), '–', '-'), ' to ', '-') as ?time_scale)
   # TODO: Update these values at the source
   BIND(LCASE(?raw_effector_scale) as ?effector_scale)
   BIND(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?table)
