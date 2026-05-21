@@ -1,0 +1,5 @@
+#+ summary: WPP table growth by various metrics
+
+# I'm actually just a duckdb query, but this needs to be here to work.
+SELECT (?s as ?date) (?p as ?group) (?o as ?count)
+WHERE { ?s ?p ?o . } LIMIT 0

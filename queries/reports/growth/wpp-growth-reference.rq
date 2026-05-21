@@ -1,0 +1,22 @@
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <http://schema.org/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?data_source ?date ('#References' as ?group) ?value
+WHERE {
+  GRAPH ?versionedPurl {
+    ?purl a owl:Ontology ;
+      schema:version ?version .
+    FILTER(STRSTARTS(STR(?purl), 'https://purl.wholepersonphysiome.org/wpp/') && ?version != 'draft')
+
+    [] a wpp:Record ;
+      wpp:reference_field [
+        wpp:source_concept ?value ;
+      ] .
+
+    BIND(CONCAT(SUBSTR(?version, 4, 4), '-', SUBSTR(?version, 8, 2), '-', SUBSTR(?version, 10, 2)) as ?date)
+    BIND(REPLACE(STR(?purl), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?data_source)
+  }
+}
+ORDER BY ?data_source ?date ?value

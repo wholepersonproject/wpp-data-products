@@ -1,0 +1,40 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+
+SELECT DISTINCT ?data_source ?date ('#Functional tissue units' as ?group) ?value
+WHERE {
+  GRAPH ?versionedPurl {
+    ?purl a owl:Ontology ;
+      schema:version ?version .
+    FILTER(STRSTARTS(STR(?purl), 'https://purl.wholepersonphysiome.org/wpp/') && ?version != 'draft')
+
+    [] wpp:source_concept ?value .
+
+    GRAPH HRA: {
+      {
+        [
+          a ccf:FtuIllustration ;
+          ccf:representation_of ?value ;
+        ] .
+      }
+      UNION
+      {
+        [
+          a ccf:AsctbRecord ;
+          ccf:ftu_types [
+            ccf:source_concept ?value 
+          ];
+        ] .
+      }
+    }
+
+    BIND(CONCAT(SUBSTR(?version, 4, 4), '-', SUBSTR(?version, 8, 2), '-', SUBSTR(?version, 10, 2)) as ?date)
+    BIND(REPLACE(STR(?purl), 'https://purl.wholepersonphysiome.org/wpp/', '') as ?data_source)
+  }
+}
+ORDER BY ?data_source ?date ?value

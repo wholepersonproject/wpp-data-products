@@ -154,4 +154,4 @@ env.sh
 
 .venv
 docs/
-blazegraph.jnl
+blazegraph*.jnl
