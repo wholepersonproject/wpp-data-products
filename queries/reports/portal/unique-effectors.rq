@@ -1,0 +1,89 @@
+#+ summary: WPP table information
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT DISTINCT ?system ?organ ?as ?ct ?total ?total_unique
+FROM WPP:
+WHERE {
+  [] a wpp:Record ; wpp:record_source ?source .
+  BIND(REPLACE(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', ''), '-', ' ') as ?system)
+
+  OPTIONAL {
+    SELECT ?source (COUNT(DISTINCT ?organ) as ?organ)
+    WHERE {
+      [
+        a wpp:Record ;
+        wpp:record_source ?source ;
+        ?field [
+          wpp:source_concept ?iri ;
+        ] ;
+      ] .
+
+      GRAPH HRA: {
+        ?hra_record a ccf:AsctbRecord ;
+          ?hra_field [
+            ccf:source_concept ?iri 
+          ] .
+
+        BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?hra_record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?organ)
+      }
+    }
+    GROUP BY ?source
+  }
+
+  OPTIONAL {
+    SELECT ?source (COUNT(DISTINCT ?iri) as ?as)
+    WHERE {
+      [
+        a wpp:Record ;
+        wpp:record_source ?source ;
+        ?field [
+          wpp:source_concept ?iri ;
+        ] ;
+      ] .
+
+      FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
+    }
+    GROUP BY ?source
+  }
+
+  OPTIONAL {
+    SELECT ?source (COUNT(DISTINCT ?iri) as ?ct)
+    WHERE {
+      [
+        a wpp:Record ;
+        wpp:record_source ?source ;
+        ?field [
+          wpp:source_concept ?iri ;
+        ] ;
+      ] .
+
+      FILTER(STRSTARTS(STR(?iri), STR(CL:)))
+    }
+    GROUP BY ?source
+  }
+
+  OPTIONAL {
+    SELECT ?source (COUNT(DISTINCT ?record) as ?total) (COUNT(DISTINCT ?iri) as ?total_unique)
+    WHERE {
+      ?record
+        a wpp:Record ;
+        wpp:record_source ?source ;
+        wpp:effector_field ?iri ;
+      .
+    }
+    GROUP BY ?source
+  }
+}

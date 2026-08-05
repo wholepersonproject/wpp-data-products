@@ -1,0 +1,54 @@
+#+ summary: How many shared terms between systems
+
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wpp: <https://purl.wholepersonphysiome.org/schema/wpp#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra>
+PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
+
+SELECT ?table1 ?table2 (COUNT(DISTINCT ?iri) as ?shared_terms) (SUM(?rows1 + ?rows2) as ?row_count)
+FROM WPP:
+WHERE {
+  {
+    SELECT DISTINCT (?table as ?table1) ?iri (COUNT(*) as ?rows1)
+    WHERE {
+      [] a wpp:Record ;
+        wpp:record_source ?source ;
+        ?field [
+          wpp:source_concept ?iri ;
+        ] ;
+      .
+
+      BIND(REPLACE(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', ''), '-', ' ') as ?table)
+    }
+    GROUP BY ?table ?iri
+    ORDER BY ?table ?iri
+  }
+
+  {
+    SELECT DISTINCT (?table as ?table2) ?iri (COUNT(*) as ?rows2)
+    WHERE {
+      [] a wpp:Record ;
+        wpp:record_source ?source ;
+        ?field [
+          wpp:source_concept ?iri ;
+        ] ;
+      .
+
+      BIND(REPLACE(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', ''), '-', ' ') as ?table)
+    }
+    GROUP BY ?table ?iri
+    ORDER BY ?table ?iri
+  }
+
+  FILTER(?table1 <= ?table2 && ?table1 != ?table2)
+}
+GROUP BY ?table1 ?table2
