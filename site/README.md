@@ -2,7 +2,7 @@
 
 ## WPP KG
 
-Go to <https://kg.wholepersonphysiome.org> to browse the current WPP KG.
+Go to <https://kg.wholepersonphysiome.org> to browse the current WPP KG. A SPARQL endpoint is available at <https://kg.wholepersonphysiome.org/sparql>.
 
 ## WPP KG in RDF Glance
 
