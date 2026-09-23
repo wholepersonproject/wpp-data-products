@@ -11,6 +11,9 @@ CDN_JNL=${BLAZEGRAPH_DB%.jnl}.cdn.jnl
 wget -N ${DEFAULT_CDN_IRI}blazegraph.jnl -O $CDN_JNL
 cp $CDN_JNL $JNL
 
+echo "Blazegraph database last modified:"
+TZ='America/New_York' date -d "$(curl -sI https://cdn.wholepersonphysiome.org/digital-objects/blazegraph.jnl | grep -i last-modified | cut -d: -f2-)"
+
 tail -n +2 named-graphs.csv | \
 while IFS=, read -r graph url _; do
   format="${url##*.}"
