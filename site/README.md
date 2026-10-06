@@ -15,6 +15,7 @@ Go to <https://kg.wholepersonphysiome.org> to browse the current WPP KG. A SPARQ
 * [WPP Table Growth Over Time](./visualizations/wpp-growth.html)
 * [WPP Temporal-Spatial Graph Visualization](./visualizations/wpp-temporal-spatial-counts.html) -- for validation
 * [WPP Temporal-Spatial Graph Visualization (imperfectly cleaned)](./visualizations/wpp-temporal-spatial-counts-cleaned.html) -- closer to original, but flawed cleaning
+* [WPP Temporal-Spatial Graph Visualization in 3D (imperfectly cleaned)](./visualizations/wpp-temporal-spatial-counts-cleaned-3d.html)
 
 ## Reports
 
