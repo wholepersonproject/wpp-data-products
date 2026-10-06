@@ -21,9 +21,9 @@
 // - Legends: the colorbar is Plotly's; the size legend and the shared vertical
 //   "Number of Processes" title are absolutely positioned HTML, placed from the
 //   colorbar's and the "Organ System" annotation's rendered positions after every redraw
-//   (positionLegends). The colorbar + size legend block is vertically centered.
+//   (positionLegends). The legend's top is aligned with the top z label (colorbarTop).
 // - Page centering: the cube sits left of center in the 800x600 plot and the legends
-//   stick out to the right, so the HTML shifts .container left by a measured 110px.
+//   stick out to the right, so the HTML shifts .container left by a measured 120px.
 //   Re-measure if the plot size, camera, or legend layout changes.
 // - Things that did NOT work for centering: camera.center (warps the perspective) and a
 //   narrower scene.domain (clips the WebGL canvas, cutting off long z labels).
@@ -39,6 +39,8 @@ const WPP_TEMPORAL_SPATIAL_3D_SPEC = {
   font: 'Metropolis',
   titleColor: '#201E3D',
   labelColor: '#4B4B5E',
+  labelSize: 12, // tick labels and legend values
+  titleSize: 14, // axis and legend titles
   // Axis domains give the tick order (first value at the low end of the axis). Rows
   // whose value isn't in the domain are dropped, as with vega-lite's explicit domains
   // (e.g. the "Organism" spatial scale).
@@ -95,8 +97,20 @@ const WPP_TEMPORAL_SPATIAL_3D_SPEC = {
     fillOpacity: 0.7,
   },
   legend: {
-    colorbarLen: 0.4, // fraction of plot height
-    gap: 16, // px between colorbar and size legend
+    colorbarLen: 0.3, // fraction of plot height
+    // Colorbar top as a fraction of plot height (from the bottom). Measured from a
+    // screenshot so the legend's top lines up with the top z label ("Urinary"), which is
+    // WebGL text and can't be queried from the DOM. Re-measure if the camera, aspect
+    // ratio, or plot size changes.
+    colorbarTop: 0.72,
+    colorbarThickness: 10.5, // px
+    // Colorbar left edge as a fraction of plot width (Plotly default 1.02); sets the gap
+    // between chart and legends. Plotly shrinks the plot area to keep the colorbar in
+    // view, so raising this moves the cube left rather than the legends right; re-measure
+    // the page centering shift in the HTML after changing it.
+    colorbarX: 0.98,
+    gap: 12, // px between colorbar and size legend
+    rowGap: 6, // px between size legend circles (circles are true size, so they can't shrink)
     titleGap: 24, // px between the legends and their shared title
   },
   // d3 / vega "yellowgreen" (YlGn) scheme
@@ -133,7 +147,7 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
 
   // Categories are plotted at integer positions 0..n-1 (Plotly 3D has no band scales)
   const axis = (enc, domain, pane) => ({
-    title: { text: enc.title, font: { size: 14, color: spec.titleColor } },
+    title: { text: enc.title, font: { size: spec.titleSize, color: spec.titleColor } },
     showticklabels: false, // drawn by the text traces instead (see notes at top)
     tickmode: 'array',
     tickvals: domain.map((_, i) => i),
@@ -155,8 +169,13 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
     scene.glplot.redraw();
   };
 
-  const sizeLegendRowHeight = spec.mark.maxDiameter + 6;
-  const sizeLegendHeight = sizeLegendRowHeight * spec.value.legendValues.length;
+  // Each size legend row is as tall as its circle (+ rowGap)
+  const sizeLegendRows = spec.value.legendValues.reduce((rows, v) => {
+    const top = rows.length ? rows[rows.length - 1].bottom : 0;
+    const d = diameter(v);
+    return [...rows, { v, cy: top + spec.legend.rowGap / 2 + d / 2, bottom: top + d + spec.legend.rowGap }];
+  }, []);
+  const sizeLegendHeight = sizeLegendRows[sizeLegendRows.length - 1].bottom;
 
   // Untitled: it shares the title drawn by renderLegendTitle with the colorbar
   const renderSizeLegend = () => {
@@ -165,13 +184,12 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
     legend.style.position = 'absolute';
     const r = spec.mark.maxDiameter / 2;
     legend.innerHTML = `<svg width="${spec.mark.maxDiameter + 60}" height="${sizeLegendHeight}">
-      ${spec.value.legendValues
-        .map((v, i) => {
-          const cy = i * sizeLegendRowHeight + sizeLegendRowHeight / 2;
+      ${sizeLegendRows
+        .map(({ v, cy }) => {
           return `<circle cx="${r + 2}" cy="${cy}" r="${diameter(v) / 2}" fill="white"
               stroke="${spec.mark.stroke}" stroke-width="1"></circle>
             <text x="${spec.mark.maxDiameter + 10}" y="${cy}" dominant-baseline="middle"
-              font-size="14" font-weight="500" fill="${spec.labelColor}">${v}</text>`;
+              font-size="${spec.labelSize}" fill="${spec.labelColor}">${v}</text>`;
         })
         .join('')}
     </svg>`;
@@ -191,7 +209,7 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
       transform: 'rotate(180deg)',
       whiteSpace: 'nowrap',
       fontFamily: spec.font,
-      fontSize: '14px',
+      fontSize: `${spec.titleSize}px`,
       color: spec.titleColor,
     });
     el.parentElement.appendChild(title);
@@ -223,7 +241,7 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
   };
 
   const fontsLoaded = document.fonts
-    ? Promise.all([document.fonts.load(`12px ${spec.font}`), document.fonts.load(`500 14px ${spec.font}`)])
+    ? Promise.all([document.fonts.load(`${spec.labelSize}px ${spec.font}`), document.fonts.load(`${spec.titleSize}px ${spec.font}`)])
     : Promise.resolve();
 
   return Promise.all([fetch(spec.dataUrl).then((res) => res.text()), fontsLoaded.catch(() => {})]).then(([text]) => {
@@ -236,11 +254,6 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
         xDomain.includes(r[spec.x.field]) && yDomain.includes(r[spec.y.field]) && zDomain.includes(r[spec.z.field]),
     );
     const values = rows.map((r) => r[spec.value.field]);
-
-    // Vertically center the colorbar + size legend block on the plot
-    const plotHeight = el.clientHeight;
-    const blockHeight = spec.legend.colorbarLen * plotHeight + spec.legend.gap + sizeLegendHeight;
-    const colorbarTop = 1 - (plotHeight - blockHeight) / 2 / plotHeight;
 
     const trace = {
       type: 'scatter3d',
@@ -270,11 +283,12 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
         opacity: spec.mark.fillOpacity,
         line: { color: spec.mark.stroke, width: spec.mark.strokeWidth },
         colorbar: {
-          tickfont: { size: 14, color: spec.labelColor },
-          thickness: 14,
+          tickfont: { size: spec.labelSize, color: spec.labelColor },
+          thickness: spec.legend.colorbarThickness,
           len: spec.legend.colorbarLen,
+          x: spec.legend.colorbarX,
           yanchor: 'top',
-          y: colorbarTop,
+          y: spec.legend.colorbarTop,
         },
       },
     };
@@ -288,7 +302,7 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
     const textTrace = (props) => ({
       type: 'scatter3d',
       mode: 'text',
-      textfont: { family: spec.font, size: 12, color: spec.labelColor },
+      textfont: { family: spec.font, size: spec.labelSize, color: spec.labelColor },
       hoverinfo: 'skip',
       showlegend: false,
       ...props,
@@ -318,7 +332,7 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
     // z title: a rotated scene annotation at the middle of the z label edge, shifted
     // right past the longest label (measured in the loaded font)
     const ctx = document.createElement('canvas').getContext('2d');
-    ctx.font = `12px ${spec.font}`;
+    ctx.font = `${spec.labelSize}px ${spec.font}`;
     const zLabelWidth = Math.max(...zLabelTrace.text.map((t) => ctx.measureText(t).width));
     const zTitle = {
       x: xEdge,
@@ -329,7 +343,7 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
       showarrow: false,
       xanchor: 'left',
       xshift: zLabelWidth + 16,
-      font: { family: spec.font, size: 14, color: spec.titleColor },
+      font: { family: spec.font, size: spec.titleSize, color: spec.titleColor },
     };
 
     const layout = {
