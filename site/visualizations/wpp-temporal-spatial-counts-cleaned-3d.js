@@ -139,6 +139,7 @@ function wppTemporalSpatial3d(selector, spec = WPP_TEMPORAL_SPATIAL_3D_SPEC) {
     tickvals: domain.map((_, i) => i),
     range: [-0.5, domain.length - 0.5],
     gridcolor: spec.gridColor,
+    zeroline: false, // categories start at 0, so the darker zero line just marks the first category
     showbackground: true,
     backgroundcolor: spec.paneColors[pane],
   });
