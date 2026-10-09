@@ -24,7 +24,7 @@ SELECT DISTINCT
   (0 as ?unique_biomarkers)
   (?uniqueProcesses as ?unique_processes)
   (?spatialScales as ?spatial_scales)
-  (?temporalScales as ?temporal_scale)
+  (?temporalScales as ?temporal_scales)
 FROM WPP:
 WHERE {
   {
