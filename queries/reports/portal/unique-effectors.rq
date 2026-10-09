@@ -17,11 +17,19 @@ PREFIX WPP: <https://purl.wholepersonphysiome.org/collection/wpp>
 SELECT DISTINCT ?system ?organ ?as ?ct ?total ?total_unique
 FROM WPP:
 WHERE {
-  [] a wpp:Record ; wpp:record_source ?source .
-  BIND(REPLACE(REPLACE(STR(?source), 'https://purl.wholepersonphysiome.org/wpp/', ''), '-', ' ') as ?system)
+  {
+    SELECT DISTINCT ?group
+    WHERE {
+      [] a wpp:Record ; wpp:record_source ?source .
+      FILTER(!STRENDS(STR(?source), '-homeostasis'))
+      VALUES ?is_total { false true }
+      BIND(IF(?is_total, 'all systems', STR(?source)) as ?group)
+    }
+  }
+  BIND(REPLACE(REPLACE(?group, 'https://purl.wholepersonphysiome.org/wpp/', ''), '-', ' ') as ?system)
 
   OPTIONAL {
-    SELECT ?source (COUNT(DISTINCT ?organ) as ?organ)
+    SELECT ?group (COUNT(DISTINCT ?organ) as ?organ)
     WHERE {
       [
         a wpp:Record ;
@@ -30,6 +38,9 @@ WHERE {
           wpp:source_concept ?iri ;
         ] ;
       ] .
+      FILTER(!STRENDS(STR(?source), '-homeostasis'))
+      VALUES ?is_total { false true }
+      BIND(IF(?is_total, 'all systems', STR(?source)) as ?group)
 
       GRAPH HRA: {
         ?hra_record a ccf:AsctbRecord ;
@@ -40,11 +51,11 @@ WHERE {
         BIND(STRBEFORE(REPLACE(STRBEFORE(STR(?hra_record), '#'), 'https://purl.humanatlas.io/asct-b/', ''), '/') as ?organ)
       }
     }
-    GROUP BY ?source
+    GROUP BY ?group
   }
 
   OPTIONAL {
-    SELECT ?source (COUNT(DISTINCT ?iri) as ?as)
+    SELECT ?group (COUNT(DISTINCT ?iri) as ?as)
     WHERE {
       [
         a wpp:Record ;
@@ -53,14 +64,17 @@ WHERE {
           wpp:source_concept ?iri ;
         ] ;
       ] .
+      FILTER(!STRENDS(STR(?source), '-homeostasis'))
+      VALUES ?is_total { false true }
+      BIND(IF(?is_total, 'all systems', STR(?source)) as ?group)
 
       FILTER(STRSTARTS(STR(?iri), STR(UBERON:)))
     }
-    GROUP BY ?source
+    GROUP BY ?group
   }
 
   OPTIONAL {
-    SELECT ?source (COUNT(DISTINCT ?iri) as ?ct)
+    SELECT ?group (COUNT(DISTINCT ?iri) as ?ct)
     WHERE {
       [
         a wpp:Record ;
@@ -69,21 +83,28 @@ WHERE {
           wpp:source_concept ?iri ;
         ] ;
       ] .
+      FILTER(!STRENDS(STR(?source), '-homeostasis'))
+      VALUES ?is_total { false true }
+      BIND(IF(?is_total, 'all systems', STR(?source)) as ?group)
 
       FILTER(STRSTARTS(STR(?iri), STR(CL:)))
     }
-    GROUP BY ?source
+    GROUP BY ?group
   }
 
   OPTIONAL {
-    SELECT ?source (COUNT(DISTINCT ?record) as ?total) (COUNT(DISTINCT ?iri) as ?total_unique)
+    SELECT ?group (COUNT(DISTINCT ?record) as ?total) (COUNT(DISTINCT ?iri) as ?total_unique)
     WHERE {
       ?record
         a wpp:Record ;
         wpp:record_source ?source ;
         wpp:effector_field ?iri ;
       .
+      FILTER(!STRENDS(STR(?source), '-homeostasis'))
+      VALUES ?is_total { false true }
+      BIND(IF(?is_total, 'all systems', STR(?source)) as ?group)
     }
-    GROUP BY ?source
+    GROUP BY ?group
   }
 }
+ORDER BY ?system (?system = 'all systems')
